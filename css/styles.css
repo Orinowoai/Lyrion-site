@@ -67,5 +67,64 @@ button.btn{cursor:pointer}
 .foot-right a{color:var(--gold);text-decoration:none}
 .hero-note{color:var(--muted);font-size:.95rem}
 
+/* Catalog System Styles */
+.shipping-banner{background:linear-gradient(90deg,var(--gold),var(--gold-2)); color:#1b1340; text-align:center; padding:8px; font-weight:700; font-size:.9rem}
+
+.promo-banner{background:var(--panel-strong); border:1px solid var(--gold); border-radius:var(--radius); padding:18px 24px; margin-bottom:24px; text-align:center}
+.promo-banner p{margin:0; color:var(--text); font-weight:600}
+
+.catalog-filters{display:flex; gap:12px; flex-wrap:wrap; margin-bottom:32px; padding:18px; background:var(--panel); border:1px solid var(--border); border-radius:var(--radius)}
+.filter-btn{background:transparent; border:1px solid var(--border); color:var(--muted); padding:8px 16px; border-radius:999px; cursor:pointer; transition:all .2s; font-size:.95rem}
+.filter-btn:hover,.filter-btn.active{background:var(--panel-strong); color:var(--text); border-color:var(--text)}
+.filter-btn:focus{outline:2px solid var(--gold); outline-offset:2px}
+
+.sign-filter{position:relative}
+.sign-dropdown{display:none; position:absolute; top:100%; left:0; margin-top:8px; background:var(--bg2); border:1px solid var(--border); border-radius:12px; padding:8px; min-width:180px; z-index:10; box-shadow:var(--shadow)}
+.sign-dropdown.active{display:grid; grid-template-columns:repeat(2,1fr); gap:6px}
+.sign-dropdown button{background:var(--panel); border:1px solid var(--border); color:var(--muted); padding:8px 12px; border-radius:8px; cursor:pointer; text-align:left; font-size:.9rem}
+.sign-dropdown button:hover{background:var(--panel-strong); color:var(--text)}
+
+.catalog-section{margin-bottom:48px}
+.catalog-section h2{font-family:"Playfair Display",serif; font-weight:700; font-size:1.8rem; margin-bottom:24px; color:var(--text)}
+
+.products-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(280px,1fr)); gap:24px}
+.bundles-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:24px}
+
+.product-card{background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:18px; box-shadow:var(--shadow); display:flex; flex-direction:column; transition:transform .2s}
+.product-card:hover{transform:translateY(-2px)}
+.product-image{width:100%; aspect-ratio:1; background:var(--panel-strong); border-radius:12px; overflow:hidden; margin-bottom:14px}
+.product-image img{width:100%; height:100%; object-fit:cover}
+.product-info{flex:1; display:flex; flex-direction:column}
+.product-title{font-size:1.1rem; font-weight:700; margin:0 0 8px; color:var(--text)}
+.product-story{font-family:"Playfair Display",serif; font-style:italic; color:var(--muted); font-size:.9rem; margin:0 0 12px}
+.product-meta{display:flex; flex-direction:column; gap:6px; margin-bottom:12px}
+.supplier-badge{display:inline-block; padding:6px 10px; background:var(--panel-strong); border:1px solid var(--border); border-radius:999px; font-size:.85rem; color:var(--muted)}
+.lead-time{font-size:.85rem; color:var(--muted); margin-left:2px}
+.product-pricing{margin:12px 0; font-weight:700}
+.price,.price-now{color:var(--text); font-size:1.2rem}
+.price-compare,.price-was{color:var(--muted); font-size:.9rem; text-decoration:line-through; margin-left:8px}
+.price-now{color:var(--gold)}
+.product-cta{margin-top:auto; display:inline-block; text-align:center; padding:10px; font-size:.95rem}
+
+.bundle-card{background:var(--panel); border:2px solid var(--gold); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow); position:relative}
+.bundle-badge{position:absolute; top:12px; right:12px; background:var(--gold); color:#1b1340; padding:6px 12px; border-radius:999px; font-weight:700; font-size:.85rem}
+.bundle-title{font-size:1.3rem; font-weight:800; margin:0 0 10px; color:var(--text)}
+.bundle-items{color:var(--muted); font-size:.95rem; margin:0 0 16px; text-transform:capitalize}
+.bundle-pricing{margin-bottom:12px}
+.bundle-price{color:var(--gold); font-size:1.4rem; font-weight:800}
+.bundle-save{display:block; color:var(--muted); font-size:.9rem; margin-top:4px}
+.bundle-note{font-size:.85rem; color:var(--muted); font-style:italic; margin:8px 0 16px}
+
+.collections-grid{display:grid; grid-template-columns:repeat(auto-fill,minmax(320px,1fr)); gap:24px; margin:32px 0}
+.zodiac-tile{background:var(--panel); border:1px solid var(--border); border-radius:var(--radius); padding:24px; box-shadow:var(--shadow)}
+.zodiac-header h3{font-family:"Playfair Display",serif; font-weight:800; font-size:1.5rem; margin:0 0 8px; color:var(--text)}
+.zodiac-mood{color:var(--muted); font-style:italic; margin:0 0 18px; font-size:.95rem}
+.zodiac-toggle{display:block; width:100%; margin-bottom:16px; cursor:pointer}
+.zodiac-products{margin-top:18px; padding-top:18px; border-top:1px solid var(--border)}
+
 @media(max-width:900px){ .hero{grid-template-columns:1fr} }
-@media (max-width:800px){ .foot-left,.foot-right{float:none;text-align:center} }
+@media (max-width:800px){ 
+  .foot-left,.foot-right{float:none;text-align:center}
+  .catalog-filters{flex-direction:column}
+  .products-grid,.bundles-grid,.collections-grid{grid-template-columns:1fr}
+}

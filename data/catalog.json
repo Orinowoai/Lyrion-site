@@ -1,0 +1,774 @@
+{
+  "brand": "LYRĪON",
+  "suppliers": {
+    "printful": {
+      "name": "Printful",
+      "regions": "EU/UK/US",
+      "notes": "Apparel & socks; consistent quality, quick DDP to EU/UK"
+    },
+    "inkthreadable": {
+      "name": "Inkthreadable",
+      "regions": "UK/EU",
+      "notes": "Eco UK apparel; soft-hand DTG, good hoodies/tees"
+    },
+    "gelato": {
+      "name": "Gelato",
+      "regions": "Global",
+      "notes": "Framed prints, posters, cushions, mugs, journals; local routing"
+    },
+    "prodigi": {
+      "name": "Prodigi",
+      "regions": "Global",
+      "notes": "Fine art prints & candles; premium homeware & gifting"
+    },
+    "printify": {
+      "name": "Printify",
+      "regions": "Global",
+      "notes": "Optional fallback for caps, totes; choose best-rated providers"
+    }
+  },
+  "pricing": {
+    "hoodie": {"cost": 28, "rrp": 72, "compareAt": 92},
+    "tee": {"cost": 9, "rrp": 32, "compareAt": 42},
+    "sock": {"cost": 6, "rrp": 18, "compareAt": 24},
+    "cap": {"cost": 10, "rrp": 30, "compareAt": 38},
+    "beanie": {"cost": 9, "rrp": 28, "compareAt": 36},
+    "scarf": {"cost": 14, "rrp": 46, "compareAt": 58},
+    "tote": {"cost": 8, "rrp": 24, "compareAt": 32},
+    "journal": {"cost": 7, "rrp": 26, "compareAt": 34},
+    "mug": {"cost": 6, "rrp": 20, "compareAt": 26},
+    "candle": {"cost": 11, "rrp": 34, "compareAt": 44},
+    "cushion": {"cost": 13, "rrp": 38, "compareAt": 48},
+    "poster_A3": {"cost": 8, "rrp": 28, "compareAt": 36},
+    "framed_print_A3": {"cost": 22, "rrp": 68, "compareAt": 86}
+  },
+  "promotions": {
+    "holidayBanner": "Solstice Event — 15% off sitewide (bundles excluded). Use code SOLSTICE15.",
+    "codes": [
+      {"code": "SOLSTICE15", "percent": 15},
+      {"code": "INNER10", "percent": 10, "note": "Inner Circle members"}
+    ],
+    "freeShippingThresholdGBP": 75
+  },
+  "bundles": [
+    {
+      "slug": "zodiac-ritual-set",
+      "title": "Zodiac Ritual Set",
+      "items": ["hoodie", "tee", "sock"],
+      "price": 109,
+      "saving": "~30–40%"
+    },
+    {
+      "slug": "altar-home",
+      "title": "Altar & Home",
+      "items": ["framed_print_A3", "candle", "cushion"],
+      "price": 129,
+      "saving": "~25–35%"
+    },
+    {
+      "slug": "constellation-gift",
+      "title": "Constellation Gift",
+      "items": ["tee", "cap", "mug", "poster_A3"],
+      "price": 89,
+      "saving": "~20–30%"
+    }
+  ],
+  "zodiacs": [
+    {
+      "sign": "Aries",
+      "mood": "ignition & courage",
+      "palette": ["#F4C84A", "#2B1F67"],
+      "story": "The first spark carried to cloth.",
+      "products": [
+        {
+          "sku": "AR-HOOD-CORE",
+          "type": "hoodie",
+          "title": "Aries Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/aries-hoodie.jpg",
+          "tags": ["apparel", "unisex", "ritual", "aries"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "AR-TEE-ORIG",
+          "type": "tee",
+          "title": "Aries Origin Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/aries-tee.jpg",
+          "tags": ["apparel", "unisex", "aries"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "AR-SOCK-FOOT",
+          "type": "sock",
+          "title": "Aries Footnotes",
+          "supplier": "printful",
+          "baseImage": "/assets/img/aries-sock.jpg",
+          "tags": ["socks", "unisex", "aries"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "AR-CAP-SUN",
+          "type": "cap",
+          "title": "Aries Sun Cap",
+          "supplier": "printful",
+          "baseImage": "/assets/img/aries-cap.jpg",
+          "tags": ["accessory", "unisex", "aries"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "AR-FRAMED-A3",
+          "type": "framed_print_A3",
+          "title": "Aries Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/aries-framed.jpg",
+          "tags": ["home", "print", "aries"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "AR-CANDLE-INT",
+          "type": "candle",
+          "title": "Aries Candle of Intention",
+          "supplier": "prodigi",
+          "baseImage": "/assets/img/aries-candle.jpg",
+          "tags": ["home", "altar", "aries"],
+          "leadDays": 3,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Taurus",
+      "mood": "ground & sensual form",
+      "palette": ["#D6C6A1", "#3A2D1A"],
+      "story": "Stone, grain, and honeyed light.",
+      "products": [
+        {
+          "sku": "TA-HOOD",
+          "type": "hoodie",
+          "title": "Taurus Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/taurus-hoodie.jpg",
+          "tags": ["apparel", "unisex", "taurus"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "TA-TEE",
+          "type": "tee",
+          "title": "Taurus Grain Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/taurus-tee.jpg",
+          "tags": ["apparel", "unisex", "taurus"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "TA-CUSH",
+          "type": "cushion",
+          "title": "Taurus Velvet Cushion",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/taurus-cushion.jpg",
+          "tags": ["home", "taurus"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "TA-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Taurus Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/taurus-framed.jpg",
+          "tags": ["home", "print", "taurus"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Gemini",
+      "mood": "duality & swift thought",
+      "palette": ["#A8D5E2", "#1C3A47"],
+      "story": "Two voices in one constellation.",
+      "products": [
+        {
+          "sku": "GE-HOOD",
+          "type": "hoodie",
+          "title": "Gemini Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/gemini-hoodie.jpg",
+          "tags": ["apparel", "unisex", "gemini"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "GE-TEE",
+          "type": "tee",
+          "title": "Gemini Dual Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/gemini-tee.jpg",
+          "tags": ["apparel", "unisex", "gemini"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "GE-JOURNAL",
+          "type": "journal",
+          "title": "Gemini Thought Journal",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/gemini-journal.jpg",
+          "tags": ["home", "stationery", "gemini"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "GE-POSTER-A3",
+          "type": "poster_A3",
+          "title": "Gemini Constellation Poster (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/gemini-poster.jpg",
+          "tags": ["home", "print", "gemini"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "GE-SOCK",
+          "type": "sock",
+          "title": "Gemini Twin Socks",
+          "supplier": "printful",
+          "baseImage": "/assets/img/gemini-sock.jpg",
+          "tags": ["socks", "unisex", "gemini"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        }
+      ]
+    },
+    {
+      "sign": "Cancer",
+      "mood": "lunar tides & nurture",
+      "palette": ["#C9D6DF", "#2E3A47"],
+      "story": "Moon-drawn waters held in shell.",
+      "products": [
+        {
+          "sku": "CA-HOOD",
+          "type": "hoodie",
+          "title": "Cancer Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/cancer-hoodie.jpg",
+          "tags": ["apparel", "unisex", "cancer"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "CA-MUG",
+          "type": "mug",
+          "title": "Cancer Lunar Mug",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/cancer-mug.jpg",
+          "tags": ["home", "cancer"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "CA-CANDLE",
+          "type": "candle",
+          "title": "Cancer Moonwater Candle",
+          "supplier": "prodigi",
+          "baseImage": "/assets/img/cancer-candle.jpg",
+          "tags": ["home", "altar", "cancer"],
+          "leadDays": 3,
+          "regions": "Global"
+        },
+        {
+          "sku": "CA-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Cancer Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/cancer-framed.jpg",
+          "tags": ["home", "print", "cancer"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "CA-TEE",
+          "type": "tee",
+          "title": "Cancer Tide Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/cancer-tee.jpg",
+          "tags": ["apparel", "unisex", "cancer"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        }
+      ]
+    },
+    {
+      "sign": "Leo",
+      "mood": "solar majesty & heart-fire",
+      "palette": ["#F4C84A", "#8B4513"],
+      "story": "Crowned in light, the lion roars.",
+      "products": [
+        {
+          "sku": "LE-HOOD",
+          "type": "hoodie",
+          "title": "Leo Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/leo-hoodie.jpg",
+          "tags": ["apparel", "unisex", "leo"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "LE-TEE",
+          "type": "tee",
+          "title": "Leo Majesty Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/leo-tee.jpg",
+          "tags": ["apparel", "unisex", "leo"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "LE-CAP",
+          "type": "cap",
+          "title": "Leo Crown Cap",
+          "supplier": "printful",
+          "baseImage": "/assets/img/leo-cap.jpg",
+          "tags": ["accessory", "unisex", "leo"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "LE-POSTER",
+          "type": "poster_A3",
+          "title": "Leo Constellation Poster (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/leo-poster.jpg",
+          "tags": ["home", "print", "leo"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "LE-CANDLE",
+          "type": "candle",
+          "title": "Leo Solar Candle",
+          "supplier": "prodigi",
+          "baseImage": "/assets/img/leo-candle.jpg",
+          "tags": ["home", "altar", "leo"],
+          "leadDays": 3,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Virgo",
+      "mood": "precision & earthen craft",
+      "palette": ["#A4B494", "#3E4A3D"],
+      "story": "Each thread counted, each seed sown.",
+      "products": [
+        {
+          "sku": "VI-HOOD",
+          "type": "hoodie",
+          "title": "Virgo Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/virgo-hoodie.jpg",
+          "tags": ["apparel", "unisex", "virgo"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "VI-TEE",
+          "type": "tee",
+          "title": "Virgo Harvest Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/virgo-tee.jpg",
+          "tags": ["apparel", "unisex", "virgo"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "VI-JOURNAL",
+          "type": "journal",
+          "title": "Virgo Detail Journal",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/virgo-journal.jpg",
+          "tags": ["home", "stationery", "virgo"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "VI-CUSHION",
+          "type": "cushion",
+          "title": "Virgo Earth Cushion",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/virgo-cushion.jpg",
+          "tags": ["home", "virgo"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "VI-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Virgo Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/virgo-framed.jpg",
+          "tags": ["home", "print", "virgo"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Libra",
+      "mood": "balance & aesthetic grace",
+      "palette": ["#E8C4D8", "#5C3A51"],
+      "story": "Scales held in perfect symmetry.",
+      "products": [
+        {
+          "sku": "LI-HOOD",
+          "type": "hoodie",
+          "title": "Libra Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/libra-hoodie.jpg",
+          "tags": ["apparel", "unisex", "libra"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "LI-TEE",
+          "type": "tee",
+          "title": "Libra Equilibrium Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/libra-tee.jpg",
+          "tags": ["apparel", "unisex", "libra"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "LI-SCARF",
+          "type": "scarf",
+          "title": "Libra Grace Scarf",
+          "supplier": "printful",
+          "baseImage": "/assets/img/libra-scarf.jpg",
+          "tags": ["accessory", "unisex", "libra"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "LI-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Libra Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/libra-framed.jpg",
+          "tags": ["home", "print", "libra"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "LI-MUG",
+          "type": "mug",
+          "title": "Libra Harmony Mug",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/libra-mug.jpg",
+          "tags": ["home", "libra"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Scorpio",
+      "mood": "depth & transformation",
+      "palette": ["#8B1E3F", "#1A0B14"],
+      "story": "The sting that births renewal.",
+      "products": [
+        {
+          "sku": "SC-HOOD",
+          "type": "hoodie",
+          "title": "Scorpio Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/scorpio-hoodie.jpg",
+          "tags": ["apparel", "unisex", "scorpio"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "SC-TEE",
+          "type": "tee",
+          "title": "Scorpio Shadow Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/scorpio-tee.jpg",
+          "tags": ["apparel", "unisex", "scorpio"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "SC-CANDLE",
+          "type": "candle",
+          "title": "Scorpio Rebirth Candle",
+          "supplier": "prodigi",
+          "baseImage": "/assets/img/scorpio-candle.jpg",
+          "tags": ["home", "altar", "scorpio"],
+          "leadDays": 3,
+          "regions": "Global"
+        },
+        {
+          "sku": "SC-POSTER",
+          "type": "poster_A3",
+          "title": "Scorpio Constellation Poster (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/scorpio-poster.jpg",
+          "tags": ["home", "print", "scorpio"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "SC-SOCK",
+          "type": "sock",
+          "title": "Scorpio Mystery Socks",
+          "supplier": "printful",
+          "baseImage": "/assets/img/scorpio-sock.jpg",
+          "tags": ["socks", "unisex", "scorpio"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        }
+      ]
+    },
+    {
+      "sign": "Sagittarius",
+      "mood": "wanderlust & blazing truth",
+      "palette": ["#E67E22", "#6B3410"],
+      "story": "Arrow drawn toward distant stars.",
+      "products": [
+        {
+          "sku": "SA-HOOD",
+          "type": "hoodie",
+          "title": "Sagittarius Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/sagittarius-hoodie.jpg",
+          "tags": ["apparel", "unisex", "sagittarius"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "SA-TEE",
+          "type": "tee",
+          "title": "Sagittarius Quest Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/sagittarius-tee.jpg",
+          "tags": ["apparel", "unisex", "sagittarius"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "SA-CAP",
+          "type": "cap",
+          "title": "Sagittarius Archer Cap",
+          "supplier": "printful",
+          "baseImage": "/assets/img/sagittarius-cap.jpg",
+          "tags": ["accessory", "unisex", "sagittarius"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "SA-MUG",
+          "type": "mug",
+          "title": "Sagittarius Journey Mug",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/sagittarius-mug.jpg",
+          "tags": ["home", "sagittarius"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "SA-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Sagittarius Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/sagittarius-framed.jpg",
+          "tags": ["home", "print", "sagittarius"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Capricorn",
+      "mood": "summit & endurance",
+      "palette": ["#7C7C7C", "#2A2A2A"],
+      "story": "The mountain goat climbs alone.",
+      "products": [
+        {
+          "sku": "CP-HOOD",
+          "type": "hoodie",
+          "title": "Capricorn Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/capricorn-hoodie.jpg",
+          "tags": ["apparel", "unisex", "capricorn"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "CP-TEE",
+          "type": "tee",
+          "title": "Capricorn Peak Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/capricorn-tee.jpg",
+          "tags": ["apparel", "unisex", "capricorn"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "CP-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Capricorn Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/capricorn-framed.jpg",
+          "tags": ["home", "print", "capricorn"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "CP-BEANIE",
+          "type": "beanie",
+          "title": "Capricorn Summit Beanie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/capricorn-beanie.jpg",
+          "tags": ["accessory", "unisex", "capricorn"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "CP-CANDLE",
+          "type": "candle",
+          "title": "Capricorn Ambition Candle",
+          "supplier": "prodigi",
+          "baseImage": "/assets/img/capricorn-candle.jpg",
+          "tags": ["home", "altar", "capricorn"],
+          "leadDays": 3,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Aquarius",
+      "mood": "innovation & collective water",
+      "palette": ["#4ECDC4", "#1A535C"],
+      "story": "Bearer of futures, poured from above.",
+      "products": [
+        {
+          "sku": "AQ-HOOD",
+          "type": "hoodie",
+          "title": "Aquarius Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/aquarius-hoodie.jpg",
+          "tags": ["apparel", "unisex", "aquarius"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "AQ-TEE",
+          "type": "tee",
+          "title": "Aquarius Vision Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/aquarius-tee.jpg",
+          "tags": ["apparel", "unisex", "aquarius"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "AQ-TOTE",
+          "type": "tote",
+          "title": "Aquarius Collective Tote",
+          "supplier": "printify",
+          "baseImage": "/assets/img/aquarius-tote.jpg",
+          "tags": ["accessory", "unisex", "aquarius"],
+          "leadDays": 3,
+          "regions": "Global"
+        },
+        {
+          "sku": "AQ-FRAMED",
+          "type": "framed_print_A3",
+          "title": "Aquarius Constellation Print (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/aquarius-framed.jpg",
+          "tags": ["home", "print", "aquarius"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "AQ-JOURNAL",
+          "type": "journal",
+          "title": "Aquarius Ideas Journal",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/aquarius-journal.jpg",
+          "tags": ["home", "stationery", "aquarius"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    },
+    {
+      "sign": "Pisces",
+      "mood": "dissolution & mystic reverie",
+      "palette": ["#B8A9C9", "#3E2B47"],
+      "story": "Two fish swim in infinite ocean.",
+      "products": [
+        {
+          "sku": "PI-HOOD",
+          "type": "hoodie",
+          "title": "Pisces Balance Hoodie",
+          "supplier": "printful",
+          "baseImage": "/assets/img/pisces-hoodie.jpg",
+          "tags": ["apparel", "unisex", "pisces"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "PI-TEE",
+          "type": "tee",
+          "title": "Pisces Dream Tee",
+          "supplier": "inkthreadable",
+          "baseImage": "/assets/img/pisces-tee.jpg",
+          "tags": ["apparel", "unisex", "pisces"],
+          "leadDays": 2,
+          "regions": "UK/EU"
+        },
+        {
+          "sku": "PI-SOCK",
+          "type": "sock",
+          "title": "Pisces Ocean Socks",
+          "supplier": "printful",
+          "baseImage": "/assets/img/pisces-sock.jpg",
+          "tags": ["socks", "unisex", "pisces"],
+          "leadDays": 3,
+          "regions": "EU/UK/US"
+        },
+        {
+          "sku": "PI-POSTER",
+          "type": "poster_A3",
+          "title": "Pisces Constellation Poster (A3)",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/pisces-poster.jpg",
+          "tags": ["home", "print", "pisces"],
+          "leadDays": 2,
+          "regions": "Global"
+        },
+        {
+          "sku": "PI-CUSHION",
+          "type": "cushion",
+          "title": "Pisces Mystic Cushion",
+          "supplier": "gelato",
+          "baseImage": "/assets/img/pisces-cushion.jpg",
+          "tags": ["home", "pisces"],
+          "leadDays": 2,
+          "regions": "Global"
+        }
+      ]
+    }
+  ]
+}
