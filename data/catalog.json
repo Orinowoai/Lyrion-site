@@ -25,6 +25,11 @@
       "name": "Printify",
       "regions": "Global",
       "notes": "Optional fallback for caps, totes; choose best-rated providers"
+    },
+    "shineon": {
+      "name": "ShineOn",
+      "regions": "Global",
+      "notes": "Premium jewelry & accessories; high-quality bracelets, chains, rings"
     }
   },
   "pricing": {
@@ -92,6 +97,31 @@
       "cost": 22,
       "rrp": 68,
       "compareAt": 86
+    },
+    "bracelet": {
+      "cost": 15,
+      "rrp": 58,
+      "compareAt": 75
+    },
+    "chain": {
+      "cost": 20,
+      "rrp": 78,
+      "compareAt": 98
+    },
+    "ring": {
+      "cost": 24,
+      "rrp": 85,
+      "compareAt": 108
+    },
+    "joggers": {
+      "cost": 22,
+      "rrp": 66,
+      "compareAt": 83
+    },
+    "hat": {
+      "cost": 10,
+      "rrp": 32,
+      "compareAt": 40
     }
   },
   "promotions": {
