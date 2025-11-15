@@ -1,5 +1,5 @@
 {
-  "brand": "LYRĪON",
+  "brand": "LYR\u012aON",
   "suppliers": {
     "printful": {
       "name": "Printful",
@@ -28,25 +28,84 @@
     }
   },
   "pricing": {
-    "hoodie": {"cost": 28, "rrp": 72, "compareAt": 92},
-    "tee": {"cost": 9, "rrp": 32, "compareAt": 42},
-    "sock": {"cost": 6, "rrp": 18, "compareAt": 24},
-    "cap": {"cost": 10, "rrp": 30, "compareAt": 38},
-    "beanie": {"cost": 9, "rrp": 28, "compareAt": 36},
-    "scarf": {"cost": 14, "rrp": 46, "compareAt": 58},
-    "tote": {"cost": 8, "rrp": 24, "compareAt": 32},
-    "journal": {"cost": 7, "rrp": 26, "compareAt": 34},
-    "mug": {"cost": 6, "rrp": 20, "compareAt": 26},
-    "candle": {"cost": 11, "rrp": 34, "compareAt": 44},
-    "cushion": {"cost": 13, "rrp": 38, "compareAt": 48},
-    "poster_A3": {"cost": 8, "rrp": 28, "compareAt": 36},
-    "framed_print_A3": {"cost": 22, "rrp": 68, "compareAt": 86}
+    "hoodie": {
+      "cost": 28,
+      "rrp": 72,
+      "compareAt": 92
+    },
+    "tee": {
+      "cost": 9,
+      "rrp": 32,
+      "compareAt": 42
+    },
+    "sock": {
+      "cost": 6,
+      "rrp": 18,
+      "compareAt": 24
+    },
+    "cap": {
+      "cost": 10,
+      "rrp": 30,
+      "compareAt": 38
+    },
+    "beanie": {
+      "cost": 9,
+      "rrp": 28,
+      "compareAt": 36
+    },
+    "scarf": {
+      "cost": 14,
+      "rrp": 46,
+      "compareAt": 58
+    },
+    "tote": {
+      "cost": 8,
+      "rrp": 24,
+      "compareAt": 32
+    },
+    "journal": {
+      "cost": 7,
+      "rrp": 26,
+      "compareAt": 34
+    },
+    "mug": {
+      "cost": 6,
+      "rrp": 20,
+      "compareAt": 26
+    },
+    "candle": {
+      "cost": 11,
+      "rrp": 34,
+      "compareAt": 44
+    },
+    "cushion": {
+      "cost": 13,
+      "rrp": 38,
+      "compareAt": 48
+    },
+    "poster_A3": {
+      "cost": 8,
+      "rrp": 28,
+      "compareAt": 36
+    },
+    "framed_print_A3": {
+      "cost": 22,
+      "rrp": 68,
+      "compareAt": 86
+    }
   },
   "promotions": {
-    "holidayBanner": "Solstice Event — 15% off sitewide (bundles excluded). Use code SOLSTICE15.",
+    "holidayBanner": "Solstice Event \u2014 15% off sitewide (bundles excluded). Use code SOLSTICE15.",
     "codes": [
-      {"code": "SOLSTICE15", "percent": 15},
-      {"code": "INNER10", "percent": 10, "note": "Inner Circle members"}
+      {
+        "code": "SOLSTICE15",
+        "percent": 15
+      },
+      {
+        "code": "INNER10",
+        "percent": 10,
+        "note": "Inner Circle members"
+      }
     ],
     "freeShippingThresholdGBP": 75
   },
@@ -54,30 +113,46 @@
     {
       "slug": "zodiac-ritual-set",
       "title": "Zodiac Ritual Set",
-      "items": ["hoodie", "tee", "sock"],
+      "items": [
+        "hoodie",
+        "tee",
+        "sock"
+      ],
       "price": 109,
-      "saving": "~30–40%"
+      "saving": "~30\u201340%"
     },
     {
       "slug": "altar-home",
       "title": "Altar & Home",
-      "items": ["framed_print_A3", "candle", "cushion"],
+      "items": [
+        "framed_print_A3",
+        "candle",
+        "cushion"
+      ],
       "price": 129,
-      "saving": "~25–35%"
+      "saving": "~25\u201335%"
     },
     {
       "slug": "constellation-gift",
       "title": "Constellation Gift",
-      "items": ["tee", "cap", "mug", "poster_A3"],
+      "items": [
+        "tee",
+        "cap",
+        "mug",
+        "poster_A3"
+      ],
       "price": 89,
-      "saving": "~20–30%"
+      "saving": "~20\u201330%"
     }
   ],
   "zodiacs": [
     {
       "sign": "Aries",
       "mood": "ignition & courage",
-      "palette": ["#F4C84A", "#2B1F67"],
+      "palette": [
+        "#F4C84A",
+        "#2B1F67"
+      ],
       "story": "The first spark carried to cloth.",
       "products": [
         {
@@ -86,7 +161,12 @@
           "title": "Aries Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/aries-hoodie.jpg",
-          "tags": ["apparel", "unisex", "ritual", "aries"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "ritual",
+            "aries"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -96,7 +176,11 @@
           "title": "Aries Origin Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/aries-tee.jpg",
-          "tags": ["apparel", "unisex", "aries"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "aries"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -106,7 +190,11 @@
           "title": "Aries Footnotes",
           "supplier": "printful",
           "baseImage": "/assets/img/aries-sock.jpg",
-          "tags": ["socks", "unisex", "aries"],
+          "tags": [
+            "socks",
+            "unisex",
+            "aries"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -116,7 +204,11 @@
           "title": "Aries Sun Cap",
           "supplier": "printful",
           "baseImage": "/assets/img/aries-cap.jpg",
-          "tags": ["accessory", "unisex", "aries"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "aries"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -126,7 +218,11 @@
           "title": "Aries Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/aries-framed.jpg",
-          "tags": ["home", "print", "aries"],
+          "tags": [
+            "home",
+            "print",
+            "aries"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -136,7 +232,11 @@
           "title": "Aries Candle of Intention",
           "supplier": "prodigi",
           "baseImage": "/assets/img/aries-candle.jpg",
-          "tags": ["home", "altar", "aries"],
+          "tags": [
+            "home",
+            "altar",
+            "aries"
+          ],
           "leadDays": 3,
           "regions": "Global"
         }
@@ -145,7 +245,10 @@
     {
       "sign": "Taurus",
       "mood": "ground & sensual form",
-      "palette": ["#D6C6A1", "#3A2D1A"],
+      "palette": [
+        "#D6C6A1",
+        "#3A2D1A"
+      ],
       "story": "Stone, grain, and honeyed light.",
       "products": [
         {
@@ -154,7 +257,11 @@
           "title": "Taurus Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/taurus-hoodie.jpg",
-          "tags": ["apparel", "unisex", "taurus"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "taurus"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -164,7 +271,11 @@
           "title": "Taurus Grain Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/taurus-tee.jpg",
-          "tags": ["apparel", "unisex", "taurus"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "taurus"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -174,7 +285,10 @@
           "title": "Taurus Velvet Cushion",
           "supplier": "gelato",
           "baseImage": "/assets/img/taurus-cushion.jpg",
-          "tags": ["home", "taurus"],
+          "tags": [
+            "home",
+            "taurus"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -184,7 +298,11 @@
           "title": "Taurus Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/taurus-framed.jpg",
-          "tags": ["home", "print", "taurus"],
+          "tags": [
+            "home",
+            "print",
+            "taurus"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
@@ -193,7 +311,10 @@
     {
       "sign": "Gemini",
       "mood": "duality & swift thought",
-      "palette": ["#A8D5E2", "#1C3A47"],
+      "palette": [
+        "#A8D5E2",
+        "#1C3A47"
+      ],
       "story": "Two voices in one constellation.",
       "products": [
         {
@@ -202,7 +323,11 @@
           "title": "Gemini Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/gemini-hoodie.jpg",
-          "tags": ["apparel", "unisex", "gemini"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "gemini"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -212,7 +337,11 @@
           "title": "Gemini Dual Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/gemini-tee.jpg",
-          "tags": ["apparel", "unisex", "gemini"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "gemini"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -222,7 +351,11 @@
           "title": "Gemini Thought Journal",
           "supplier": "gelato",
           "baseImage": "/assets/img/gemini-journal.jpg",
-          "tags": ["home", "stationery", "gemini"],
+          "tags": [
+            "home",
+            "stationery",
+            "gemini"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -232,7 +365,11 @@
           "title": "Gemini Constellation Poster (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/gemini-poster.jpg",
-          "tags": ["home", "print", "gemini"],
+          "tags": [
+            "home",
+            "print",
+            "gemini"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -242,7 +379,11 @@
           "title": "Gemini Twin Socks",
           "supplier": "printful",
           "baseImage": "/assets/img/gemini-sock.jpg",
-          "tags": ["socks", "unisex", "gemini"],
+          "tags": [
+            "socks",
+            "unisex",
+            "gemini"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         }
@@ -251,7 +392,10 @@
     {
       "sign": "Cancer",
       "mood": "lunar tides & nurture",
-      "palette": ["#C9D6DF", "#2E3A47"],
+      "palette": [
+        "#C9D6DF",
+        "#2E3A47"
+      ],
       "story": "Moon-drawn waters held in shell.",
       "products": [
         {
@@ -260,7 +404,11 @@
           "title": "Cancer Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/cancer-hoodie.jpg",
-          "tags": ["apparel", "unisex", "cancer"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "cancer"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -270,7 +418,10 @@
           "title": "Cancer Lunar Mug",
           "supplier": "gelato",
           "baseImage": "/assets/img/cancer-mug.jpg",
-          "tags": ["home", "cancer"],
+          "tags": [
+            "home",
+            "cancer"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -280,7 +431,11 @@
           "title": "Cancer Moonwater Candle",
           "supplier": "prodigi",
           "baseImage": "/assets/img/cancer-candle.jpg",
-          "tags": ["home", "altar", "cancer"],
+          "tags": [
+            "home",
+            "altar",
+            "cancer"
+          ],
           "leadDays": 3,
           "regions": "Global"
         },
@@ -290,7 +445,11 @@
           "title": "Cancer Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/cancer-framed.jpg",
-          "tags": ["home", "print", "cancer"],
+          "tags": [
+            "home",
+            "print",
+            "cancer"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -300,7 +459,11 @@
           "title": "Cancer Tide Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/cancer-tee.jpg",
-          "tags": ["apparel", "unisex", "cancer"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "cancer"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         }
@@ -309,7 +472,10 @@
     {
       "sign": "Leo",
       "mood": "solar majesty & heart-fire",
-      "palette": ["#F4C84A", "#8B4513"],
+      "palette": [
+        "#F4C84A",
+        "#8B4513"
+      ],
       "story": "Crowned in light, the lion roars.",
       "products": [
         {
@@ -318,7 +484,11 @@
           "title": "Leo Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/leo-hoodie.jpg",
-          "tags": ["apparel", "unisex", "leo"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "leo"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -328,7 +498,11 @@
           "title": "Leo Majesty Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/leo-tee.jpg",
-          "tags": ["apparel", "unisex", "leo"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "leo"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -338,7 +512,11 @@
           "title": "Leo Crown Cap",
           "supplier": "printful",
           "baseImage": "/assets/img/leo-cap.jpg",
-          "tags": ["accessory", "unisex", "leo"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "leo"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -348,7 +526,11 @@
           "title": "Leo Constellation Poster (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/leo-poster.jpg",
-          "tags": ["home", "print", "leo"],
+          "tags": [
+            "home",
+            "print",
+            "leo"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -358,7 +540,11 @@
           "title": "Leo Solar Candle",
           "supplier": "prodigi",
           "baseImage": "/assets/img/leo-candle.jpg",
-          "tags": ["home", "altar", "leo"],
+          "tags": [
+            "home",
+            "altar",
+            "leo"
+          ],
           "leadDays": 3,
           "regions": "Global"
         }
@@ -367,7 +553,10 @@
     {
       "sign": "Virgo",
       "mood": "precision & earthen craft",
-      "palette": ["#A4B494", "#3E4A3D"],
+      "palette": [
+        "#A4B494",
+        "#3E4A3D"
+      ],
       "story": "Each thread counted, each seed sown.",
       "products": [
         {
@@ -376,7 +565,11 @@
           "title": "Virgo Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/virgo-hoodie.jpg",
-          "tags": ["apparel", "unisex", "virgo"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "virgo"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -386,7 +579,11 @@
           "title": "Virgo Harvest Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/virgo-tee.jpg",
-          "tags": ["apparel", "unisex", "virgo"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "virgo"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -396,7 +593,11 @@
           "title": "Virgo Detail Journal",
           "supplier": "gelato",
           "baseImage": "/assets/img/virgo-journal.jpg",
-          "tags": ["home", "stationery", "virgo"],
+          "tags": [
+            "home",
+            "stationery",
+            "virgo"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -406,7 +607,10 @@
           "title": "Virgo Earth Cushion",
           "supplier": "gelato",
           "baseImage": "/assets/img/virgo-cushion.jpg",
-          "tags": ["home", "virgo"],
+          "tags": [
+            "home",
+            "virgo"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -416,7 +620,11 @@
           "title": "Virgo Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/virgo-framed.jpg",
-          "tags": ["home", "print", "virgo"],
+          "tags": [
+            "home",
+            "print",
+            "virgo"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
@@ -425,7 +633,10 @@
     {
       "sign": "Libra",
       "mood": "balance & aesthetic grace",
-      "palette": ["#E8C4D8", "#5C3A51"],
+      "palette": [
+        "#E8C4D8",
+        "#5C3A51"
+      ],
       "story": "Scales held in perfect symmetry.",
       "products": [
         {
@@ -434,7 +645,11 @@
           "title": "Libra Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/libra-hoodie.jpg",
-          "tags": ["apparel", "unisex", "libra"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "libra"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -444,7 +659,11 @@
           "title": "Libra Equilibrium Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/libra-tee.jpg",
-          "tags": ["apparel", "unisex", "libra"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "libra"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -454,7 +673,11 @@
           "title": "Libra Grace Scarf",
           "supplier": "printful",
           "baseImage": "/assets/img/libra-scarf.jpg",
-          "tags": ["accessory", "unisex", "libra"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "libra"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -464,7 +687,11 @@
           "title": "Libra Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/libra-framed.jpg",
-          "tags": ["home", "print", "libra"],
+          "tags": [
+            "home",
+            "print",
+            "libra"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -474,7 +701,10 @@
           "title": "Libra Harmony Mug",
           "supplier": "gelato",
           "baseImage": "/assets/img/libra-mug.jpg",
-          "tags": ["home", "libra"],
+          "tags": [
+            "home",
+            "libra"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
@@ -483,7 +713,10 @@
     {
       "sign": "Scorpio",
       "mood": "depth & transformation",
-      "palette": ["#8B1E3F", "#1A0B14"],
+      "palette": [
+        "#8B1E3F",
+        "#1A0B14"
+      ],
       "story": "The sting that births renewal.",
       "products": [
         {
@@ -492,7 +725,11 @@
           "title": "Scorpio Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/scorpio-hoodie.jpg",
-          "tags": ["apparel", "unisex", "scorpio"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "scorpio"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -502,7 +739,11 @@
           "title": "Scorpio Shadow Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/scorpio-tee.jpg",
-          "tags": ["apparel", "unisex", "scorpio"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "scorpio"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -512,7 +753,11 @@
           "title": "Scorpio Rebirth Candle",
           "supplier": "prodigi",
           "baseImage": "/assets/img/scorpio-candle.jpg",
-          "tags": ["home", "altar", "scorpio"],
+          "tags": [
+            "home",
+            "altar",
+            "scorpio"
+          ],
           "leadDays": 3,
           "regions": "Global"
         },
@@ -522,7 +767,11 @@
           "title": "Scorpio Constellation Poster (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/scorpio-poster.jpg",
-          "tags": ["home", "print", "scorpio"],
+          "tags": [
+            "home",
+            "print",
+            "scorpio"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -532,7 +781,11 @@
           "title": "Scorpio Mystery Socks",
           "supplier": "printful",
           "baseImage": "/assets/img/scorpio-sock.jpg",
-          "tags": ["socks", "unisex", "scorpio"],
+          "tags": [
+            "socks",
+            "unisex",
+            "scorpio"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         }
@@ -541,7 +794,10 @@
     {
       "sign": "Sagittarius",
       "mood": "wanderlust & blazing truth",
-      "palette": ["#E67E22", "#6B3410"],
+      "palette": [
+        "#E67E22",
+        "#6B3410"
+      ],
       "story": "Arrow drawn toward distant stars.",
       "products": [
         {
@@ -550,7 +806,11 @@
           "title": "Sagittarius Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/sagittarius-hoodie.jpg",
-          "tags": ["apparel", "unisex", "sagittarius"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "sagittarius"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -560,7 +820,11 @@
           "title": "Sagittarius Quest Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/sagittarius-tee.jpg",
-          "tags": ["apparel", "unisex", "sagittarius"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "sagittarius"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -570,7 +834,11 @@
           "title": "Sagittarius Archer Cap",
           "supplier": "printful",
           "baseImage": "/assets/img/sagittarius-cap.jpg",
-          "tags": ["accessory", "unisex", "sagittarius"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "sagittarius"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -580,7 +848,10 @@
           "title": "Sagittarius Journey Mug",
           "supplier": "gelato",
           "baseImage": "/assets/img/sagittarius-mug.jpg",
-          "tags": ["home", "sagittarius"],
+          "tags": [
+            "home",
+            "sagittarius"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -590,7 +861,11 @@
           "title": "Sagittarius Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/sagittarius-framed.jpg",
-          "tags": ["home", "print", "sagittarius"],
+          "tags": [
+            "home",
+            "print",
+            "sagittarius"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
@@ -599,7 +874,10 @@
     {
       "sign": "Capricorn",
       "mood": "summit & endurance",
-      "palette": ["#7C7C7C", "#2A2A2A"],
+      "palette": [
+        "#7C7C7C",
+        "#2A2A2A"
+      ],
       "story": "The mountain goat climbs alone.",
       "products": [
         {
@@ -608,7 +886,11 @@
           "title": "Capricorn Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/capricorn-hoodie.jpg",
-          "tags": ["apparel", "unisex", "capricorn"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "capricorn"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -618,7 +900,11 @@
           "title": "Capricorn Peak Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/capricorn-tee.jpg",
-          "tags": ["apparel", "unisex", "capricorn"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "capricorn"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -628,7 +914,11 @@
           "title": "Capricorn Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/capricorn-framed.jpg",
-          "tags": ["home", "print", "capricorn"],
+          "tags": [
+            "home",
+            "print",
+            "capricorn"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -638,7 +928,11 @@
           "title": "Capricorn Summit Beanie",
           "supplier": "printful",
           "baseImage": "/assets/img/capricorn-beanie.jpg",
-          "tags": ["accessory", "unisex", "capricorn"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "capricorn"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -648,7 +942,11 @@
           "title": "Capricorn Ambition Candle",
           "supplier": "prodigi",
           "baseImage": "/assets/img/capricorn-candle.jpg",
-          "tags": ["home", "altar", "capricorn"],
+          "tags": [
+            "home",
+            "altar",
+            "capricorn"
+          ],
           "leadDays": 3,
           "regions": "Global"
         }
@@ -657,7 +955,10 @@
     {
       "sign": "Aquarius",
       "mood": "innovation & collective water",
-      "palette": ["#4ECDC4", "#1A535C"],
+      "palette": [
+        "#4ECDC4",
+        "#1A535C"
+      ],
       "story": "Bearer of futures, poured from above.",
       "products": [
         {
@@ -666,7 +967,11 @@
           "title": "Aquarius Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/aquarius-hoodie.jpg",
-          "tags": ["apparel", "unisex", "aquarius"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "aquarius"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -676,7 +981,11 @@
           "title": "Aquarius Vision Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/aquarius-tee.jpg",
-          "tags": ["apparel", "unisex", "aquarius"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "aquarius"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -686,7 +995,11 @@
           "title": "Aquarius Collective Tote",
           "supplier": "printify",
           "baseImage": "/assets/img/aquarius-tote.jpg",
-          "tags": ["accessory", "unisex", "aquarius"],
+          "tags": [
+            "accessory",
+            "unisex",
+            "aquarius"
+          ],
           "leadDays": 3,
           "regions": "Global"
         },
@@ -696,7 +1009,11 @@
           "title": "Aquarius Constellation Print (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/aquarius-framed.jpg",
-          "tags": ["home", "print", "aquarius"],
+          "tags": [
+            "home",
+            "print",
+            "aquarius"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -706,7 +1023,11 @@
           "title": "Aquarius Ideas Journal",
           "supplier": "gelato",
           "baseImage": "/assets/img/aquarius-journal.jpg",
-          "tags": ["home", "stationery", "aquarius"],
+          "tags": [
+            "home",
+            "stationery",
+            "aquarius"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
@@ -715,7 +1036,10 @@
     {
       "sign": "Pisces",
       "mood": "dissolution & mystic reverie",
-      "palette": ["#B8A9C9", "#3E2B47"],
+      "palette": [
+        "#B8A9C9",
+        "#3E2B47"
+      ],
       "story": "Two fish swim in infinite ocean.",
       "products": [
         {
@@ -724,7 +1048,11 @@
           "title": "Pisces Balance Hoodie",
           "supplier": "printful",
           "baseImage": "/assets/img/pisces-hoodie.jpg",
-          "tags": ["apparel", "unisex", "pisces"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "pisces"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -734,7 +1062,11 @@
           "title": "Pisces Dream Tee",
           "supplier": "inkthreadable",
           "baseImage": "/assets/img/pisces-tee.jpg",
-          "tags": ["apparel", "unisex", "pisces"],
+          "tags": [
+            "apparel",
+            "unisex",
+            "pisces"
+          ],
           "leadDays": 2,
           "regions": "UK/EU"
         },
@@ -744,7 +1076,11 @@
           "title": "Pisces Ocean Socks",
           "supplier": "printful",
           "baseImage": "/assets/img/pisces-sock.jpg",
-          "tags": ["socks", "unisex", "pisces"],
+          "tags": [
+            "socks",
+            "unisex",
+            "pisces"
+          ],
           "leadDays": 3,
           "regions": "EU/UK/US"
         },
@@ -754,7 +1090,11 @@
           "title": "Pisces Constellation Poster (A3)",
           "supplier": "gelato",
           "baseImage": "/assets/img/pisces-poster.jpg",
-          "tags": ["home", "print", "pisces"],
+          "tags": [
+            "home",
+            "print",
+            "pisces"
+          ],
           "leadDays": 2,
           "regions": "Global"
         },
@@ -764,11 +1104,1896 @@
           "title": "Pisces Mystic Cushion",
           "supplier": "gelato",
           "baseImage": "/assets/img/pisces-cushion.jpg",
-          "tags": ["home", "pisces"],
+          "tags": [
+            "home",
+            "pisces"
+          ],
           "leadDays": 2,
           "regions": "Global"
         }
       ]
+    }
+  ],
+  "extendedCatalog": [
+    {
+      "id": "LYR-001",
+      "name": "Aries Ignition Hoodie",
+      "signTags": [
+        "Aries"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Soft fleece infused with lunar calm; embroidered Sun sigil on the heart.",
+      "description": "Premium organic cotton fleece with screen-printed constellation map. Hand-embroidered zodiac glyph at chest. Wears like a promise kept.",
+      "materials": "100% organic cotton fleece, water-based inks, embroidered sigil",
+      "productionNotes": "Artisan-printed by Printful; ethically sourced fleece, low-impact dyes",
+      "imagery": "/img/lyrion/aries-ignition-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 72,
+        "compareAtGBP": 92
+      },
+      "affirmation": "I move through fire with sovereign grace.",
+      "chargePhrase": "Channel courage."
+    },
+    {
+      "id": "LYR-002",
+      "name": "Taurus Earth Hoodie",
+      "signTags": [
+        "Taurus"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Velvet-soft hoodie anchored in earthen tones; bull constellation on sleeve.",
+      "description": "Heavyweight brushed cotton blend with tonal embroidered sigil. Ground-tested durability meets sensory luxury.",
+      "materials": "Heavyweight cotton blend, botanical dyes, embroidered constellation",
+      "productionNotes": "Slow-made with regenerative cotton; printed in solar-powered facilities",
+      "imagery": "/img/lyrion/taurus-earth-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 74,
+        "compareAtGBP": 95
+      },
+      "affirmation": "I root deep, I rise steady.",
+      "chargePhrase": "Ground intention."
+    },
+    {
+      "id": "LYR-003",
+      "name": "Gemini Duality Hoodie",
+      "signTags": [
+        "Gemini"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Reversible design in twin shades; twin stars embroidered at collar.",
+      "description": "Dual-layer organic fleece with contrast stitching and reversible finish. Two hoodies in one, reflecting Geminis nature.",
+      "materials": "Reversible organic cotton fleece, dual-tone printing",
+      "productionNotes": "Double-printed for mirror effect; uses water-based ink only",
+      "imagery": "/img/lyrion/gemini-duality-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 30,
+        "retailGBP": 78,
+        "compareAtGBP": 98
+      },
+      "affirmation": "I speak with clarity, I listen with depth.",
+      "chargePhrase": "Align duality."
+    },
+    {
+      "id": "LYR-004",
+      "name": "Cancer Moon Hoodie",
+      "signTags": [
+        "Cancer"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Lunar-inspired fleece with tidal wave motif; wears like a whispered promise.",
+      "description": "Soft-touch cotton with moon phase embroidery on the chest. Gentle as moonlight, strong as ocean tides.",
+      "materials": "Soft cotton fleece, moon phase embroidery, silver thread accents",
+      "productionNotes": "Produced in ethical micro-factories; GOTS-certified fabric",
+      "imagery": "/img/lyrion/cancer-moon-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 70,
+        "compareAtGBP": 90
+      },
+      "affirmation": "I hold space, I honor feeling.",
+      "chargePhrase": "Nurture self."
+    },
+    {
+      "id": "LYR-005",
+      "name": "Leo Solar Hoodie",
+      "signTags": [
+        "Leo"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Golden fleece with radiant sun sigil; crowned in confidence.",
+      "description": "Heavyweight cotton with metallic gold thread detail. Hand-finished embroidery catches light like a lions mane.",
+      "materials": "Premium cotton fleece, metallic gold thread, sun mandala print",
+      "productionNotes": "Hand-finished embroidery; printed with plant-based pigments",
+      "imagery": "/img/lyrion/leo-solar-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 29,
+        "retailGBP": 76,
+        "compareAtGBP": 96
+      },
+      "affirmation": "I shine without apology.",
+      "chargePhrase": "Claim power."
+    },
+    {
+      "id": "LYR-006",
+      "name": "Virgo Precision Hoodie",
+      "signTags": [
+        "Virgo"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Minimalist design with geometric constellation; crafted to perfection.",
+      "description": "Fine-gauge cotton fleece with laser-engraved sleeve detail. Every stitch counted, every seam aligned.",
+      "materials": "Fine cotton fleece, geometric laser engraving, precision cut",
+      "productionNotes": "Made in zero-waste facilities; precision-cut patterns reduce scrap",
+      "imagery": "/img/lyrion/virgo-precision-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 72,
+        "compareAtGBP": 92
+      },
+      "affirmation": "Each detail, intentional.",
+      "chargePhrase": "Refine vision."
+    },
+    {
+      "id": "LYR-007",
+      "name": "Libra Balance Hoodie",
+      "signTags": [
+        "Libra"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Symmetrical design in balanced tones; scales embroidered at heart.",
+      "description": "Premium cotton with hand-stitched equilibrium motif. Perfect weight, perfect balance, perfect harmony.",
+      "materials": "Organic cotton, hand-embroidered scales, balanced color palette",
+      "productionNotes": "Fair-trade certified; printed with non-toxic inks",
+      "imagery": "/img/lyrion/libra-balance-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 73,
+        "compareAtGBP": 93
+      },
+      "affirmation": "I hold beauty and truth in equal measure.",
+      "chargePhrase": "Seek harmony."
+    },
+    {
+      "id": "LYR-008",
+      "name": "Scorpio Depth Hoodie",
+      "signTags": [
+        "Scorpio"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Deep burgundy fleece with scorpion constellation; transformative wear.",
+      "description": "Organic cotton dyed with natural indigo and madder root. Each piece carries unique depth variation from hand-dyeing.",
+      "materials": "Natural-dyed organic cotton, scorpion constellation print",
+      "productionNotes": "Small-batch production; hand-dyed for unique color variation",
+      "imagery": "/img/lyrion/scorpio-depth-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 30,
+        "retailGBP": 77,
+        "compareAtGBP": 97
+      },
+      "affirmation": "I embrace shadow to find light.",
+      "chargePhrase": "Transform fear."
+    },
+    {
+      "id": "LYR-009",
+      "name": "Sagittarius Quest Hoodie",
+      "signTags": [
+        "Sagittarius"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Adventurers hoodie with arrow motif; points toward distant horizons.",
+      "description": "Durable cotton blend with screen-printed archer constellation. Built for wanderers who carry home within.",
+      "materials": "Cotton-poly blend, archer constellation, reinforced pockets",
+      "productionNotes": "Made with recycled fibers; supports reforestation initiatives",
+      "imagery": "/img/lyrion/sagittarius-quest-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 71,
+        "compareAtGBP": 91
+      },
+      "affirmation": "I seek truth beyond the visible.",
+      "chargePhrase": "Expand horizons."
+    },
+    {
+      "id": "LYR-010",
+      "name": "Capricorn Summit Hoodie",
+      "signTags": [
+        "Capricorn"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Mountain-inspired fleece in granite tones; goat constellation at shoulder.",
+      "description": "Heavyweight organic cotton with raised relief printing. Built to endure, designed to ascend.",
+      "materials": "Heavyweight cotton, raised relief print, mountain motif",
+      "productionNotes": "Carbon-neutral shipping; produced in worker-owned cooperatives",
+      "imagery": "/img/lyrion/capricorn-summit-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 29,
+        "retailGBP": 75,
+        "compareAtGBP": 95
+      },
+      "affirmation": "I climb with patience, I reach with purpose.",
+      "chargePhrase": "Build legacy."
+    },
+    {
+      "id": "LYR-011",
+      "name": "Aquarius Vision Hoodie",
+      "signTags": [
+        "Aquarius"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Futuristic design with water-bearer motif; innovation in fabric form.",
+      "description": "Tech-fleece blend with reflective constellation detail. Future-forward comfort meets timeless design.",
+      "materials": "Recycled tech-fleece, reflective print, water-bearer symbols",
+      "productionNotes": "Made with post-consumer recycled materials; closed-loop production",
+      "imagery": "/img/lyrion/aquarius-vision-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 31,
+        "retailGBP": 79,
+        "compareAtGBP": 99
+      },
+      "affirmation": "I pour wisdom into collective waters.",
+      "chargePhrase": "Innovate freely."
+    },
+    {
+      "id": "LYR-012",
+      "name": "Pisces Dream Hoodie",
+      "signTags": [
+        "Pisces"
+      ],
+      "category": "Apparel",
+      "type": "hoodie",
+      "tagline": "Oceanic fleece with twin fish embroidery; dissolves boundaries between worlds.",
+      "description": "Ultra-soft cotton with hand-painted watercolor effect. Wears like a lucid dream, moves like flowing water.",
+      "materials": "Ultra-soft cotton, watercolor print, twin fish embroidery",
+      "productionNotes": "Artisan collaboration; supports marine conservation projects",
+      "imagery": "/img/lyrion/pisces-dream-hoodie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 70,
+        "compareAtGBP": 90
+      },
+      "affirmation": "I flow between realms with grace.",
+      "chargePhrase": "Embrace mystery."
+    },
+    {
+      "id": "LYR-013",
+      "name": "Celestial Alignment Tee",
+      "signTags": [
+        "Aries",
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Fire sign trinity tee; triple constellation map across chest.",
+      "description": "Organic cotton jersey with screen-printed fire element symbols. Three flames united in purpose.",
+      "materials": "100% organic cotton jersey, fire element print",
+      "productionNotes": "Made in wind-powered facilities; uses non-toxic water-based inks",
+      "imagery": "/img/lyrion/celestial-alignment-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I burn with purpose.",
+      "chargePhrase": "Ignite will."
+    },
+    {
+      "id": "LYR-014",
+      "name": "Earth Temple Tee",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Grounding tee with earth element sigils; wears like solid ground.",
+      "description": "Heavyweight cotton with botanical dye printing. Root systems visible in subtle pattern work.",
+      "materials": "Heavyweight cotton, botanical dyes, earth element symbols",
+      "productionNotes": "Zero-waste pattern cutting; fabric scraps donated to textile recycling",
+      "imagery": "/img/lyrion/earth-temple-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 39,
+        "compareAtGBP": 49
+      },
+      "affirmation": "I stand rooted, unshaken.",
+      "chargePhrase": "Stabilize form."
+    },
+    {
+      "id": "LYR-015",
+      "name": "Air Current Tee",
+      "signTags": [
+        "Gemini",
+        "Libra",
+        "Aquarius"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Flowing tee with air element glyphs; moves like thought itself.",
+      "description": "Lightweight organic cotton with minimalist line art. Breathable design honors wind and word.",
+      "materials": "Organic cotton, minimalist air element design",
+      "productionNotes": "Printed with renewable energy; packaged in compostable materials",
+      "imagery": "/img/lyrion/air-current-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I think, therefore I transform.",
+      "chargePhrase": "Circulate ideas."
+    },
+    {
+      "id": "LYR-016",
+      "name": "Water Vessel Tee",
+      "signTags": [
+        "Cancer",
+        "Scorpio",
+        "Pisces"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Emotional depth captured in fabric; water symbols flow across chest.",
+      "description": "Soft-hand cotton with gradient dyeing technique. Each piece holds unique tidal variation.",
+      "materials": "Soft cotton, gradient dye, water element motifs",
+      "productionNotes": "Hand-dipped in natural indigo; each piece unique",
+      "imagery": "/img/lyrion/water-vessel-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 40,
+        "compareAtGBP": 50
+      },
+      "affirmation": "I feel the universe within.",
+      "chargePhrase": "Trust intuition."
+    },
+    {
+      "id": "LYR-017",
+      "name": "Lunar Phases Tee",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Moon cycle tee with phase diagram; tracks celestial rhythm.",
+      "description": "Organic cotton with metallic silver moon print. Waxes and wanes with you.",
+      "materials": "Organic cotton, metallic silver print, moon phases",
+      "productionNotes": "Printed during new moon; charged with lunar intention",
+      "imagery": "/img/lyrion/lunar-phases-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I wax and wane with cosmic grace.",
+      "chargePhrase": "Honor cycles."
+    },
+    {
+      "id": "LYR-018",
+      "name": "Solar Flare Tee",
+      "signTags": [
+        "Leo",
+        "Aries"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Radiant sun tee with golden threads; blazes with quiet confidence.",
+      "description": "Premium cotton with gold foil detail. Catches light, commands attention, maintains humility.",
+      "materials": "Premium cotton, gold foil accents, sun motif",
+      "productionNotes": "Hand-finished with metallic accents; supports solar energy projects",
+      "imagery": "/img/lyrion/solar-flare-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 41,
+        "compareAtGBP": 51
+      },
+      "affirmation": "I am the light I seek.",
+      "chargePhrase": "Radiate warmth."
+    },
+    {
+      "id": "LYR-019",
+      "name": "Equinox Balance Tee",
+      "signTags": [
+        "Libra",
+        "Virgo"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Day-night equilibrium tee; perfect symmetry in design.",
+      "description": "Balanced-weight cotton with dual-tone printing. Light and shadow in perfect conversation.",
+      "materials": "Balanced cotton, dual-tone print, symmetrical design",
+      "productionNotes": "Created during equinox windows; honors seasonal balance",
+      "imagery": "/img/lyrion/equinox-balance-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I find center in all extremes.",
+      "chargePhrase": "Maintain poise."
+    },
+    {
+      "id": "LYR-020",
+      "name": "Void Walker Tee",
+      "signTags": [
+        "Scorpio",
+        "Capricorn"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Deep space tee with constellation void mapping; embraces the unknown.",
+      "description": "Dark organic cotton with phosphorescent star details. Day wear becomes night oracle.",
+      "materials": "Dark cotton, glow-in-dark ink, void constellation map",
+      "productionNotes": "Glow-in-dark ink; reveals hidden patterns after dark",
+      "imagery": "/img/lyrion/void-walker-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 40,
+        "compareAtGBP": 50
+      },
+      "affirmation": "I walk through darkness, luminous.",
+      "chargePhrase": "Face shadows."
+    },
+    {
+      "id": "LYR-021",
+      "name": "Cosmic Messenger Tee",
+      "signTags": [
+        "Gemini",
+        "Aquarius"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Starfield tee with messenger constellation; carries words between worlds.",
+      "description": "Soft cotton with cosmic pattern. Bridge heaven and earth with every breath.",
+      "materials": "Soft cotton, cosmic print, constellation details",
+      "productionNotes": "Eco-friendly inks; supports communication arts",
+      "imagery": "/img/lyrion/cosmic-messenger-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 39,
+        "compareAtGBP": 49
+      },
+      "affirmation": "My words bridge worlds.",
+      "chargePhrase": "Speak truth."
+    },
+    {
+      "id": "LYR-022",
+      "name": "Heart Flame Tee",
+      "signTags": [
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Apparel",
+      "type": "tee",
+      "tagline": "Warm tones with heart-fire motif; passion made visible.",
+      "description": "Premium jersey with gradient fire print. Let your heart blaze.",
+      "materials": "Premium jersey, fire gradient, heart symbol",
+      "productionNotes": "Made with love; supports creative fire programs",
+      "imagery": "/img/lyrion/heart-flame-tee.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 40,
+        "compareAtGBP": 50
+      },
+      "affirmation": "My heart burns true.",
+      "chargePhrase": "Honor passion."
+    },
+    {
+      "id": "LYR-023",
+      "name": "Meditation Joggers",
+      "signTags": [
+        "Pisces",
+        "Cancer",
+        "Libra"
+      ],
+      "category": "Apparel",
+      "type": "joggers",
+      "tagline": "Flow-state joggers with subtle mantra embroidery at ankle.",
+      "description": "Brushed organic cotton fleece with elastic drawstring waist. Moves with breath, rests with stillness.",
+      "materials": "Organic cotton fleece, embroidered mantra, adjustable waist",
+      "productionNotes": "Ethically manufactured; supports mindfulness education programs",
+      "imagery": "/img/lyrion/meditation-joggers.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 22,
+        "retailGBP": 65,
+        "compareAtGBP": 82
+      },
+      "affirmation": "My body moves, my mind stills.",
+      "chargePhrase": "Embody calm."
+    },
+    {
+      "id": "LYR-024",
+      "name": "Temple Movement Joggers",
+      "signTags": [
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Apparel",
+      "type": "joggers",
+      "tagline": "Structured joggers with geometric pocket details; precision in motion.",
+      "description": "Performance cotton blend with reinforced knees. Built to last, designed to move.",
+      "materials": "Performance cotton blend, reinforced construction, geometric details",
+      "productionNotes": "Made in fair-wage facilities; durable construction reduces waste",
+      "imagery": "/img/lyrion/temple-movement-joggers.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 23,
+        "retailGBP": 67,
+        "compareAtGBP": 84
+      },
+      "affirmation": "Every step, deliberate.",
+      "chargePhrase": "Move mindfully."
+    },
+    {
+      "id": "LYR-025",
+      "name": "Cosmic Comfort Joggers",
+      "signTags": [
+        "Sagittarius",
+        "Aquarius"
+      ],
+      "category": "Apparel",
+      "type": "joggers",
+      "tagline": "Adventure-ready joggers with constellation knee patches.",
+      "description": "Heavyweight fleece with reflective constellation details. Comfort for wanderers, style for visionaries.",
+      "materials": "Recycled fleece, reflective patches, constellation details",
+      "productionNotes": "Recycled polyester blend; supports wilderness conservation",
+      "imagery": "/img/lyrion/cosmic-comfort-joggers.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 22,
+        "retailGBP": 66,
+        "compareAtGBP": 83
+      },
+      "affirmation": "I roam freely, I rest deeply.",
+      "chargePhrase": "Explore worlds."
+    },
+    {
+      "id": "LYR-026",
+      "name": "Grounding Socks",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Apparel",
+      "type": "socks",
+      "tagline": "Earthen-toned socks with root chakra symbols; connects sole to soil.",
+      "description": "Organic cotton blend with arch support and earth element motifs. Every step grounded, every movement sacred.",
+      "materials": "Organic cotton blend, arch support, earth symbols",
+      "productionNotes": "Made with regenerative cotton; supports soil health initiatives",
+      "imagery": "/img/lyrion/grounding-socks.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 6,
+        "retailGBP": 18,
+        "compareAtGBP": 24
+      },
+      "affirmation": "I walk on sacred ground.",
+      "chargePhrase": "Root energy."
+    },
+    {
+      "id": "LYR-027",
+      "name": "Starwalker Socks",
+      "signTags": [
+        "Aquarius",
+        "Gemini",
+        "Sagittarius"
+      ],
+      "category": "Apparel",
+      "type": "socks",
+      "tagline": "Constellation map socks with golden star details at heel.",
+      "description": "Premium cotton with metallic thread constellation map. Feet on earth, head in stars.",
+      "materials": "Premium cotton, metallic thread, star map pattern",
+      "productionNotes": "Knitted with care; each pair supports astronomy education",
+      "imagery": "/img/lyrion/starwalker-socks.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 6,
+        "retailGBP": 19,
+        "compareAtGBP": 25
+      },
+      "affirmation": "My feet touch earth, my mind touches stars.",
+      "chargePhrase": "Bridge realms."
+    },
+    {
+      "id": "LYR-028",
+      "name": "Winter Solstice Beanie",
+      "signTags": [
+        "Capricorn",
+        "Aquarius"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "Warmth woven with intention; midnight blue with silver moon phases.",
+      "description": "Merino wool blend with hand-stitched moon phase pattern. Knitted to honor the longest night, worn to celebrate returning light.",
+      "materials": "Merino wool blend, hand-stitched details, moon phase embroidery",
+      "productionNotes": "Knitted by artisan cooperatives; supports fair-wage winter wear production",
+      "imagery": "/img/lyrion/winter-solstice-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 30,
+        "compareAtGBP": 38
+      },
+      "affirmation": "I hold warmth within.",
+      "chargePhrase": "Preserve heat."
+    },
+    {
+      "id": "LYR-029",
+      "name": "Fire Sign Beanie",
+      "signTags": [
+        "Aries",
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "Crimson knit with embroidered flame; carries solar heat.",
+      "description": "Organic cotton knit with metallic fire element embroidery. Keeps your fire lit even in coldest winds.",
+      "materials": "Organic cotton, metallic embroidery, fire element design",
+      "productionNotes": "Made in small batches; supports indigenous textile traditions",
+      "imagery": "/img/lyrion/fire-sign-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 31,
+        "compareAtGBP": 39
+      },
+      "affirmation": "I keep my fire lit.",
+      "chargePhrase": "Sustain spark."
+    },
+    {
+      "id": "LYR-030",
+      "name": "Ocean Depth Beanie",
+      "signTags": [
+        "Pisces",
+        "Cancer",
+        "Scorpio"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "Indigo knit with wave pattern; holds tidal wisdom.",
+      "description": "Recycled cotton blend with hand-dyed gradient effect. Each beanie unique as ocean itself.",
+      "materials": "Recycled cotton, natural indigo dye, wave pattern",
+      "productionNotes": "Natural dye process; each beanie unique in color depth",
+      "imagery": "/img/lyrion/ocean-depth-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 30,
+        "compareAtGBP": 38
+      },
+      "affirmation": "I dive deep, I surface renewed.",
+      "chargePhrase": "Navigate depths."
+    },
+    {
+      "id": "LYR-031",
+      "name": "Earth Keeper Beanie",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "Moss green with subtle tree-of-life pattern; grounds the crown.",
+      "description": "Organic wool with embossed botanical design. Roots meet sky at the crown chakra.",
+      "materials": "Organic wool, embossed botanical motif, natural dyes",
+      "productionNotes": "Carbon-neutral production; plants one tree per beanie sold",
+      "imagery": "/img/lyrion/earth-keeper-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 32,
+        "compareAtGBP": 40
+      },
+      "affirmation": "I honor the ground beneath.",
+      "chargePhrase": "Tend earth."
+    },
+    {
+      "id": "LYR-032",
+      "name": "Mind Expanse Beanie",
+      "signTags": [
+        "Gemini",
+        "Libra",
+        "Aquarius"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "Sky blue with geometric air patterns; opens thought channels.",
+      "description": "Lightweight merino with laser-cut geometric details. Thought becomes form, ideas take flight.",
+      "materials": "Lightweight merino, geometric cutouts, air element symbols",
+      "productionNotes": "Made with renewable energy; minimal waste construction",
+      "imagery": "/img/lyrion/mind-expanse-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 30,
+        "compareAtGBP": 38
+      },
+      "affirmation": "My thoughts travel far, return clear.",
+      "chargePhrase": "Expand awareness."
+    },
+    {
+      "id": "LYR-033",
+      "name": "Unity Beanie",
+      "signTags": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "beanie",
+      "tagline": "All zodiac symbols united; knitted with collective intention.",
+      "description": "Premium wool blend with full zodiac wheel embroidered band. We are many, we are one.",
+      "materials": "Premium wool, zodiac wheel embroidery, unity design",
+      "productionNotes": "Collaborative design with astrology collective; supports mental health resources",
+      "imagery": "/img/lyrion/unity-beanie.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 11,
+        "retailGBP": 34,
+        "compareAtGBP": 42
+      },
+      "affirmation": "I am one thread in infinite tapestry.",
+      "chargePhrase": "Connect all."
+    },
+    {
+      "id": "LYR-034",
+      "name": "Archers Cap",
+      "signTags": [
+        "Sagittarius"
+      ],
+      "category": "Accessories",
+      "type": "hat",
+      "tagline": "Canvas cap with embroidered arrow; points toward truth.",
+      "description": "Organic cotton canvas with adjustable leather strap. Aim true, release clean, trust the arc.",
+      "materials": "Organic cotton canvas, leather strap, arrow embroidery",
+      "productionNotes": "Handcrafted details; supports archery programs for youth",
+      "imagery": "/img/lyrion/archers-cap.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 32,
+        "compareAtGBP": 40
+      },
+      "affirmation": "I aim true, I release fear.",
+      "chargePhrase": "Focus aim."
+    },
+    {
+      "id": "LYR-035",
+      "name": "Lions Crown Cap",
+      "signTags": [
+        "Leo"
+      ],
+      "category": "Accessories",
+      "type": "hat",
+      "tagline": "Golden cap with subtle mane texture; solar pride embodied.",
+      "description": "Premium cotton with metallic gold stitching. Wear your crown with quiet confidence.",
+      "materials": "Premium cotton, metallic gold thread, lion motif",
+      "productionNotes": "Hand-embroidered lion constellation; supports wildlife conservation",
+      "imagery": "/img/lyrion/lions-crown-cap.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 11,
+        "retailGBP": 34,
+        "compareAtGBP": 42
+      },
+      "affirmation": "I wear my sovereignty lightly.",
+      "chargePhrase": "Own throne."
+    },
+    {
+      "id": "LYR-036",
+      "name": "Scales Cap",
+      "signTags": [
+        "Libra"
+      ],
+      "category": "Accessories",
+      "type": "hat",
+      "tagline": "Balanced design in dual tones; perfectly symmetrical embroidery.",
+      "description": "Two-tone cotton with mirrored scales embroidery. Every stitch balanced, every seam aligned.",
+      "materials": "Dual-tone cotton, symmetrical scales, balanced construction",
+      "productionNotes": "Made in ethical facilities; each cap perfectly weighted for comfort",
+      "imagery": "/img/lyrion/scales-cap.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 31,
+        "compareAtGBP": 39
+      },
+      "affirmation": "I find equilibrium in all things.",
+      "chargePhrase": "Balance choices."
+    },
+    {
+      "id": "LYR-037",
+      "name": "Mystic Cap",
+      "signTags": [
+        "Scorpio",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "hat",
+      "tagline": "Deep purple with embroidered third eye; opens inner vision.",
+      "description": "Soft cotton with hand-stitched mystical symbols. See beyond surface, trust the unseen.",
+      "materials": "Soft cotton, third eye embroidery, mystical symbols",
+      "productionNotes": "Created during new moon; charged with intuitive energy",
+      "imagery": "/img/lyrion/mystic-cap.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 32,
+        "compareAtGBP": 40
+      },
+      "affirmation": "I see beyond the veil.",
+      "chargePhrase": "Activate sight."
+    },
+    {
+      "id": "LYR-038",
+      "name": "Lunar Silk Scarf",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "scarf",
+      "tagline": "Moon phase silk with silver thread; drapes like moonlight.",
+      "description": "Pure silk with hand-rolled hems and moon phase print. Soft as lunar beams, strong as tidal pull.",
+      "materials": "Pure silk, hand-rolled hems, moon phase print, silver thread",
+      "productionNotes": "Ethical silk production; supports lunar cycle education",
+      "imagery": "/img/lyrion/lunar-silk-scarf.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 18,
+        "retailGBP": 52,
+        "compareAtGBP": 65
+      },
+      "affirmation": "I wrap myself in cosmic rhythm.",
+      "chargePhrase": "Flow gently."
+    },
+    {
+      "id": "LYR-039",
+      "name": "Solar Warmth Scarf",
+      "signTags": [
+        "Leo",
+        "Aries"
+      ],
+      "category": "Accessories",
+      "type": "scarf",
+      "tagline": "Golden threads woven with sun motif; radiates confidence.",
+      "description": "Organic wool blend with metallic gold threading. Carries the suns warmth wherever you wander.",
+      "materials": "Wool blend, metallic gold thread, sun mandala design",
+      "productionNotes": "Hand-woven by master artisans; supports solar energy initiatives",
+      "imagery": "/img/lyrion/solar-warmth-scarf.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 19,
+        "retailGBP": 54,
+        "compareAtGBP": 68
+      },
+      "affirmation": "I carry the sun within.",
+      "chargePhrase": "Share warmth."
+    },
+    {
+      "id": "LYR-040",
+      "name": "Infinity Scarf",
+      "signTags": [
+        "Libra",
+        "Gemini"
+      ],
+      "category": "Accessories",
+      "type": "scarf",
+      "tagline": "M\u00f6bius strip design in dual colors; endless elegance.",
+      "description": "Soft cashmere blend with seamless construction. No beginning, no end, perfect flow.",
+      "materials": "Cashmere blend, seamless M\u00f6bius construction, dual tone",
+      "productionNotes": "Zero-waste pattern; philosophical design with mathematical precision",
+      "imagery": "/img/lyrion/infinity-scarf.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 20,
+        "retailGBP": 55,
+        "compareAtGBP": 69
+      },
+      "affirmation": "I am both question and answer.",
+      "chargePhrase": "Embrace paradox."
+    },
+    {
+      "id": "LYR-041",
+      "name": "Earth Wrap Scarf",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "scarf",
+      "tagline": "Botanical print on organic cotton; grounding beauty.",
+      "description": "GOTS-certified cotton with natural dye plant patterns. Wrapped in earths gentle strength.",
+      "materials": "GOTS cotton, natural botanical dyes, plant motif",
+      "productionNotes": "Supports regenerative agriculture; plants native species for each sale",
+      "imagery": "/img/lyrion/earth-wrap-scarf.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 17,
+        "retailGBP": 50,
+        "compareAtGBP": 63
+      },
+      "affirmation": "I am held by earths embrace.",
+      "chargePhrase": "Root beauty."
+    },
+    {
+      "id": "LYR-042",
+      "name": "Constellation Scarf",
+      "signTags": [
+        "Sagittarius",
+        "Aquarius"
+      ],
+      "category": "Accessories",
+      "type": "scarf",
+      "tagline": "Star map on midnight blue silk; navigation for seekers.",
+      "description": "Silk-cotton blend with glow-in-dark constellation details. Day guide, night oracle.",
+      "materials": "Silk-cotton blend, glow ink, winter solstice star map",
+      "productionNotes": "Supports astronomy outreach; each scarf maps winter solstice sky",
+      "imagery": "/img/lyrion/constellation-scarf.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 18,
+        "retailGBP": 52,
+        "compareAtGBP": 65
+      },
+      "affirmation": "I follow stars to find myself.",
+      "chargePhrase": "Navigate cosmos."
+    },
+    {
+      "id": "LYR-043",
+      "name": "Grounding Brass Bracelet",
+      "signTags": [
+        "Taurus",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Solid brass with earth element engraving; anchors intention.",
+      "description": "Recycled brass with hand-stamped affirmation inside band. Wear your anchor with pride.",
+      "materials": "Recycled brass, hand-stamped interior, earth symbols",
+      "productionNotes": "Made by jewelry artisans; supports mining reform initiatives",
+      "imagery": "/img/lyrion/grounding-brass-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 15,
+        "retailGBP": 58,
+        "compareAtGBP": 75
+      },
+      "affirmation": "I am grounded in truth.",
+      "chargePhrase": "Anchor self."
+    },
+    {
+      "id": "LYR-044",
+      "name": "Lunar Phase Bracelet",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Silver with moon phase charms; tracks personal cycles.",
+      "description": "Sterling silver with hand-cast moon phase medallions. Honor your rhythms, trust your tides.",
+      "materials": "Sterling silver, moon phase charms, hand-cast details",
+      "productionNotes": "Ethically sourced silver; supports lunar literacy programs",
+      "imagery": "/img/lyrion/lunar-phase-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 18,
+        "retailGBP": 68,
+        "compareAtGBP": 88
+      },
+      "affirmation": "I honor my natural rhythms.",
+      "chargePhrase": "Sync cycles."
+    },
+    {
+      "id": "LYR-045",
+      "name": "Fire Keeper Bracelet",
+      "signTags": [
+        "Aries",
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Copper with flame motif; conducts creative energy.",
+      "description": "Pure copper with hand-etched fire symbols. Keep your inner flame burning bright.",
+      "materials": "Pure copper, hand-etched flames, energy conducting",
+      "productionNotes": "Traditional metalwork; supports indigenous fire-keeping ceremonies",
+      "imagery": "/img/lyrion/fire-keeper-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 16,
+        "retailGBP": 62,
+        "compareAtGBP": 80
+      },
+      "affirmation": "I tend my inner flame.",
+      "chargePhrase": "Stoke fire."
+    },
+    {
+      "id": "LYR-046",
+      "name": "Air Element Bracelet",
+      "signTags": [
+        "Gemini",
+        "Libra",
+        "Aquarius"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Lightweight silver with feather charms; lifts the spirit.",
+      "description": "Recycled silver with air element symbols. Light as breath, strong as wind.",
+      "materials": "Recycled silver, feather charms, air symbols",
+      "productionNotes": "Supports bird conservation; portion of proceeds to raptor rehabilitation",
+      "imagery": "/img/lyrion/air-element-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 17,
+        "retailGBP": 65,
+        "compareAtGBP": 84
+      },
+      "affirmation": "I rise on currents of thought.",
+      "chargePhrase": "Elevate mind."
+    },
+    {
+      "id": "LYR-047",
+      "name": "Affirmation Chain",
+      "signTags": [
+        "Aries",
+        "Leo",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Brass chain engraved within: I move like light through form.",
+      "description": "Solid brass with hidden engraved affirmation and adjustable length. Your secret power, worn close to heart.",
+      "materials": "Solid brass, engraved affirmation, adjustable length",
+      "productionNotes": "Hand-engraved by master jewelers; each piece blessed with intention",
+      "imagery": "/img/lyrion/affirmation-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 20,
+        "retailGBP": 75,
+        "compareAtGBP": 95
+      },
+      "affirmation": "I speak my truth into being.",
+      "chargePhrase": "Voice power."
+    },
+    {
+      "id": "LYR-048",
+      "name": "Constellation Chain",
+      "signTags": [
+        "Sagittarius",
+        "Aquarius"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Silver chain with your zodiac constellation charm.",
+      "description": "Sterling silver with hand-set constellation in tiny crystals. You are written in the stars.",
+      "materials": "Sterling silver, crystal constellation, custom mapping",
+      "productionNotes": "Custom constellation mapping; supports dark sky preservation",
+      "imagery": "/img/lyrion/constellation-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 22,
+        "retailGBP": 82,
+        "compareAtGBP": 105
+      },
+      "affirmation": "I am written in stars.",
+      "chargePhrase": "Claim destiny."
+    },
+    {
+      "id": "LYR-049",
+      "name": "Protection Chain",
+      "signTags": [
+        "Scorpio",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Obsidian pendant on silver chain; shields with elegance.",
+      "description": "Ethically sourced obsidian with sterling silver setting. Your fortress, worn with grace.",
+      "materials": "Obsidian stone, sterling silver, protective setting",
+      "productionNotes": "Stone blessed by energy workers; supports protection for vulnerable communities",
+      "imagery": "/img/lyrion/protection-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 21,
+        "retailGBP": 78,
+        "compareAtGBP": 98
+      },
+      "affirmation": "I am my own fortress.",
+      "chargePhrase": "Guard heart."
+    },
+    {
+      "id": "LYR-050",
+      "name": "Heart Opener Chain",
+      "signTags": [
+        "Cancer",
+        "Libra",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Rose quartz on delicate gold chain; softens and opens.",
+      "description": "Ethically mined rose quartz with 14k gold-filled chain. Love without armor, trust without fear.",
+      "materials": "Rose quartz, 14k gold-filled chain, heart chakra stone",
+      "productionNotes": "Supports heart-centered healing programs; portion to counseling services",
+      "imagery": "/img/lyrion/heart-opener-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 23,
+        "retailGBP": 85,
+        "compareAtGBP": 108
+      },
+      "affirmation": "I love without condition.",
+      "chargePhrase": "Open fully."
+    },
+    {
+      "id": "LYR-051",
+      "name": "Solar Ring",
+      "signTags": [
+        "Leo",
+        "Aries"
+      ],
+      "category": "Accessories",
+      "type": "ring",
+      "tagline": "Gold band with sun ray details; wears like captured light.",
+      "description": "14k gold-filled with hand-etched solar rays. Sovereign light on your finger.",
+      "materials": "14k gold-filled, hand-etched rays, adjustable band",
+      "productionNotes": "Handcrafted by independent jewelers; supports solar education",
+      "imagery": "/img/lyrion/solar-ring.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 25,
+        "retailGBP": 88,
+        "compareAtGBP": 112
+      },
+      "affirmation": "I am sovereign light.",
+      "chargePhrase": "Shine bright."
+    },
+    {
+      "id": "LYR-052",
+      "name": "Moon Ring",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "ring",
+      "tagline": "Silver crescent with moonstone setting; holds lunar mystery.",
+      "description": "Sterling silver with ethically sourced moonstone. Trust the tide within.",
+      "materials": "Sterling silver, moonstone, crescent design",
+      "productionNotes": "Moon-phase crafted; supports feminine empowerment programs",
+      "imagery": "/img/lyrion/moon-ring.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 24,
+        "retailGBP": 85,
+        "compareAtGBP": 108
+      },
+      "affirmation": "I trust the tide within.",
+      "chargePhrase": "Follow moon."
+    },
+    {
+      "id": "LYR-053",
+      "name": "Ritual Flame Candle",
+      "signTags": [
+        "Aries",
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Amber candle with cinnamon & frankincense; ignites sacred space.",
+      "description": "Soy wax blend with essential oils and cotton wick. Light your fire, claim your space.",
+      "materials": "Soy wax, cinnamon & frankincense oils, cotton wick",
+      "productionNotes": "Hand-poured in small batches; supports fire safety education",
+      "imagery": "/img/lyrion/ritual-flame-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 12,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I light the way forward.",
+      "chargePhrase": "Kindle vision."
+    },
+    {
+      "id": "LYR-054",
+      "name": "Lunar Dream Candle",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Silver candle with jasmine & moonflower; invites reverie.",
+      "description": "Coconut wax with lunar-aligned essential oil blend. Surrender to cosmic dreaming.",
+      "materials": "Coconut wax, jasmine & moonflower, lunar oil blend",
+      "productionNotes": "Poured during full moon; portion supports sleep wellness programs",
+      "imagery": "/img/lyrion/lunar-dream-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 13,
+        "retailGBP": 40,
+        "compareAtGBP": 50
+      },
+      "affirmation": "I surrender to cosmic dreaming.",
+      "chargePhrase": "Welcome rest."
+    },
+    {
+      "id": "LYR-055",
+      "name": "Earth Medicine Candle",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Green candle with cedarwood & sage; grounds the space.",
+      "description": "Beeswax blend with wildcrafted herb infusion. Ancient wisdom in every breath.",
+      "materials": "Beeswax, cedarwood & sage, wildcrafted herbs",
+      "productionNotes": "Ethical beekeeping; supports forest restoration projects",
+      "imagery": "/img/lyrion/earth-medicine-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 12,
+        "retailGBP": 39,
+        "compareAtGBP": 49
+      },
+      "affirmation": "I breathe earths ancient wisdom.",
+      "chargePhrase": "Cleanse space."
+    },
+    {
+      "id": "LYR-056",
+      "name": "Transformation Candle",
+      "signTags": [
+        "Scorpio"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Deep purple with myrrh & patchouli; alchemizes energy.",
+      "description": "Soy wax with hand-carved scorpion symbol on vessel. Burn away what no longer serves.",
+      "materials": "Soy wax, myrrh & patchouli, hand-carved vessel",
+      "productionNotes": "Supports shadow work workshops; portion to mental health resources",
+      "imagery": "/img/lyrion/transformation-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 14,
+        "retailGBP": 42,
+        "compareAtGBP": 52
+      },
+      "affirmation": "I burn away what no longer serves.",
+      "chargePhrase": "Release old."
+    },
+    {
+      "id": "LYR-057",
+      "name": "Balance Candle",
+      "signTags": [
+        "Libra"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Dual-scented with rose & sandalwood; harmonizes opposites.",
+      "description": "Two-tone wax with perfect scent balance. Peace found in paradox.",
+      "materials": "Layered wax, rose & sandalwood, dual scent",
+      "productionNotes": "Supports conflict resolution training; packaged in recycled glass",
+      "imagery": "/img/lyrion/balance-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 12,
+        "retailGBP": 38,
+        "compareAtGBP": 48
+      },
+      "affirmation": "I find peace in paradox.",
+      "chargePhrase": "Center being."
+    },
+    {
+      "id": "LYR-058",
+      "name": "Visionary Candle",
+      "signTags": [
+        "Aquarius",
+        "Sagittarius"
+      ],
+      "category": "Homeware",
+      "type": "candle",
+      "tagline": "Azure candle with eucalyptus & mint; opens minds eye.",
+      "description": "Coconut wax with clarity-enhancing essential oils. See futures unfolding.",
+      "materials": "Coconut wax, eucalyptus & mint, clarity blend",
+      "productionNotes": "Supports innovation hubs; portion to creative education programs",
+      "imagery": "/img/lyrion/visionary-candle.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 13,
+        "retailGBP": 40,
+        "compareAtGBP": 50
+      },
+      "affirmation": "I see futures unfolding.",
+      "chargePhrase": "Open vision."
+    },
+    {
+      "id": "LYR-059",
+      "name": "Constellation Cushion",
+      "signTags": [
+        "Gemini",
+        "Sagittarius",
+        "Aquarius"
+      ],
+      "category": "Homeware",
+      "type": "cushion",
+      "tagline": "Star map cushion with embroidered constellations; rest among stars.",
+      "description": "Organic cotton cover with hand-embroidered star patterns and down fill. Cosmic comfort for earthbound dreamers.",
+      "materials": "Organic cotton, embroidered stars, down fill",
+      "productionNotes": "Ethically sourced down; supports astronomy education",
+      "imagery": "/img/lyrion/constellation-cushion.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 15,
+        "retailGBP": 42,
+        "compareAtGBP": 53
+      },
+      "affirmation": "I rest in cosmic embrace.",
+      "chargePhrase": "Find comfort."
+    },
+    {
+      "id": "LYR-060",
+      "name": "Earth Altar Cushion",
+      "signTags": [
+        "Taurus",
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Homeware",
+      "type": "cushion",
+      "tagline": "Moss velvet with tree-of-life embroidery; meditation essential.",
+      "description": "Organic velvet with buckwheat hull fill for grounding. Sit on sacred ground.",
+      "materials": "Organic velvet, buckwheat fill, tree embroidery",
+      "productionNotes": "Natural fiber fill; supports regenerative agriculture",
+      "imagery": "/img/lyrion/earth-altar-cushion.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 16,
+        "retailGBP": 45,
+        "compareAtGBP": 57
+      },
+      "affirmation": "I sit on sacred ground.",
+      "chargePhrase": "Ground practice."
+    },
+    {
+      "id": "LYR-061",
+      "name": "Moon Phase Cushion",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Homeware",
+      "type": "cushion",
+      "tagline": "Lunar cycle print on silk-cotton blend; tracks cosmic time.",
+      "description": "Silk-cotton with moon phase pattern and feather-down fill. Honor natural rhythms.",
+      "materials": "Silk-cotton blend, moon phases, feather-down fill",
+      "productionNotes": "Moon-phase printed; supports lunar science education",
+      "imagery": "/img/lyrion/moon-phase-cushion.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 15,
+        "retailGBP": 43,
+        "compareAtGBP": 54
+      },
+      "affirmation": "I honor natural rhythms.",
+      "chargePhrase": "Flow with time."
+    },
+    {
+      "id": "LYR-062",
+      "name": "Solar Radiance Cushion",
+      "signTags": [
+        "Leo",
+        "Aries"
+      ],
+      "category": "Homeware",
+      "type": "cushion",
+      "tagline": "Golden velvet with sun mandala; radiates warmth.",
+      "description": "Plush velvet with metallic embroidered sun and eco-fill. Shine from within.",
+      "materials": "Velvet, metallic sun embroidery, eco-fiber fill",
+      "productionNotes": "Supports solar energy projects; made with renewable energy",
+      "imagery": "/img/lyrion/solar-radiance-cushion.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 16,
+        "retailGBP": 44,
+        "compareAtGBP": 55
+      },
+      "affirmation": "I shine from within.",
+      "chargePhrase": "Emit light."
+    },
+    {
+      "id": "LYR-063",
+      "name": "Infinity Cushion",
+      "signTags": [
+        "Libra",
+        "Gemini"
+      ],
+      "category": "Homeware",
+      "type": "cushion",
+      "tagline": "M\u00f6bius pattern in dual tones; endless comfort.",
+      "description": "Organic cotton with optical illusion pattern and memory foam. Rest in perfect balance.",
+      "materials": "Organic cotton, M\u00f6bius pattern, memory foam",
+      "productionNotes": "Zero-waste design; supports geometric education programs",
+      "imagery": "/img/lyrion/infinity-cushion.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 15,
+        "retailGBP": 42,
+        "compareAtGBP": 53
+      },
+      "affirmation": "I rest in perfect balance.",
+      "chargePhrase": "Maintain poise."
+    },
+    {
+      "id": "LYR-064",
+      "name": "Morning Ritual Mug",
+      "signTags": [
+        "Virgo",
+        "Capricorn"
+      ],
+      "category": "Homeware",
+      "type": "mug",
+      "tagline": "Ceramic mug with affirmation inside rim: Each sip, intentional.",
+      "description": "Handmade ceramic with food-safe glaze and hidden affirmation. Begin each day with purpose.",
+      "materials": "Handmade ceramic, food-safe glaze, affirmation detail",
+      "productionNotes": "Small-batch pottery; supports ceramic arts programs",
+      "imagery": "/img/lyrion/morning-ritual-mug.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 8,
+        "retailGBP": 28,
+        "compareAtGBP": 35
+      },
+      "affirmation": "I begin each day with purpose.",
+      "chargePhrase": "Set intention."
+    },
+    {
+      "id": "LYR-065",
+      "name": "Lunar Brew Mug",
+      "signTags": [
+        "Cancer",
+        "Pisces"
+      ],
+      "category": "Homeware",
+      "type": "mug",
+      "tagline": "Moon phase mug that reveals full moon when filled with hot liquid.",
+      "description": "Heat-reactive ceramic with moon phase thermochromic design. Honor your inner tides.",
+      "materials": "Ceramic, thermochromic ink, moon phase design",
+      "productionNotes": "Supports lunar science; portion to womens health initiatives",
+      "imagery": "/img/lyrion/lunar-brew-mug.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 30,
+        "compareAtGBP": 38
+      },
+      "affirmation": "I honor my inner tides.",
+      "chargePhrase": "Trust cycles."
+    },
+    {
+      "id": "LYR-066",
+      "name": "Solar Warmth Mug",
+      "signTags": [
+        "Leo",
+        "Aries"
+      ],
+      "category": "Homeware",
+      "type": "mug",
+      "tagline": "Gold-rimmed mug with sun rays; holds morning light.",
+      "description": "Ceramic with 22k gold lustre detail and comfortable grip. Drink in the days potential.",
+      "materials": "Ceramic, 22k gold lustre, ergonomic handle",
+      "productionNotes": "Hand-finished gold; supports solar education programs",
+      "imagery": "/img/lyrion/solar-warmth-mug.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 9,
+        "retailGBP": 31,
+        "compareAtGBP": 39
+      },
+      "affirmation": "I drink in the days potential.",
+      "chargePhrase": "Absorb energy."
+    },
+    {
+      "id": "LYR-067",
+      "name": "Cosmic Coffee Mug",
+      "signTags": [
+        "Sagittarius",
+        "Aquarius",
+        "Gemini"
+      ],
+      "category": "Homeware",
+      "type": "mug",
+      "tagline": "Galaxy print mug with constellation handle; universe in hand.",
+      "description": "Ceramic with full-wrap constellation map and ergonomic handle. Hold infinity in your palm.",
+      "materials": "Ceramic, galaxy print, constellation detail",
+      "productionNotes": "Supports space education; portion to STEM scholarships",
+      "imagery": "/img/lyrion/cosmic-coffee-mug.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 8,
+        "retailGBP": 29,
+        "compareAtGBP": 37
+      },
+      "affirmation": "I hold infinity in my palm.",
+      "chargePhrase": "Expand mind."
+    },
+    {
+      "id": "LYR-068",
+      "name": "Zodiac Wheel Print",
+      "signTags": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ],
+      "category": "Homeware",
+      "type": "print",
+      "tagline": "Complete zodiac mandala in gold ink; cosmic calendar for the wall.",
+      "description": "Museum-quality gicl\u00e9e print on archival paper with hand-applied gold leaf. Part of infinite cycle.",
+      "materials": "Archival paper, gold leaf, gicl\u00e9e print",
+      "productionNotes": "Limited edition series; supports astrology education and preservation",
+      "imagery": "/img/lyrion/zodiac-wheel-print.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 15,
+        "retailGBP": 55,
+        "compareAtGBP": 70
+      },
+      "affirmation": "I am part of infinite cycle.",
+      "chargePhrase": "Honor wholeness."
+    },
+    {
+      "id": "LYR-069",
+      "name": "Birth Chart Template Print",
+      "signTags": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ],
+      "category": "Homeware",
+      "type": "print",
+      "tagline": "Blank birth chart for personal mapping; invitation to self-discovery.",
+      "description": "Letterpress on cotton paper with embossed chart lines. Chart your own course.",
+      "materials": "Cotton paper, letterpress, embossed lines",
+      "productionNotes": "Printed with traditional methods; supports astrology literacy",
+      "imagery": "/img/lyrion/birth-chart-template-print.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 12,
+        "retailGBP": 48,
+        "compareAtGBP": 61
+      },
+      "affirmation": "I chart my own course.",
+      "chargePhrase": "Map self."
+    },
+    {
+      "id": "LYR-070",
+      "name": "Celestial Bodies Print",
+      "signTags": [
+        "Sagittarius",
+        "Aquarius",
+        "Gemini"
+      ],
+      "category": "Homeware",
+      "type": "print",
+      "tagline": "Vintage astronomy illustration of planetary orbits; science meets art.",
+      "description": "Archival inkjet on fine art paper with hand-torn edges. Study cosmos to know self.",
+      "materials": "Fine art paper, archival inkjet, hand-torn edges",
+      "productionNotes": "Reproduced from 1800s astronomical texts; supports library preservation",
+      "imagery": "/img/lyrion/celestial-bodies-print.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 14,
+        "retailGBP": 52,
+        "compareAtGBP": 66
+      },
+      "affirmation": "I study the cosmos to know myself.",
+      "chargePhrase": "Seek knowledge."
+    },
+    {
+      "id": "LYR-071",
+      "name": "Lunar Journal",
+      "signTags": [
+        "Cancer",
+        "Pisces",
+        "Scorpio"
+      ],
+      "category": "Homeware",
+      "type": "journal",
+      "tagline": "Moon-tracking journal with phase guides; maps inner tides.",
+      "description": "Handbound with recycled paper and lunar calendar inserts. Write your truth by moonlight.",
+      "materials": "Recycled paper, handbound, lunar calendar inserts",
+      "productionNotes": "Supports menstrual health education; portion to feminine wellness programs",
+      "imagery": "/img/lyrion/lunar-journal.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 10,
+        "retailGBP": 45,
+        "compareAtGBP": 57
+      },
+      "affirmation": "I write my truth by moonlight.",
+      "chargePhrase": "Document cycles."
+    },
+    {
+      "id": "LYR-072",
+      "name": "Manifestation Journal",
+      "signTags": [
+        "Capricorn",
+        "Aries",
+        "Leo"
+      ],
+      "category": "Homeware",
+      "type": "journal",
+      "tagline": "Goal-setting journal with intention prompts; builds reality.",
+      "description": "Premium cotton paper with gold-edged pages and ribbon marker. Script your becoming.",
+      "materials": "Cotton paper, gold-edged, ribbon marker",
+      "productionNotes": "Supports entrepreneurship programs; portion to business education",
+      "imagery": "/img/lyrion/manifestation-journal.jpg",
+      "supplier": "Gelato",
+      "pricing": {
+        "baseGBP": 11,
+        "retailGBP": 48,
+        "compareAtGBP": 61
+      },
+      "affirmation": "I script my becoming.",
+      "chargePhrase": "Claim goals."
+    },
+    {
+      "id": "LYR-073",
+      "name": "Aries Fire Ritual Kit",
+      "signTags": [
+        "Aries"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Complete fire-element ritual: hoodie, tee, candle, affirmation card.",
+      "description": "Curated bundle with matching Aries items and ritual guide booklet. Claim your sovereign fire.",
+      "materials": "Bundle: hoodie, tee, candle, ritual guide",
+      "productionNotes": "Assembled with intention; includes ritual instruction card",
+      "imagery": "/img/lyrion/aries-fire-ritual-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 60,
+        "retailGBP": 145,
+        "compareAtGBP": 185
+      },
+      "affirmation": "I claim my sovereign fire.",
+      "chargePhrase": "Ignite purpose."
+    },
+    {
+      "id": "LYR-074",
+      "name": "Taurus Earth Temple Kit",
+      "signTags": [
+        "Taurus"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Grounding ritual: hoodie, cushion, candle, journal.",
+      "description": "Earth-element bundle with botanical ritual guide. Root into earths wisdom.",
+      "materials": "Bundle: hoodie, cushion, candle, journal, guide",
+      "productionNotes": "Ethically sourced components; supports soil health education",
+      "imagery": "/img/lyrion/taurus-earth-temple-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 65,
+        "retailGBP": 155,
+        "compareAtGBP": 198
+      },
+      "affirmation": "I root into earths wisdom.",
+      "chargePhrase": "Cultivate ground."
+    },
+    {
+      "id": "LYR-075",
+      "name": "Gemini Air Flow Kit",
+      "signTags": [
+        "Gemini"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Thought-expansion: tee, journal, mug, air element bracelet.",
+      "description": "Air-element bundle with communication practices guide. Speak truth clearly.",
+      "materials": "Bundle: tee, journal, mug, bracelet, guide",
+      "productionNotes": "Supports literacy programs; includes writing prompts",
+      "imagery": "/img/lyrion/gemini-air-flow-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 58,
+        "retailGBP": 138,
+        "compareAtGBP": 176
+      },
+      "affirmation": "I speak my truth clearly.",
+      "chargePhrase": "Free voice."
+    },
+    {
+      "id": "LYR-076",
+      "name": "Cancer Moon Tide Kit",
+      "signTags": [
+        "Cancer"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Lunar ritual: hoodie, moon journal, candle, lunar bracelet.",
+      "description": "Moon-phase bundle with tide-tracking guide. Honor natural rhythms.",
+      "materials": "Bundle: hoodie, journal, candle, bracelet, moon calendar",
+      "productionNotes": "Supports lunar literacy; includes moon calendar",
+      "imagery": "/img/lyrion/cancer-moon-tide-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 68,
+        "retailGBP": 160,
+        "compareAtGBP": 204
+      },
+      "affirmation": "I honor my natural rhythms.",
+      "chargePhrase": "Sync moon."
+    },
+    {
+      "id": "LYR-077",
+      "name": "Leo Solar Crown Kit",
+      "signTags": [
+        "Leo"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Radiance ritual: hoodie, solar mug, ring, confidence guide.",
+      "description": "Solar-element bundle with self-expression practices. Shine without apology.",
+      "materials": "Bundle: hoodie, mug, ring, affirmation deck, guide",
+      "productionNotes": "Supports leadership programs; includes affirmation deck",
+      "imagery": "/img/lyrion/leo-solar-crown-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 72,
+        "retailGBP": 168,
+        "compareAtGBP": 214
+      },
+      "affirmation": "I shine without apology.",
+      "chargePhrase": "Own light."
+    },
+    {
+      "id": "LYR-078",
+      "name": "Virgo Precision Kit",
+      "signTags": [
+        "Virgo"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Refinement ritual: hoodie, journal, earth candle, morning mug.",
+      "description": "Earth-element bundle with precision practice guide. Each detail sacred.",
+      "materials": "Bundle: hoodie, journal, candle, mug, guide",
+      "productionNotes": "Zero-waste packaging; supports craftsmanship education",
+      "imagery": "/img/lyrion/virgo-precision-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 62,
+        "retailGBP": 148,
+        "compareAtGBP": 189
+      },
+      "affirmation": "Each detail, sacred.",
+      "chargePhrase": "Refine craft."
+    },
+    {
+      "id": "LYR-079",
+      "name": "Scorpio Shadow Kit",
+      "signTags": [
+        "Scorpio"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Transformation ritual: hoodie, candle, protection chain, shadow journal.",
+      "description": "Water-element bundle with deep work practices. Alchemize pain into power.",
+      "materials": "Bundle: hoodie, candle, chain, journal, shadow guide",
+      "productionNotes": "Supports mental health; includes shadow integration guide",
+      "imagery": "/img/lyrion/scorpio-shadow-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 75,
+        "retailGBP": 175,
+        "compareAtGBP": 223
+      },
+      "affirmation": "I alchemize pain into power.",
+      "chargePhrase": "Transform shadows."
+    },
+    {
+      "id": "LYR-080",
+      "name": "Solstice Celebration Box",
+      "signTags": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer",
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio",
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Complete seasonal ritual kit: tee, candle, journal, zodiac print, mug.",
+      "description": "Curated solstice celebration with items for all signs. Honor the turning wheel of the year with intention and beauty.",
+      "materials": "Bundle: tee, candle, journal, print, mug, seasonal guide",
+      "productionNotes": "Assembled during solstice windows; supports seasonal mindfulness education",
+      "imagery": "/img/lyrion/solstice-celebration-box.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 65,
+        "retailGBP": 155,
+        "compareAtGBP": 198
+      },
+      "affirmation": "I honor the eternal return.",
+      "chargePhrase": "Celebrate cycles."
     }
   ]
 }
