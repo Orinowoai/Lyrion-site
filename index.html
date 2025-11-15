@@ -1,131 +1,800 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<title>LYRĪON — Celestial Luxury Wardrobe</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta name="description" content="LYRĪON — a celestial fashion house of astrology-inspired hoodies, tees, socks, headwear, kidswear, and home pieces." />
-<link rel="icon" href="images/favicon.png" type="image/png" />
-<link rel="stylesheet" href="assets/css/style.css" />
+ <meta charset="UTF-8" />
+ <title>LYRĪON – Luxury Celestial Couture</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <meta
+ name="description"
+ content="LYRĪON – premium zodiac apparel, celestial accessories, and mystic home pieces, crafted for the star-struck and spellbound."
+ />
+
+ <!-- FAVICON + LOGO (you will add these image files later) -->
+ <!-- Put your favicon file in /images/favicon.ico -->
+ <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+ <!-- BASIC INLINE STYLES (no external CSS needed) -->
+ <style>
+ :root {
+ --bg: #050309;
+ --bg-soft: #0f0a18;
+ --gold: #f5d08a;
+ --gold-soft: #c9a35c;
+ --ivory: #f7f1e9;
+ --ink: #1a1324;
+ --accent: #8c6ddf;
+ --accent-soft: #42306f;
+ }
+
+ * {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ }
+
+ body {
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+ "Segoe UI", sans-serif;
+ background: radial-gradient(circle at top, #241236 0, #050309 55%);
+ color: var(--ivory);
+ line-height: 1.7;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ color: inherit;
+ text-decoration: none;
+ }
+
+ img {
+ max-width: 100%;
+ display: block;
+ }
+
+ /* LAYOUT */
+
+ .page {
+ min-height: 100vh;
+ display: flex;
+ flex-direction: column;
+ }
+
+ .shell {
+ width: 100%;
+ max-width: 1120px;
+ margin: 0 auto;
+ padding: 1.5rem 1.25rem 3rem;
+ }
+
+ header {
+ position: sticky;
+ top: 0;
+ z-index: 20;
+ backdrop-filter: blur(18px);
+ background: linear-gradient(
+ to bottom,
+ rgba(5, 3, 9, 0.96),
+ rgba(5, 3, 9, 0.75),
+ transparent
+ );
+ border-bottom: 1px solid rgba(245, 208, 138, 0.16);
+ }
+
+ .nav {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ gap: 1rem;
+ }
+
+ .nav-brand {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+ }
+
+ .nav-logo {
+ width: 40px;
+ height: 40px;
+ border-radius: 999px;
+ border: 1px solid rgba(245, 208, 138, 0.4);
+ background: radial-gradient(circle at 30% 20%, #ffeebf, #c99130);
+ overflow: hidden;
+ }
+
+ .nav-title {
+ letter-spacing: 0.2em;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ color: var(--gold);
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 1.25rem;
+ font-size: 0.9rem;
+ }
+
+ .nav-links a {
+ opacity: 0.85;
+ position: relative;
+ }
+
+ .nav-links a::after {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom: -0.2rem;
+ width: 0;
+ height: 1px;
+ background: linear-gradient(to right, var(--gold), var(--accent));
+ transition: width 0.22s ease-out;
+ }
+
+ .nav-links a:hover::after {
+ width: 100%;
+ }
+
+ .pill {
+ border-radius: 999px;
+ border: 1px solid rgba(245, 208, 138, 0.35);
+ padding: 0.4rem 0.9rem;
+ font-size: 0.8rem;
+ text-transform: uppercase;
+ letter-spacing: 0.16em;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.35rem;
+ background: radial-gradient(circle at 0 0, #3f275b 0, transparent 52%);
+ color: var(--gold);
+ }
+
+ .pill-dot {
+ width: 6px;
+ height: 6px;
+ border-radius: 999px;
+ background: var(--gold);
+ box-shadow: 0 0 8px rgba(245, 208, 138, 0.7);
+ }
+
+ main {
+ flex: 1;
+ }
+
+ section {
+ padding: 3.75rem 1.25rem 0;
+ }
+
+ /* HERO */
+
+ .hero-grid {
+ display: grid;
+ grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+ gap: 3rem;
+ align-items: center;
+ margin-top: 2.5rem;
+ }
+
+ .hero-title {
+ font-size: clamp(2.4rem, 3vw, 3.2rem);
+ line-height: 1.05;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ }
+
+ .hero-title span {
+ color: var(--gold);
+ }
+
+ .hero-sub {
+ margin-top: 1.25rem;
+ max-width: 26rem;
+ color: rgba(247, 241, 233, 0.8);
+ font-size: 0.98rem;
+ }
+
+ .hero-actions {
+ margin-top: 1.9rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.8rem;
+ }
+
+ .btn {
+ border-radius: 999px;
+ padding: 0.8rem 1.3rem;
+ font-size: 0.9rem;
+ border: 1px solid transparent;
+ cursor: pointer;
+ display: inline-flex;
+ align-items: center;
+ gap: 0.45rem;
+ text-transform: uppercase;
+ letter-spacing: 0.14em;
+ transition: transform 0.14s ease-out, box-shadow 0.14s ease-out,
+ background 0.18s ease-out, border-color 0.18s ease-out;
+ }
+
+ .btn-primary {
+ background: radial-gradient(circle at 0 0, #fde1a7 0, #c8912f 60%);
+ color: #2a1605;
+ box-shadow: 0 0 32px rgba(245, 208, 138, 0.35);
+ }
+
+ .btn-primary:hover {
+ transform: translateY(-1px);
+ box-shadow: 0 0 40px rgba(245, 208, 138, 0.6);
+ }
+
+ .btn-ghost {
+ background: rgba(15, 10, 24, 0.8);
+ border-color: rgba(245, 208, 138, 0.35);
+ color: var(--gold);
+ }
+
+ .btn-ghost:hover {
+ background: rgba(26, 19, 36, 0.9);
+ transform: translateY(-1px);
+ }
+
+ .hero-badges {
+ margin-top: 1.5rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ font-size: 0.78rem;
+ opacity: 0.9;
+ }
+
+ .hero-visual {
+ border-radius: 1.6rem;
+ border: 1px solid rgba(245, 208, 138, 0.26);
+ background: radial-gradient(circle at top, #3b214f 0, #07030c 58%);
+ padding: 1.4rem 1.3rem 1.6rem;
+ box-shadow: 0 18px 55px rgba(0, 0, 0, 0.75);
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-constellation {
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(circle at 20% 10%, rgba(255, 255, 255, 0.13), transparent 55%),
+ radial-gradient(circle at 80% 80%, rgba(140, 109, 223, 0.35), transparent 60%);
+ opacity: 0.7;
+ mix-blend-mode: screen;
+ pointer-events: none;
+ }
+
+ .hero-moon {
+ width: 148px;
+ height: 148px;
+ border-radius: 999px;
+ background: radial-gradient(circle at 20% 20%, #fff7d1 0, #f0c45f 40%, #8b4e10 75%);
+ margin: 0 auto 1.6rem;
+ box-shadow: 0 0 35px rgba(245, 208, 138, 0.8);
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero-moon::after {
+ content: "";
+ position: absolute;
+ inset: 0;
+ background-image: radial-gradient(circle, rgba(255, 255, 255, 0.4) 1px, transparent 0);
+ background-size: 8px 8px;
+ opacity: 0.25;
+ mix-blend-mode: soft-light;
+ }
+
+ .hero-wheel {
+ display: grid;
+ grid-template-columns: repeat(7, minmax(0, 1fr));
+ gap: 0.35rem;
+ font-size: 0.65rem;
+ text-align: center;
+ margin-bottom: 1rem;
+ }
+
+ .wheel-pill {
+ padding: 0.3rem 0;
+ border-radius: 999px;
+ border: 1px solid rgba(245, 208, 138, 0.35);
+ background: rgba(5, 3, 9, 0.7);
+ color: var(--gold);
+ }
+
+ .wheel-pill--bright {
+ background: radial-gradient(circle at 0 0, #fde1a7 0, #c8912f 70%);
+ color: #2a1605;
+ border-color: transparent;
+ box-shadow: 0 0 16px rgba(245, 208, 138, 0.8);
+ }
+
+ .hero-note {
+ font-size: 0.78rem;
+ color: rgba(247, 241, 233, 0.75);
+ text-align: center;
+ }
+
+ /* SECTIONS */
+
+ .section-title {
+ font-size: 1.3rem;
+ letter-spacing: 0.18em;
+ text-transform: uppercase;
+ color: var(--gold);
+ margin-bottom: 0.2rem;
+ }
+
+ .section-sub {
+ font-size: 0.9rem;
+ color: rgba(247, 241, 233, 0.78);
+ max-width: 32rem;
+ }
+
+ .cards-row {
+ margin-top: 1.8rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 1.6rem;
+ }
+
+ .card {
+ background: radial-gradient(circle at top left, #1e1434 0, #09040f 60%);
+ border-radius: 1.1rem;
+ border: 1px solid rgba(245, 208, 138, 0.22);
+ padding: 1.2rem 1.2rem 1.3rem;
+ box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+ }
+
+ .card-tag {
+ font-size: 0.72rem;
+ text-transform: uppercase;
+ letter-spacing: 0.16em;
+ color: rgba(245, 208, 138, 0.78);
+ margin-bottom: 0.4rem;
+ }
+
+ .card-title {
+ font-size: 1rem;
+ margin-bottom: 0.5rem;
+ }
+
+ .card-text {
+ font-size: 0.86rem;
+ color: rgba(247, 241, 233, 0.75);
+ margin-bottom: 0.8rem;
+ }
+
+ .card-foot {
+ font-size: 0.8rem;
+ color: rgba(245, 208, 138, 0.82);
+ }
+
+ .pill-row {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.35rem;
+ margin-top: 0.85rem;
+ }
+
+ .pill-mini {
+ font-size: 0.7rem;
+ border-radius: 999px;
+ padding: 0.25rem 0.6rem;
+ border: 1px solid rgba(245, 208, 138, 0.4);
+ color: rgba(247, 241, 233, 0.9);
+ background: rgba(5, 3, 9, 0.7);
+ }
+
+ /* ORACLE */
+
+ .oracle-box {
+ margin-top: 1.8rem;
+ border-radius: 1.3rem;
+ border: 1px solid rgba(140, 109, 223, 0.6);
+ background: radial-gradient(circle at top left, #391b58 0, #08020f 65%);
+ padding: 1.5rem 1.4rem 1.6rem;
+ max-width: 540px;
+ }
+
+ .oracle-label {
+ font-size: 0.78rem;
+ letter-spacing: 0.18em;
+ text-transform: uppercase;
+ color: rgba(235, 223, 255, 0.9);
+ margin-bottom: 0.3rem;
+ }
+
+ .oracle-input {
+ width: 100%;
+ border-radius: 999px;
+ border: 1px solid rgba(235, 223, 255, 0.45);
+ background: rgba(2, 0, 10, 0.75);
+ padding: 0.65rem 0.9rem;
+ color: #fdfbff;
+ font-size: 0.9rem;
+ margin: 0.6rem 0 0.9rem;
+ outline: none;
+ }
+
+ .oracle-input::placeholder {
+ color: rgba(235, 223, 255, 0.55);
+ }
+
+ .oracle-btn {
+ border-radius: 999px;
+ padding: 0.7rem 1.15rem;
+ font-size: 0.85rem;
+ text-transform: uppercase;
+ letter-spacing: 0.16em;
+ background: linear-gradient(120deg, #f5d08a, #8c6ddf);
+ color: #1b0d2c;
+ border: none;
+ cursor: pointer;
+ }
+
+ .oracle-output {
+ margin-top: 0.9rem;
+ font-size: 0.9rem;
+ color: rgba(247, 241, 233, 0.9);
+ min-height: 2.2rem;
+ }
+
+ /* CONTACT / FOOTER */
+
+ .contact-grid {
+ margin-top: 1.8rem;
+ display: grid;
+ grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+ gap: 2.2rem;
+ align-items: flex-start;
+ }
+
+ .contact-note {
+ font-size: 0.88rem;
+ color: rgba(247, 241, 233, 0.8);
+ max-width: 24rem;
+ }
+
+ .contact-detail {
+ font-size: 0.88rem;
+ }
+
+ .contact-detail a {
+ color: var(--gold);
+ }
+
+ footer {
+ border-top: 1px solid rgba(245, 208, 138, 0.2);
+ margin-top: 3rem;
+ padding: 1.4rem 1.25rem 2.2rem;
+ font-size: 0.8rem;
+ color: rgba(247, 241, 233, 0.75);
+ }
+
+ .footer-inner {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.75rem;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .footer-nav {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.9rem;
+ font-size: 0.8rem;
+ }
+
+ /* SMALL SCREENS */
+
+ @media (max-width: 780px) {
+ header .shell {
+ padding-top: 1rem;
+ padding-bottom: 0.8rem;
+ }
+
+ .nav {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 0.75rem;
+ }
+
+ .hero-grid {
+ grid-template-columns: 1fr;
+ }
+
+ .hero-visual {
+ order: -1;
+ margin-top: 1.4rem;
+ }
+
+ section {
+ padding-top: 3rem;
+ }
+
+ .contact-grid {
+ grid-template-columns: 1fr;
+ }
+ }
+ </style>
 </head>
-<body class="page-home">
 
-<header class="site-header">
-<div class="shell header-inner">
-<a href="index.html" class="brand">
-<img src="images/lyrion-logo-main.png" alt="LYRĪON logo" class="brand__mark" />
-<span class="brand__name">LYRĪON</span>
-</a>
-<nav class="nav">
-<a href="index.html">Home</a>
-<a href="shop.html">Shop</a>
-<a href="collections.html">Collections</a>
-<a href="oracle.html">Oracle</a>
-<a href="about.html">About</a>
-<a href="contact.html">Contact</a>
-</nav>
-</div>
-</header>
+<body>
+ <div class="page">
+ <header>
+ <div class="shell nav">
+ <div class="nav-brand">
+ <div class="nav-logo">
+ <!-- When ready, put your round LYRĪON logo image here as background-image in CSS or as <img> -->
+ </div>
+ <div>
+ <div class="nav-title">LYRĪON</div>
+ <div style="font-size:0.75rem; color:rgba(247,241,233,0.7);">
+ Celestial Couture House
+ </div>
+ </div>
+ </div>
 
-<main>
-<!-- HERO -->
-<section class="hero">
-<div class="shell hero__grid">
-<div class="hero__copy">
-<p class="eyebrow">Celestial Fashion House</p>
-<h1>Where Astrology Wears the Body.</h1>
-<p class="lede">
-Hoodies, tees, socks, headwear, kidswear, and home pieces tuned to the quiet power
-of your chart. Premium, mystic, made to be lived in.
-</p>
-<div class="hero__actions">
-<a href="shop.html" class="btn btn--primary">Enter the Wardrobe</a>
-<a href="collections.html" class="btn btn--ghost">Explore Collections</a>
-</div>
-</div>
-<div class="hero__visual">
-<div class="hero__orb"></div>
-<p class="hero__note">
-Pair your sign hoodie with aura socks, headwarmers, or celestial beanies
-for a complete ritual set.
-</p>
-</div>
-</div>
-</section>
+ <nav class="nav-links">
+ <a href="#shop">Shop</a>
+ <a href="#collections">Collections</a>
+ <a href="#oracle">Oracle</a>
+ <a href="#about">About</a>
+ <a href="#contact">Contact</a>
+ </nav>
+ </div>
+ </header>
 
-<!-- CATEGORIES -->
-<section class="section section--grid">
-<div class="shell">
-<h2 class="section__title">The Zodiac Wardrobe</h2>
-<p class="section__lede">
-Build your ritual wardrobe from core silhouettes: hoodies, tees, socks,
-headwear, kids sets, and home pieces mapped to your sign.
-</p>
-<div class="grid grid--categories">
-<a href="shop.html#hoodies" class="card">
-<h3>Hoodies & Sweatshirts</h3>
-<p>Heavyweight fleece with LYRĪON emblem and sign glyphs at the heart.</p>
-</a>
-<a href="shop.html#tees" class="card">
-<h3>Tees & Tops</h3>
-<p>Soft, everyday tees with quiet sigils and affirmations.</p>
-</a>
-<a href="shop.html#socks" class="card">
-<h3>Socks & Warmers</h3>
-<p>Cushioned socks, leg warmers and arm warmers in elemental palettes.</p>
-</a>
-<a href="shop.html#headwear" class="card">
-<h3>Hats & Beanies</h3>
-<p>Headwarmers embroidered with your sign and planetary ruler.</p>
-</a>
-<a href="shop.html#kids" class="card">
-<h3>Kids • Mini Constellations</h3>
-<p>Star-soft hoodies, tees, and joggers for small starlings.</p>
-</a>
-<a href="collections.html#home" class="card">
-<h3>Home & Art</h3>
-<p>Wall art, cushions, throws, and altar textiles for your sanctuary.</p>
-</a>
-</div>
-</div>
-</section>
+ <main>
+ <div class="shell">
 
-<!-- HOME & ORACLE -->
-<section class="section section--tinted">
-<div class="shell section--split">
-<div>
-<h2>Celestial Home</h2>
-<p>
-Treat your room like a private observatory. Zodiac art prints, altar cloths,
-cushions, and blankets tuned to your sign and element.
-</p>
-<a href="collections.html#home" class="link-arrow">Explore Home Pieces</a>
-</div>
-<div>
-<h2>The LYRĪON Oracle</h2>
-<p>
-A gentle one-line reading based on your question. No doom, no fear, just
-a nudge in the direction of your own knowing.
-</p>
-<a href="oracle.html" class="btn btn--ghost">Consult the Oracle</a>
-</div>
-</div>
-</section>
-</main>
+ <!-- HERO -->
+ <section id="home">
+ <div class="pill">
+ <span class="pill-dot"></span>
+ Luxury Zodiac Apparel &amp; Art
+ </div>
 
-<footer class="site-footer">
-<div class="shell footer-inner">
-<div>
-<span class="brand__name">LYRĪON</span>
-<span class="footer__tagline">Where the stars choose you.</span>
-</div>
-<div class="footer__meta">
-<span>© <span id="year"></span> LYRĪON Celestial House.</span>
-<span>hello@lyrion.co.uk</span>
-</div>
-</div>
-</footer>
+ <div class="hero-grid">
+ <div>
+ <h1 class="hero-title">
+ Where Astrology<br />
+ Wears the <span>Body</span>.
+ </h1>
+ <p class="hero-sub">
+ Signature zodiac hoodies, tees, socks, and celestial home pieces
+ crafted for the mystic, the dreamer, and the star-struck.
+ </p>
 
-<script src="assets/js/main.js"></script>
+ <div class="hero-actions">
+ <a href="#shop" class="btn btn-primary">Enter the House</a>
+ <a href="#collections" class="btn btn-ghost">Explore the Zodiac Wardrobe</a>
+ </div>
+
+ <div class="hero-badges">
+ <span> Premium fabrics &amp; print-on-demand fulfillment</span>
+ <span> Designed for every sign &amp; rising</span>
+ </div>
+ </div>
+
+ <div class="hero-visual">
+ <div class="hero-constellation"></div>
+
+ <div class="hero-moon"></div>
+
+ <div class="hero-wheel" aria-label="Zodiac wheel">
+ <div class="wheel-pill"> Aries</div>
+ <div class="wheel-pill"> Taurus</div>
+ <div class="wheel-pill"> Gemini</div>
+ <div class="wheel-pill wheel-pill--bright"> Cancer</div>
+ <div class="wheel-pill"> Leo</div>
+ <div class="wheel-pill"> Virgo</div>
+ <div class="wheel-pill"> Libra</div>
+ <div class="wheel-pill"> Scorpio</div>
+ <div class="wheel-pill"> Sagittarius</div>
+ <div class="wheel-pill"> Capricorn</div>
+ <div class="wheel-pill"> Aquarius</div>
+ <div class="wheel-pill"> Pisces</div>
+ <div class="wheel-pill wheel-pill--bright">☉ Sun</div>
+ </div>
+
+ <p class="hero-note">
+ Build your own constellation: mix tees, hoodies, hats, socks, and wall art
+ tuned to your chart.
+ </p>
+ </div>
+ </div>
+ </section>
+
+ <!-- SHOP -->
+ <section id="shop">
+ <h2 class="section-title">Zodiac Wardrobe</h2>
+ <p class="section-sub">
+ Everyday ritual pieces – hoodies, tees, hats, socks, and loungewear –
+ aligned to your sun, moon, and rising. Fulfilled on-demand via premium POD partners.
+ </p>
+
+ <div class="cards-row">
+ <article class="card">
+ <div class="card-tag">Apparel Capsules</div>
+ <h3 class="card-title">Signature Hoodies &amp; Tees</h3>
+ <p class="card-text">
+ Soft, weighty cotton blends with embroidered or printed zodiac sigils.
+ Each sign features a primary glyph, ruling planet, and channeled affirmation.
+ </p>
+ <p class="card-foot">From £65 hoodies · £38 tees</p>
+ </article>
+
+ <article class="card">
+ <div class="card-tag">Accessories</div>
+ <h3 class="card-title">Beanies, Hats &amp; Head-warmers</h3>
+ <p class="card-text">
+ Cozy knits and structured caps with subtle sigil detailing, tonal glyph
+ badges, and golden thread accents.
+ </p>
+ <p class="card-foot">From £32–£45 per piece</p>
+ </article>
+
+ <article class="card">
+ <div class="card-tag">Socks &amp; Intimates</div>
+ <h3 class="card-title">Astral Footnotes</h3>
+ <p class="card-text">
+ Zodiac socks and soft layers that keep your chart close to your skin.
+ Perfect for ritual days, airport portals, and quiet magic.
+ </p>
+ <p class="card-foot">From £18–£28</p>
+ </article>
+ </div>
+ </section>
+
+ <!-- COLLECTIONS -->
+ <section id="collections">
+ <h2 class="section-title">Collections &amp; Home Pieces</h2>
+ <p class="section-sub">
+ Build a full LYRĪON universe: apparel, framed art prints, altar cloths,
+ cushions, and throws – tuned to element, modality, or sign.
+ </p>
+
+ <div class="cards-row">
+ <article class="card">
+ <div class="card-tag">Home &amp; Art</div>
+ <h3 class="card-title">Celestial Home Pieces</h3>
+ <p class="card-text">
+ Museum-grade zodiac art prints, altar cloths, and throw blankets
+ that turn your space into a private observatory.
+ </p>
+ <div class="pill-row">
+ <span class="pill-mini">Fine art prints</span>
+ <span class="pill-mini">Altar cloths</span>
+ <span class="pill-mini">Cushions</span>
+ <span class="pill-mini">Throws</span>
+ </div>
+ </article>
+
+ <article class="card">
+ <div class="card-tag">Elemental Drops</div>
+ <h3 class="card-title">Earth · Air · Fire · Water</h3>
+ <p class="card-text">
+ Curated mini-capsules themed by classical element – soft earth
+ tones, airy gradients, flame-lit accents, or deep ocean palettes.
+ </p>
+ <p class="card-foot">Great for gifting to entire friend groups.</p>
+ </article>
+
+ <article class="card">
+ <div class="card-tag">Bundles</div>
+ <h3 class="card-title">Constellation Sets</h3>
+ <p class="card-text">
+ Apparel + art + accessory bundles built for premium margins and
+ effortless gifting. Each set arrives as a curated micro-wardrobe.
+ </p>
+ <p class="card-foot">Bundle pricing designed for 30–45% margins.</p>
+ </article>
+ </div>
+ </section>
+
+ <!-- ORACLE -->
+ <section id="oracle">
+ <h2 class="section-title">The LYRĪON Oracle</h2>
+ <p class="section-sub">
+ A gentle one-line reading based on your question. No doom, no fear –
+ just subtle nudges in the direction of your own knowing.
+ </p>
+
+ <div class="oracle-box">
+ <div class="oracle-label">Ask the stars a question</div>
+ <input
+ id="oracle-input"
+ class="oracle-input"
+ type="text"
+ placeholder="What are you seeking right now?"
+ />
+ <button class="oracle-btn" type="button" onclick="pullOracle()">Consult the Oracle</button>
+ <div id="oracle-output" class="oracle-output"></div>
+ </div>
+ </section>
+
+ <!-- ABOUT + CONTACT -->
+ <section id="about">
+ <h2 class="section-title">About LYRĪON</h2>
+ <p class="section-sub">
+ LYRĪON is a celestial fashion house dedicated to weaving myth,
+ astrology, and modern luxury together. Every piece is designed to
+ feel like an amulet you can wear.
+ </p>
+
+ <div class="contact-grid" id="contact">
+ <div>
+ <h3 style="margin-bottom:0.5rem; font-size:1rem; color:var(--gold);">
+ Contact
+ </h3>
+ <p class="contact-note">
+ For custom orders, collaborations, wholesale, or media,
+ reach out to the LYRĪON studio.
+ </p>
+ </div>
+ <div class="contact-detail">
+ <p><strong>Email</strong><br />
+ <a href="mailto:hello@lyrion.co.uk">hello@lyrion.co.uk</a>
+ </p>
+ <p style="margin-top:0.7rem;"><strong>House</strong><br />
+ LYRĪON Celestial House · United Kingdom
+ </p>
+ </div>
+ </div>
+ </section>
+ </div>
+
+ <footer>
+ <div class="shell footer-inner">
+ <div>
+ © <span id="year"></span> LYRĪON Celestial House. 
+ Where the stars choose you.
+ </div>
+ <nav class="footer-nav">
+ <a href="#home">Home</a>
+ <a href="#shop">Shop</a>
+ <a href="#collections">Collections</a>
+ <a href="#oracle">Oracle</a>
+ <a href="#contact">Contact</a>
+ </nav>
+ </div>
+ </footer>
+ </main>
+ </div>
+
+ <script>
+ const oracleMessages = [
+ "The path is already opening – move as if it has.",
+ "The universe is not late, only lovingly precise.",
+ "Release what you keep rehearsing in your head. The stars can hear you now.",
+ "You are allowed to want more than you were taught to ask for.",
+ "The next yes arrives when you stop bargaining with your no.",
+ "Your timing is not broken. Your courage is ripening.",
+ "You do not have to earn what is already yours by nature.",
+ "A tiny, tidy action today will echo through your year.",
+ "What if this time it works out better than you feared?",
+ "Nothing is missing – it is only becoming visible."
+ ];
+
+ function pullOracle() {
+ const input = document.getElementById("oracle-input").value.trim();
+ const box = document.getElementById("oracle-output");
+ const msg =
+ oracleMessages[Math.floor(Math.random() * oracleMessages.length)];
+ if (!input) {
+ box.textContent = msg;
+ } else {
+ box.textContent = `"${input}" — ${msg}`;
+ }
+ }
+
+ document.getElementById("year").textContent =
+ new Date().getFullYear();
+ </script>
 </body>
 </html>
