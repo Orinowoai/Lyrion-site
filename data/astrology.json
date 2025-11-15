@@ -1,0 +1,329 @@
+{
+  "signs": [
+    {
+      "name": "Aries",
+      "symbol": "♈",
+      "element": "Fire",
+      "modality": "Cardinal",
+      "planet": "Mars",
+      "season": "Spring",
+      "dates": "March 21 - April 19",
+      "keywords": ["courage", "initiative", "passion", "leadership"],
+      "essence": "The first spark carried to cloth.",
+      "archetype": "The Pioneer",
+      "color": "#F4C84A",
+      "secondaryColor": "#2B1F67",
+      "bodyPart": "Head",
+      "house": 1,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Taurus",
+      "symbol": "♉",
+      "element": "Earth",
+      "modality": "Fixed",
+      "planet": "Venus",
+      "season": "Spring",
+      "dates": "April 20 - May 20",
+      "keywords": ["stability", "sensuality", "patience", "luxury"],
+      "essence": "Stone, grain, and honeyed light.",
+      "archetype": "The Builder",
+      "color": "#D6C6A1",
+      "secondaryColor": "#3A2D1A",
+      "bodyPart": "Throat",
+      "house": 2,
+      "polarity": "Negative"
+    },
+    {
+      "name": "Gemini",
+      "symbol": "♊",
+      "element": "Air",
+      "modality": "Mutable",
+      "planet": "Mercury",
+      "season": "Spring",
+      "dates": "May 21 - June 20",
+      "keywords": ["communication", "curiosity", "adaptability", "wit"],
+      "essence": "Two voices in one constellation.",
+      "archetype": "The Messenger",
+      "color": "#A8D5E2",
+      "secondaryColor": "#1C3A47",
+      "bodyPart": "Arms, Hands",
+      "house": 3,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Cancer",
+      "symbol": "♋",
+      "element": "Water",
+      "modality": "Cardinal",
+      "planet": "Moon",
+      "season": "Summer",
+      "dates": "June 21 - July 22",
+      "keywords": ["nurturing", "intuition", "emotion", "protection"],
+      "essence": "Moon-drawn waters held in shell.",
+      "archetype": "The Nurturer",
+      "color": "#C9D6DF",
+      "secondaryColor": "#2E3A47",
+      "bodyPart": "Chest, Stomach",
+      "house": 4,
+      "polarity": "Negative"
+    },
+    {
+      "name": "Leo",
+      "symbol": "♌",
+      "element": "Fire",
+      "modality": "Fixed",
+      "planet": "Sun",
+      "season": "Summer",
+      "dates": "July 23 - August 22",
+      "keywords": ["creativity", "confidence", "generosity", "warmth"],
+      "essence": "Crowned in light, the lion roars.",
+      "archetype": "The Sovereign",
+      "color": "#F4C84A",
+      "secondaryColor": "#8B4513",
+      "bodyPart": "Heart, Spine",
+      "house": 5,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Virgo",
+      "symbol": "♍",
+      "element": "Earth",
+      "modality": "Mutable",
+      "planet": "Mercury",
+      "season": "Summer",
+      "dates": "August 23 - September 22",
+      "keywords": ["precision", "service", "analysis", "health"],
+      "essence": "Each thread counted, each seed sown.",
+      "archetype": "The Healer",
+      "color": "#A4B494",
+      "secondaryColor": "#3E4A3D",
+      "bodyPart": "Digestive System",
+      "house": 6,
+      "polarity": "Negative"
+    },
+    {
+      "name": "Libra",
+      "symbol": "♎",
+      "element": "Air",
+      "modality": "Cardinal",
+      "planet": "Venus",
+      "season": "Autumn",
+      "dates": "September 23 - October 22",
+      "keywords": ["balance", "harmony", "justice", "beauty"],
+      "essence": "Scales held in perfect symmetry.",
+      "archetype": "The Diplomat",
+      "color": "#E8C4D8",
+      "secondaryColor": "#5C3A51",
+      "bodyPart": "Kidneys, Lower Back",
+      "house": 7,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Scorpio",
+      "symbol": "♏",
+      "element": "Water",
+      "modality": "Fixed",
+      "planet": "Pluto",
+      "season": "Autumn",
+      "dates": "October 23 - November 21",
+      "keywords": ["transformation", "intensity", "mystery", "power"],
+      "essence": "The sting that births renewal.",
+      "archetype": "The Alchemist",
+      "color": "#8B1E3F",
+      "secondaryColor": "#1A0B14",
+      "bodyPart": "Reproductive System",
+      "house": 8,
+      "polarity": "Negative"
+    },
+    {
+      "name": "Sagittarius",
+      "symbol": "♐",
+      "element": "Fire",
+      "modality": "Mutable",
+      "planet": "Jupiter",
+      "season": "Autumn",
+      "dates": "November 22 - December 21",
+      "keywords": ["freedom", "wisdom", "adventure", "truth"],
+      "essence": "Arrow drawn toward distant stars.",
+      "archetype": "The Philosopher",
+      "color": "#E67E22",
+      "secondaryColor": "#6B3410",
+      "bodyPart": "Hips, Thighs",
+      "house": 9,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Capricorn",
+      "symbol": "♑",
+      "element": "Earth",
+      "modality": "Cardinal",
+      "planet": "Saturn",
+      "season": "Winter",
+      "dates": "December 22 - January 19",
+      "keywords": ["ambition", "discipline", "structure", "mastery"],
+      "essence": "The mountain goat climbs alone.",
+      "archetype": "The Master",
+      "color": "#7C7C7C",
+      "secondaryColor": "#2A2A2A",
+      "bodyPart": "Bones, Knees",
+      "house": 10,
+      "polarity": "Negative"
+    },
+    {
+      "name": "Aquarius",
+      "symbol": "♒",
+      "element": "Air",
+      "modality": "Fixed",
+      "planet": "Uranus",
+      "season": "Winter",
+      "dates": "January 20 - February 18",
+      "keywords": ["innovation", "humanitarian", "independence", "vision"],
+      "essence": "Bearer of futures, poured from above.",
+      "archetype": "The Visionary",
+      "color": "#4ECDC4",
+      "secondaryColor": "#1A535C",
+      "bodyPart": "Ankles, Circulatory System",
+      "house": 11,
+      "polarity": "Positive"
+    },
+    {
+      "name": "Pisces",
+      "symbol": "♓",
+      "element": "Water",
+      "modality": "Mutable",
+      "planet": "Neptune",
+      "season": "Winter",
+      "dates": "February 19 - March 20",
+      "keywords": ["compassion", "imagination", "spirituality", "empathy"],
+      "essence": "Two fish swim in infinite ocean.",
+      "archetype": "The Mystic",
+      "color": "#B8A9C9",
+      "secondaryColor": "#3E2B47",
+      "bodyPart": "Feet",
+      "house": 12,
+      "polarity": "Negative"
+    }
+  ],
+  "elements": {
+    "Fire": {
+      "signs": ["Aries", "Leo", "Sagittarius"],
+      "qualities": ["passion", "energy", "inspiration", "courage"],
+      "essence": "The spark of creation and will",
+      "season": "Summer (peak energy)"
+    },
+    "Earth": {
+      "signs": ["Taurus", "Virgo", "Capricorn"],
+      "qualities": ["stability", "practicality", "sensuality", "manifestation"],
+      "essence": "The ground of material reality",
+      "season": "Autumn (harvest)"
+    },
+    "Air": {
+      "signs": ["Gemini", "Libra", "Aquarius"],
+      "qualities": ["intellect", "communication", "connection", "ideas"],
+      "essence": "The breath of thought and word",
+      "season": "Spring (renewal)"
+    },
+    "Water": {
+      "signs": ["Cancer", "Scorpio", "Pisces"],
+      "qualities": ["emotion", "intuition", "depth", "flow"],
+      "essence": "The tide of feeling and soul",
+      "season": "Winter (reflection)"
+    }
+  },
+  "modalities": {
+    "Cardinal": {
+      "signs": ["Aries", "Cancer", "Libra", "Capricorn"],
+      "quality": "Initiating energy that begins new cycles",
+      "action": "Start, lead, pioneer"
+    },
+    "Fixed": {
+      "signs": ["Taurus", "Leo", "Scorpio", "Aquarius"],
+      "quality": "Sustaining energy that maintains and deepens",
+      "action": "Preserve, deepen, stabilize"
+    },
+    "Mutable": {
+      "signs": ["Gemini", "Virgo", "Sagittarius", "Pisces"],
+      "quality": "Adapting energy that transforms and completes",
+      "action": "Adjust, refine, release"
+    }
+  },
+  "planets": {
+    "Sun": {
+      "rules": "Leo",
+      "archetype": "The Self",
+      "qualities": ["identity", "vitality", "purpose", "consciousness"]
+    },
+    "Moon": {
+      "rules": "Cancer",
+      "archetype": "The Soul",
+      "qualities": ["emotion", "instinct", "nurturing", "memory"]
+    },
+    "Mercury": {
+      "rules": ["Gemini", "Virgo"],
+      "archetype": "The Messenger",
+      "qualities": ["communication", "thought", "learning", "connection"]
+    },
+    "Venus": {
+      "rules": ["Taurus", "Libra"],
+      "archetype": "The Lover",
+      "qualities": ["love", "beauty", "value", "harmony"]
+    },
+    "Mars": {
+      "rules": "Aries",
+      "archetype": "The Warrior",
+      "qualities": ["action", "desire", "courage", "assertion"]
+    },
+    "Jupiter": {
+      "rules": "Sagittarius",
+      "archetype": "The Teacher",
+      "qualities": ["expansion", "wisdom", "abundance", "meaning"]
+    },
+    "Saturn": {
+      "rules": "Capricorn",
+      "archetype": "The Master",
+      "qualities": ["structure", "discipline", "time", "mastery"]
+    },
+    "Uranus": {
+      "rules": "Aquarius",
+      "archetype": "The Awakener",
+      "qualities": ["innovation", "revolution", "freedom", "insight"]
+    },
+    "Neptune": {
+      "rules": "Pisces",
+      "archetype": "The Dreamer",
+      "qualities": ["imagination", "spirituality", "dissolution", "compassion"]
+    },
+    "Pluto": {
+      "rules": "Scorpio",
+      "archetype": "The Transformer",
+      "qualities": ["power", "transformation", "depth", "regeneration"]
+    }
+  },
+  "seasonalEvents": {
+    "springEquinox": {
+      "date": "March 20-21",
+      "sign": "Aries",
+      "theme": "New beginnings, ignition of will",
+      "ritual": "Plant intentions, light new fires"
+    },
+    "summerSolstice": {
+      "date": "June 20-21",
+      "sign": "Cancer",
+      "theme": "Peak light, emotional fullness",
+      "ritual": "Celebrate abundance, honor feelings"
+    },
+    "autumnEquinox": {
+      "date": "September 22-23",
+      "sign": "Libra",
+      "theme": "Balance, harvest of the year",
+      "ritual": "Find equilibrium, give thanks"
+    },
+    "winterSolstice": {
+      "date": "December 21-22",
+      "sign": "Capricorn",
+      "theme": "Deepest dark, rebirth of light",
+      "ritual": "Rest in stillness, plan for return"
+    }
+  }
+}
