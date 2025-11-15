@@ -158,6 +158,20 @@ textarea:focus,select:focus,input:focus{outline:2px solid var(--gold);outline-of
 .faq details[open] summary::before{content:'− '}
 .faq details p{margin:12px 0 0;padding-left:20px}
 
+/* Oracle Glimpse Styles */
+.glow-note{
+  background:radial-gradient(400px 300px at 50% 0%, rgba(244,200,74,.12), transparent 70%),
+             var(--panel);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:20px;
+  margin-top:16px;
+  box-shadow:0 12px 28px rgba(244,200,74,.08), inset 0 1px 0 rgba(255,255,255,.03);
+}
+.glow-note p{margin:0;line-height:1.7;color:var(--text)}
+.glow-note .muted{font-size:.9rem;color:var(--muted)}
+#glimpseOut{min-height:40px;transition:opacity .3s ease}
+
 @media(max-width:900px){ .hero{grid-template-columns:1fr} }
 @media (max-width:800px){ 
   .foot-left,.foot-right{float:none;text-align:center}
