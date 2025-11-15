@@ -76,6 +76,12 @@
  <button class="btn" type="submit">Send to the Circle</button>
  <p class="muted" style="font-size:.9rem;margin-top:8px;">We usually reply within 24–72 hours.</p>
  </form>
+
+ <div style="margin-top:20px;padding-top:20px;border-top:1px solid var(--border)">
+ <p class="muted" style="margin-bottom:12px;">Or receive an instant glimpse—a quiet, playful reading drawn from the question and sign above.</p>
+ <button id="glimpseBtn" class="btn-outline" type="button" style="cursor:pointer;display:inline-block" aria-controls="glimpseOut">Get a Glimpse</button>
+ <div id="glimpseOut" role="status" aria-live="polite" style="margin-top:12px"></div>
+ </div>
  </section>
 
  <section id="support-the-circle" class="panel grid-2">
@@ -132,5 +138,12 @@
 <footer class="site-footer"><div class="wrap">
  <div class="foot-left">© LYRĪON — Celestial Couture House</div>
 </div></footer>
+
+<script type="module">
+import { initOracleGlimpse } from '/js/oracle-glimpse.js';
+document.addEventListener('DOMContentLoaded', () => {
+ initOracleGlimpse();
+});
+</script>
 
 </body></html>
