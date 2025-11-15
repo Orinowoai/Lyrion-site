@@ -26,22 +26,106 @@
 </div></header>
 
 <main class="wrap">
- <section class="page-hero">
- <h1>Oracle</h1>
- <p>Quiet monthly notes from the sky — Inner Circle previews, rituals, and the Almanac.</p>
- </section>
- <section class="grid">
- <div class="card"><h3>Almanac</h3><p>Monthly PDF astrology guide.</p><a href="/archives.html">View in Archives</a></div>
- <div class="card"><h3>Inner Circle</h3><p>£6.99/mo — private readings, early drops, 10% off.</p><a href="/about.html#inner-circle">Learn more</a></div>
- </section>
- 
- <section id="support-the-circle" class="page-hero" style="margin-top:48px;">
- <h2>Support the Circle</h2>
- <p>Sustain the quiet work: intercessions, ritual letters, candles of intention, and time held in mindful presence.</p>
- <div class="cta">
- <a class="btn" href="https://buy.stripe.com/test_lyrion" target="_blank" rel="noopener noreferrer">Give with Card (Stripe)</a>
- <a class="btn-outline" href="https://ko-fi.com/your-lyrion" target="_blank" rel="noopener noreferrer">Offer via Ko-fi</a>
+ <section class="hero">
+ <div class="hero-text">
+ <span class="badge-pill">Celestial Guidance</span>
+ <h1>WHEN THE STARS ANSWER BACK.</h1>
+ <p>Send a question into the quiet and receive a considered reply—written by hand, guided by sign and season.</p>
  </div>
+ <div class="hero-card">
+ <div class="oracle-sigil" aria-hidden="true"></div>
+ <p class="hero-note">Ask with intention. Receive with grace. The Oracle welcomes all seekers walking their path.</p>
+ </div>
+ </section>
+
+ <section id="ask" class="panel">
+ <h2>Ask the Oracle</h2>
+ <p class="muted">Share your question with the circle. We hold each inquiry with care and respond within 24–72 hours.</p>
+ 
+ <form name="oracle" method="POST" data-netlify="true" action="/oracle-success.html" class="stack">
+ <input type="hidden" name="form-name" value="oracle">
+ 
+ <label for="question">What would you like to ask?</label>
+ <textarea id="question" name="question" maxlength="600" rows="5" required aria-required="true"></textarea>
+
+ <div class="row">
+ <div class="col">
+ <label for="email">Email (optional — for our reply)</label>
+ <input type="email" id="email" name="email" />
+ </div>
+ <div class="col">
+ <label for="sign">Your sign (optional)</label>
+ <select id="sign" name="sign">
+ <option value="">Select sign</option>
+ <option value="Aries">Aries</option>
+ <option value="Taurus">Taurus</option>
+ <option value="Gemini">Gemini</option>
+ <option value="Cancer">Cancer</option>
+ <option value="Leo">Leo</option>
+ <option value="Virgo">Virgo</option>
+ <option value="Libra">Libra</option>
+ <option value="Scorpio">Scorpio</option>
+ <option value="Sagittarius">Sagittarius</option>
+ <option value="Capricorn">Capricorn</option>
+ <option value="Aquarius">Aquarius</option>
+ <option value="Pisces">Pisces</option>
+ </select>
+ </div>
+ </div>
+
+ <button class="btn" type="submit">Send to the Circle</button>
+ <p class="muted" style="font-size:.9rem;margin-top:8px;">We usually reply within 24–72 hours.</p>
+ </form>
+ </section>
+
+ <section id="support-the-circle" class="panel grid-2">
+ <div class="card">
+ <h3>Choose Your Offering</h3>
+ <p class="muted">All contributions help sustain the circle's work. LYRĪON honors every path of light and love; these offerings are symbolic and intentionally non-religious.</p>
+ <div style="margin-top:16px;">
+ <a class="btn" href="#" data-donate="stripe" style="display:inline-block;margin-bottom:10px;">Give with Card</a>
+ <a class="btn-outline" href="#" data-donate="kofi" style="display:inline-block;">Offer via Ko-fi</a>
+ </div>
+ </div>
+ 
+ <div class="card">
+ <h3>What Donations Fund</h3>
+ <ul style="margin:12px 0;padding-left:20px;">
+ <li>Quiet intercessions and names held in mindful presence</li>
+ <li>Handwritten ritual letters and celestial correspondence</li>
+ <li>Candles of intention, materials, and ceremonial upkeep</li>
+ <li>Time for the circle to craft, reflect, and hold space</li>
+ </ul>
+ </div>
+ </section>
+
+ <section class="panel faq">
+ <h2>Frequently Asked</h2>
+ 
+ <details>
+ <summary tabindex="0" aria-expanded="false">How are readings made?</summary>
+ <p class="muted">Each reading is handwritten with intention, guided by astrological timing, intuitive pulls, and the resonance of your question. We blend traditional astrology with quiet observation and symbolic interpretation.</p>
+ </details>
+
+ <details>
+ <summary tabindex="0" aria-expanded="false">When to expect a reply?</summary>
+ <p class="muted">We typically respond within 24–72 hours. During celestial events (new moons, eclipses, retrogrades), replies may take a bit longer as we honor the timing of the cosmos.</p>
+ </details>
+
+ <details>
+ <summary tabindex="0" aria-expanded="false">Privacy & data</summary>
+ <p class="muted">Your questions and personal details remain confidential. We do not share, sell, or store your information beyond what's needed to reply. All correspondence is treated with sacred privacy.</p>
+ </details>
+
+ <details>
+ <summary tabindex="0" aria-expanded="false">Is this religious?</summary>
+ <p class="muted">No. LYRĪON's practices are intentionally non-religious—they are about resonance, attention, and presence. We honor all beliefs and do not promote any doctrine.</p>
+ </details>
+
+ <details>
+ <summary tabindex="0" aria-expanded="false">Refunds & adjustments</summary>
+ <p class="muted">Oracle readings are offered freely. Donations are voluntary offerings to sustain the work. If you have concerns about a reading or need assistance, please reach out to hello@lyrion.co.uk.</p>
+ </details>
  </section>
 </main>
 
