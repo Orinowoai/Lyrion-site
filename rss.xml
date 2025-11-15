@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>LYRĪON — Glimpses Blog</title>
+    <link>https://lyrion.house/blog.html</link>
+    <description>Editorial essays exploring the intersection of astrology, design, luxury, and conscious living from the LYRĪON House of Celestial Couture.</description>
+    <language>en-us</language>
+    <atom:link href="https://lyrion.house/rss.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Fabric of the Sky</title>
+      <link>https://lyrion.house/posts/fabric-of-the-sky.html</link>
+      <guid>https://lyrion.house/posts/fabric-of-the-sky.html</guid>
+      <pubDate>Fri, 15 Nov 2025 00:00:00 GMT</pubDate>
+      <description>Where celestial cartography meets couture — an exploration of how the stars guide our aesthetic choices and the threads that bind heaven to earth.</description>
+    </item>
+    
+    <item>
+      <title>Twelve Signs, Twelve Silhouettes</title>
+      <link>https://lyrion.house/posts/twelve-signs-twelve-silhouettes.html</link>
+      <guid>https://lyrion.house/posts/twelve-signs-twelve-silhouettes.html</guid>
+      <pubDate>Thu, 14 Nov 2025 00:00:00 GMT</pubDate>
+      <description>How the twelve archetypes of the zodiac translate into distinct aesthetics, and why your birth chart might be the most honest style guide you'll ever consult.</description>
+    </item>
+    
+    <item>
+      <title>The Science of Serenity</title>
+      <link>https://lyrion.house/posts/science-of-serenity.html</link>
+      <guid>https://lyrion.house/posts/science-of-serenity.html</guid>
+      <pubDate>Wed, 13 Nov 2025 00:00:00 GMT</pubDate>
+      <description>What neuroscience, color theory, and material science reveal about clothing as a tool for nervous system regulation and mental clarity.</description>
+    </item>
+    
+    <item>
+      <title>Objects of Frequency</title>
+      <link>https://lyrion.house/posts/objects-of-frequency.html</link>
+      <guid>https://lyrion.house/posts/objects-of-frequency.html</guid>
+      <pubDate>Tue, 12 Nov 2025 00:00:00 GMT</pubDate>
+      <description>On the difference between things and Objects — and why everything you bring into your home should earn its place not just in space, but in your energetic field.</description>
+    </item>
+    
+    <item>
+      <title>Rituals of the Wardrobe</title>
+      <link>https://lyrion.house/posts/rituals-of-the-wardrobe.html</link>
+      <guid>https://lyrion.house/posts/rituals-of-the-wardrobe.html</guid>
+      <pubDate>Mon, 11 Nov 2025 00:00:00 GMT</pubDate>
+      <description>How to transform getting dressed from mundane necessity to sacred practice — and why your morning routine might be the most overlooked spiritual discipline.</description>
+    </item>
+    
+    <item>
+      <title>Designing for the Celestial Body</title>
+      <link>https://lyrion.house/posts/designing-for-the-celestial-body.html</link>
+      <guid>https://lyrion.house/posts/designing-for-the-celestial-body.html</guid>
+      <pubDate>Sun, 10 Nov 2025 00:00:00 GMT</pubDate>
+      <description>Beyond earthly ergonomics — how we design garments that honor both your physical form and your astrological blueprint.</description>
+    </item>
+    
+    <item>
+      <title>A House Made of Light</title>
+      <link>https://lyrion.house/posts/a-house-made-of-light.html</link>
+      <guid>https://lyrion.house/posts/a-house-made-of-light.html</guid>
+      <pubDate>Sat, 09 Nov 2025 00:00:00 GMT</pubDate>
+      <description>On building a life — and a wardrobe — that doesn't block the light but becomes it. A meditation on luminosity as both aesthetic and practice.</description>
+    </item>
+  </channel>
+</rss>

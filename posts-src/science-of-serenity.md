@@ -1,10 +1,11 @@
 ---
 title: The Science of Serenity
-date: 2024-02-15
-author: LYRĪON House
-category: Wellness & Design
+slug: science-of-serenity
+date: 2025-11-13
 tags: [science, wellness, psychology, neuroscience]
 excerpt: What neuroscience, color theory, and material science reveal about clothing as a tool for nervous system regulation and mental clarity.
+cover: /assets/img/posts/science-of-serenity.jpg
+featured: false
 ---
 
 # The Science of Serenity
