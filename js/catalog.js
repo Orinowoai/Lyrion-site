@@ -102,9 +102,6 @@
       </div>
     `;
   }
-      </div>
-    `;
-  }
 
   // Create bundle card HTML
   function createBundleCard(bundle) {
