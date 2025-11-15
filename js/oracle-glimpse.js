@@ -253,3 +253,154 @@ export function initOracleGlimpse() {
     }, 800);
   });
 }
+
+/**
+ * Get a random oracle insight for product pages
+ * @param {string} sign - Zodiac sign (optional)
+ * @param {string} productType - Type of product (optional)
+ * @returns {string} - Oracle insight text
+ */
+export function getProductOracleNote(sign = null, productType = null) {
+  const seed = seedFrom((sign || "") + "|" + (productType || "") + "|" + new Date().toISOString().slice(0, 10));
+  const rand = seededRand(seed);
+  
+  const element = sign ? ELEMENT_BY_SIGN[sign] : null;
+  
+  // Product-specific insights
+  const PRODUCT_INSIGHTS = {
+    hoodie: [
+      "Comfort invites courage.",
+      "What you wear shapes how you move.",
+      "Softness is strength embodied."
+    ],
+    candle: [
+      "Light transforms space.",
+      "Flame holds focus.",
+      "Burn what no longer serves."
+    ],
+    bracelet: [
+      "Wrist circles carry intention.",
+      "Small weights ground big energy.",
+      "Worn daily, wisdom accumulates."
+    ],
+    chain: [
+      "Close to heart, closer to truth.",
+      "Metal remembers what you forget.",
+      "Chains of choice, not constraint."
+    ],
+    ring: [
+      "Circles close intention.",
+      "Gold catches more than light.",
+      "Sovereignty on every finger."
+    ],
+    journal: [
+      "Paper holds what mind releases.",
+      "Write to remember or forget.",
+      "Pages turn, patterns emerge."
+    ],
+    mug: [
+      "Mornings hold magic.",
+      "Ritual begins with the first sip.",
+      "What you drink from matters."
+    ],
+    tee: [
+      "Second skin speaks volumes.",
+      "Casual carries consequence.",
+      "Foundation pieces anchor everything."
+    ],
+    scarf: [
+      "Breath meets beauty.",
+      "Wrapped in intention, not just warmth.",
+      "Flow adapts to form."
+    ]
+  };
+
+  const productInsights = productType && PRODUCT_INSIGHTS[productType] 
+    ? PRODUCT_INSIGHTS[productType] 
+    : TONES;
+  
+  const insight = pick(rand, productInsights);
+  
+  // Element-specific additions
+  let elementNote = "";
+  if (element) {
+    const elementInsights = 
+      element === "Fire" ? INSIGHTS_FIRE :
+      element === "Earth" ? INSIGHTS_EARTH :
+      element === "Air" ? INSIGHTS_AIR :
+      INSIGHTS_WATER;
+    elementNote = " " + pick(rand, elementInsights);
+  }
+  
+  return insight + elementNote;
+}
+
+/**
+ * Get current zodiac season information
+ * @returns {Object} - Current sign and seasonal message
+ */
+export function getCurrentZodiacSeason() {
+  const now = new Date();
+  const month = now.getMonth() + 1; // 1-12
+  const day = now.getDate();
+  
+  // Simplified zodiac date ranges
+  const zodiacRanges = [
+    { sign: "Capricorn", start: [12, 22], end: [1, 19] },
+    { sign: "Aquarius", start: [1, 20], end: [2, 18] },
+    { sign: "Pisces", start: [2, 19], end: [3, 20] },
+    { sign: "Aries", start: [3, 21], end: [4, 19] },
+    { sign: "Taurus", start: [4, 20], end: [5, 20] },
+    { sign: "Gemini", start: [5, 21], end: [6, 20] },
+    { sign: "Cancer", start: [6, 21], end: [7, 22] },
+    { sign: "Leo", start: [7, 23], end: [8, 22] },
+    { sign: "Virgo", start: [8, 23], end: [9, 22] },
+    { sign: "Libra", start: [9, 23], end: [10, 22] },
+    { sign: "Scorpio", start: [10, 23], end: [11, 21] },
+    { sign: "Sagittarius", start: [11, 22], end: [12, 21] }
+  ];
+  
+  for (const range of zodiacRanges) {
+    const [startMonth, startDay] = range.start;
+    const [endMonth, endDay] = range.end;
+    
+    // Handle year-crossing signs (Capricorn)
+    if (startMonth > endMonth) {
+      if ((month === startMonth && day >= startDay) || (month === endMonth && day <= endDay)) {
+        return {
+          sign: range.sign,
+          message: `The Sun is in ${range.sign} — ${getSignMessage(range.sign)}`
+        };
+      }
+    } else {
+      if ((month === startMonth && day >= startDay) || 
+          (month === endMonth && day <= endDay) ||
+          (month > startMonth && month < endMonth)) {
+        return {
+          sign: range.sign,
+          message: `The Sun is in ${range.sign} — ${getSignMessage(range.sign)}`
+        };
+      }
+    }
+  }
+  
+  return { sign: "Aries", message: "The Sun illuminates new beginnings." };
+}
+
+function getSignMessage(sign) {
+  const messages = {
+    "Aries": "Initiation energy reigns.",
+    "Taurus": "Grounding beauty prevails.",
+    "Gemini": "Curiosity leads the way.",
+    "Cancer": "Emotional depth surfaces.",
+    "Leo": "Creative fire burns bright.",
+    "Virgo": "Precision refines all.",
+    "Libra": "Balance seeks expression.",
+    "Scorpio": "Transformation deepens.",
+    "Sagittarius": "Truth expands horizons.",
+    "Capricorn": "Mastery builds legacy.",
+    "Aquarius": "Innovation flows freely.",
+    "Pisces": "Compassion dissolves boundaries."
+  };
+  return messages[sign] || "The cosmos aligns.";
+}

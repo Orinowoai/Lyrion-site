@@ -3024,6 +3024,294 @@
       },
       "affirmation": "I honor the eternal return.",
       "chargePhrase": "Celebrate cycles."
+    },
+    {
+      "id": "LYR-081",
+      "name": "Mercury Retrograde Survival Kit",
+      "signTags": [
+        "Gemini",
+        "Virgo"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Navigate communication chaos with grace: journal, grounding socks, clarity candle.",
+      "description": "Curated for Mercury's backward dance. When messages go astray and tech fails, ground yourself in ritual. Includes reflection journal, grounding socks, and Visionary Candle for mental clarity.",
+      "materials": "Bundle: journal, socks, candle, retrograde survival guide",
+      "productionNotes": "Released during Mercury retrograde periods; supports communication workshops",
+      "imagery": "/img/lyrion/mercury-retrograde-kit.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 45,
+        "retailGBP": 98,
+        "compareAtGBP": 125
+      },
+      "affirmation": "I slow down to go faster.",
+      "chargePhrase": "Embrace the pause."
+    },
+    {
+      "id": "LYR-082",
+      "name": "New Moon Manifestation Set",
+      "signTags": [
+        "Aries",
+        "Cancer",
+        "Libra",
+        "Capricorn"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Cardinal energy for new beginnings: manifestation journal, intention candle, affirmation chain.",
+      "description": "Harness the new moon's initiating power with tools for setting intentions. Journal your visions, light your path, wear your commitment close to heart.",
+      "materials": "Bundle: manifestation journal, ritual candle, affirmation chain, moon calendar",
+      "productionNotes": "Assembled during new moon; includes lunar tracking calendar",
+      "imagery": "/img/lyrion/new-moon-manifestation-set.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 75,
+        "retailGBP": 165,
+        "compareAtGBP": 210
+      },
+      "affirmation": "I plant seeds in darkness, trusting the light to come.",
+      "chargePhrase": "Begin again."
+    },
+    {
+      "id": "LYR-083",
+      "name": "Full Moon Release Ritual",
+      "signTags": [
+        "Taurus",
+        "Leo",
+        "Scorpio",
+        "Aquarius"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Fixed sign power for letting go: transformation candle, lunar journal, cleansing scarf.",
+      "description": "Release what no longer serves under the full moon's illuminating light. Write it down, burn it away, wrap yourself in renewal.",
+      "materials": "Bundle: transformation candle, lunar journal, infinity scarf, release ritual guide",
+      "productionNotes": "Crafted during full moon; supports emotional wellness programs",
+      "imagery": "/img/lyrion/full-moon-release-ritual.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 80,
+        "retailGBP": 175,
+        "compareAtGBP": 223
+      },
+      "affirmation": "I release with gratitude what I no longer need.",
+      "chargePhrase": "Let go gracefully."
+    },
+    {
+      "id": "LYR-084",
+      "name": "The Wisdom Keeper Ring",
+      "signTags": [
+        "Sagittarius",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "ring",
+      "tagline": "Etched band with ancient symbols; carries accumulated knowing.",
+      "description": "Sterling silver with hand-etched runes and planetary symbols. Each wear deepens the patina, making it uniquely yours. For those who learn by living.",
+      "materials": "Sterling silver, hand-etched symbols, oxidized finish",
+      "productionNotes": "Hand-finished by master metalsmiths; supports elder wisdom preservation",
+      "imagery": "/img/lyrion/wisdom-keeper-ring.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 26,
+        "retailGBP": 92,
+        "compareAtGBP": 117
+      },
+      "affirmation": "I am the sum of my experiences.",
+      "chargePhrase": "Honor lessons."
+    },
+    {
+      "id": "LYR-085",
+      "name": "The Truth Speaker Ring",
+      "signTags": [
+        "Gemini",
+        "Sagittarius"
+      ],
+      "category": "Accessories",
+      "type": "ring",
+      "tagline": "Mercury-blessed band for authentic expression.",
+      "description": "Silver band with turquoise stone — the stone of truth-tellers and travelers. Wear when difficult conversations await. Let it remind you: honesty is kindness.",
+      "materials": "Sterling silver, turquoise stone, throat chakra alignment",
+      "productionNotes": "Stone ethically sourced; supports free speech initiatives",
+      "imagery": "/img/lyrion/truth-speaker-ring.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 28,
+        "retailGBP": 95,
+        "compareAtGBP": 121
+      },
+      "affirmation": "My voice matters, my truth heals.",
+      "chargePhrase": "Speak clearly."
+    },
+    {
+      "id": "LYR-086",
+      "name": "The Boundary Keeper Bracelet",
+      "signTags": [
+        "Scorpio",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Black onyx and hematite — protection worn with elegance.",
+      "description": "Grounding stones set in oxidized silver. For empaths, healers, and those who absorb too much. This bracelet says: I protect my energy without apology.",
+      "materials": "Black onyx, hematite, oxidized silver, protective stones",
+      "productionNotes": "Stones cleansed before setting; supports boundary education programs",
+      "imagery": "/img/lyrion/boundary-keeper-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 19,
+        "retailGBP": 72,
+        "compareAtGBP": 93
+      },
+      "affirmation": "My no is sacred, my yes is sovereign.",
+      "chargePhrase": "Guard space."
+    },
+    {
+      "id": "LYR-087",
+      "name": "The Joy Keeper Bracelet",
+      "signTags": [
+        "Leo",
+        "Sagittarius"
+      ],
+      "category": "Accessories",
+      "type": "bracelet",
+      "tagline": "Citrine and sunstone — solar energy captured in stone.",
+      "description": "Golden stones that catch light like laughter. For those who choose joy as rebellion, who keep their fire lit even in rain. Wear it as a promise to yourself.",
+      "materials": "Citrine, sunstone, gold-filled findings, solar plexus activation",
+      "productionNotes": "Hand-strung with intention; supports joy-based education",
+      "imagery": "/img/lyrion/joy-keeper-bracelet.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 18,
+        "retailGBP": 68,
+        "compareAtGBP": 88
+      },
+      "affirmation": "Joy is my birthright, not a reward.",
+      "chargePhrase": "Choose delight."
+    },
+    {
+      "id": "LYR-088",
+      "name": "The Healer's Hand Chain",
+      "signTags": [
+        "Virgo",
+        "Pisces"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Delicate chain with healing hands symbol — for those who tend others.",
+      "description": "Fine silver chain with hamsa pendant. For nurses, therapists, teachers, parents — anyone who pours themselves into service. May you remember to fill your own cup.",
+      "materials": "Fine silver, hamsa pendant, healing intention",
+      "productionNotes": "Blessed by energy workers; portion supports healthcare worker wellness",
+      "imagery": "/img/lyrion/healers-hand-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 23,
+        "retailGBP": 88,
+        "compareAtGBP": 112
+      },
+      "affirmation": "I can hold space for others and myself.",
+      "chargePhrase": "Heal wisely."
+    },
+    {
+      "id": "LYR-089",
+      "name": "Equinox Gift Collection",
+      "signTags": [
+        "Aries",
+        "Libra"
+      ],
+      "category": "Bundles",
+      "type": "bundle",
+      "tagline": "Balance in a box: scarf, balance candle, equilibrium tee, scales print.",
+      "description": "Perfect for Aries (spring equinox) or Libra (autumn equinox) birthdays. Celebrate the point where day equals night, action meets rest, self meets other.",
+      "materials": "Bundle: infinity scarf, balance candle, equinox tee, scales print, ritual guide",
+      "productionNotes": "Released during equinox windows; supports environmental balance education",
+      "imagery": "/img/lyrion/equinox-gift-collection.jpg",
+      "supplier": "Printful",
+      "pricing": {
+        "baseGBP": 88,
+        "retailGBP": 195,
+        "compareAtGBP": 248
+      },
+      "affirmation": "I honor both light and shadow equally.",
+      "chargePhrase": "Find center."
+    },
+    {
+      "id": "LYR-090",
+      "name": "The Ancestor Chain",
+      "signTags": [
+        "Cancer",
+        "Scorpio",
+        "Capricorn"
+      ],
+      "category": "Accessories",
+      "type": "chain",
+      "tagline": "Family tree pendant — roots visible, branches reaching.",
+      "description": "Bronze tree-of-life pendant on adjustable chain. For those who carry lineage, who honor the past while building the future. You are the bridge between what was and what will be.",
+      "materials": "Bronze pendant, adjustable chain, family lineage symbol",
+      "productionNotes": "Hand-cast from ancient tree mold; supports genealogy preservation",
+      "imagery": "/img/lyrion/ancestor-chain.jpg",
+      "supplier": "ShineOn",
+      "pricing": {
+        "baseGBP": 24,
+        "retailGBP": 89,
+        "compareAtGBP": 113
+      },
+      "affirmation": "I honor those who came before, I build for those who follow.",
+      "chargePhrase": "Remember roots."
     }
-  ]
+  ],
+  "seasonalPromotions": {
+    "current": "Solstice Event — 15% off sitewide (bundles excluded). Use code SOLSTICE15.",
+    "upcoming": [
+      {
+        "name": "Mercury Retrograde Sale",
+        "code": "RETRO10",
+        "discount": 10,
+        "dates": "During Mercury retrograde periods",
+        "message": "Navigate chaos with 10% off communication tools — journals, Mercury-ruled items.",
+        "excludes": ["bundles"]
+      },
+      {
+        "name": "Lunar New Year",
+        "code": "LUNARNY",
+        "discount": 20,
+        "dates": "Lunar New Year week",
+        "message": "New moon, new you — 20% off new beginnings bundles.",
+        "includes": ["bundles"]
+      },
+      {
+        "name": "Equinox Balance",
+        "code": "EQUINOX15",
+        "discount": 15,
+        "dates": "Spring & Autumn Equinox weeks",
+        "message": "Balance your wardrobe — 15% off Libra & Aries collections.",
+        "excludes": []
+      },
+      {
+        "name": "Birthday Month Magic",
+        "code": "BIRTHDAY12",
+        "discount": 12,
+        "dates": "Customer's sun sign month",
+        "message": "Happy Solar Return — 12% off your sign's collection.",
+        "personal": true
+      }
+    ]
+  },
+  "upsellSystem": {
+    "completeTheRitual": {
+      "apparel": ["accessory", "homeware"],
+      "accessory": ["apparel", "homeware"],
+      "homeware": ["apparel", "accessory"]
+    },
+    "algorithmicPairings": {
+      "hoodie": ["beanie", "joggers", "candle"],
+      "tee": ["scarf", "bracelet", "mug"],
+      "candle": ["journal", "cushion", "tee"],
+      "bracelet": ["chain", "ring", "hoodie"],
+      "journal": ["candle", "mug", "tee"]
+    },
+    "signBasedUpsells": true,
+    "elementBasedBundles": true
+  }
 }
