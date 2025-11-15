@@ -73,31 +73,35 @@
 
     const tagsStr = product.tags.join(',');
     const signClass = zodiac ? zodiac.sign.toLowerCase() : '';
+    
+    // Handle missing images with placeholder
+    const imageHTML = product.baseImage 
+      ? `<img src="${product.baseImage}" alt="${product.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;placeholder&quot; aria-hidden=&quot;true&quot;></div>'">`
+      : `<div class="placeholder" aria-hidden="true"></div>`;
 
     return `
       <div class="product-card" 
            data-sku="${product.sku}" 
            data-supplier="${product.supplier}"
+           data-regions="${product.regions}"
            data-tags="${tagsStr}"
            data-sign="${signClass}"
            data-type="${product.type}">
         <div class="product-image">
-          <img src="${product.baseImage}" alt="${product.title}" loading="lazy" onerror="this.style.background='linear-gradient(135deg, var(--panel), var(--panel-strong))'">
+          ${imageHTML}
         </div>
         <div class="product-info">
           <h4 class="product-title">${product.title}</h4>
           <p class="product-story">${zodiac ? zodiac.story : ''}</p>
-          <div class="product-meta">
-            <span class="supplier-badge" title="${supplier.notes}">
-              ${supplier.name} • ${product.regions}
-            </span>
-            <span class="lead-time">${product.leadDays}–${product.leadDays + 1} days production</span>
-          </div>
+          <span class="lead-time">${product.leadDays}–${product.leadDays + 1} days production</span>
           <div class="product-pricing">
             ${priceDisplay}
           </div>
           <a href="#" class="product-cta btn" title="Coming online at launch">View</a>
         </div>
+      </div>
+    `;
+  }
       </div>
     `;
   }
@@ -130,32 +134,36 @@
     const container = document.querySelector('.shop-catalog');
     if (!container) return;
 
-    // Render promo banner
-    if (catalogData.promotions.holidayBanner) {
-      const banner = document.createElement('div');
-      banner.className = 'promo-banner';
-      banner.innerHTML = `<p>${catalogData.promotions.holidayBanner}</p>`;
-      container.insertBefore(banner, container.firstChild);
-    }
+    // Render promo bar in hero
+    const promoHTML = `<div class="promo-bar">Solstice Event — 15% off sitewide (bundles excluded). Code: SOLSTICE15.</div>`;
+    container.insertAdjacentHTML('afterbegin', promoHTML);
 
-    // Render filters
-    const filtersHTML = `
-      <div class="catalog-filters">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="apparel">Apparel</button>
-        <button class="filter-btn" data-filter="accessory">Accessories</button>
-        <button class="filter-btn" data-filter="socks">Socks</button>
-        <button class="filter-btn" data-filter="home">Homeware</button>
-        <button class="filter-btn" data-filter="bundles">Bundles</button>
+    // Render category tiles
+    const categoryTilesHTML = `
+      <div class="tiles" style="margin-top:24px;">
+        <a class="tile" href="#men"><h3>Men</h3><p>Hoodies, tees, caps, socks</p></a>
+        <a class="tile" href="#women"><h3>Women</h3><p>Hoodies, tees, scarves, socks</p></a>
+        <a class="tile" href="#kids-boys"><h3>Kids — Boys</h3><p>Tees, hoodies, caps</p></a>
+        <a class="tile" href="#kids-girls"><h3>Kids — Girls</h3><p>Tees, hoodies, scarves</p></a>
+        <a class="tile" href="#home"><h3>Homeware</h3><p>Prints, candles, cushions</p></a>
+        <a class="tile" href="#bundles"><h3>Bundles</h3><p>Curated zodiac sets</p></a>
+      </div>
+    `;
+    container.insertAdjacentHTML('beforeend', categoryTilesHTML);
+
+    // Add Sign filter dropdown only
+    const signFilterHTML = `
+      <div style="display:flex;justify-content:flex-end;margin:32px 0 24px;">
         <div class="sign-filter">
           <button class="filter-btn" data-filter="sign">Sign ▾</button>
           <div class="sign-dropdown">
+            <button data-sign="all">All Signs</button>
             ${catalogData.zodiacs.map(z => `<button data-sign="${z.sign.toLowerCase()}">${z.sign}</button>`).join('')}
           </div>
         </div>
       </div>
     `;
-    container.insertAdjacentHTML('afterbegin', filtersHTML);
+    container.insertAdjacentHTML('beforeend', signFilterHTML);
 
     // Collect all products
     const allProducts = [];
@@ -165,13 +173,42 @@
       });
     });
 
-    // Group products by category
+    // Helper to check if product matches tags
+    const matchesTags = (product, tags) => {
+      return tags.some(tag => product.tags.includes(tag));
+    };
+
+    // Define luxury category sections with proper filtering
     const sections = [
-      { title: 'Signature Hoodies', id: 'hoodies', filter: p => p.product.type === 'hoodie' },
-      { title: 'Essential Tees', id: 'tees', filter: p => p.product.type === 'tee' },
-      { title: 'Accessories', id: 'accessories', filter: p => ['cap', 'beanie', 'scarf', 'tote'].includes(p.product.type) },
-      { title: 'Socks & Intimates', id: 'socks', filter: p => p.product.type === 'sock' },
-      { title: 'Homeware & Art', id: 'homeware', filter: p => ['candle', 'cushion', 'mug', 'journal', 'framed_print_A3', 'poster_A3'].includes(p.product.type) }
+      { 
+        title: 'Men', 
+        id: 'men', 
+        filter: p => ['hoodie', 'tee', 'cap', 'beanie', 'sock'].includes(p.product.type) && 
+                     matchesTags(p.product, ['unisex', 'men'])
+      },
+      { 
+        title: 'Women', 
+        id: 'women', 
+        filter: p => ['hoodie', 'tee', 'scarf', 'sock'].includes(p.product.type) && 
+                     matchesTags(p.product, ['unisex', 'women'])
+      },
+      { 
+        title: 'Kids — Boys', 
+        id: 'kids-boys', 
+        filter: p => ['tee', 'hoodie', 'cap'].includes(p.product.type) && 
+                     matchesTags(p.product, ['kids', 'boys'])
+      },
+      { 
+        title: 'Kids — Girls', 
+        id: 'kids-girls', 
+        filter: p => ['tee', 'hoodie', 'scarf'].includes(p.product.type) && 
+                     matchesTags(p.product, ['kids', 'girls'])
+      },
+      { 
+        title: 'Homeware', 
+        id: 'home', 
+        filter: p => ['framed_print_A3', 'poster_A3', 'cushion', 'candle', 'mug', 'tote', 'journal'].includes(p.product.type)
+      }
     ];
 
     // Render sections
@@ -180,7 +217,7 @@
       if (sectionProducts.length === 0) return;
 
       const sectionHTML = `
-        <section class="catalog-section" id="${section.id}">
+        <section class="catalog-section" id="${section.id}" data-category="${section.id}">
           <h2>${section.title}</h2>
           <div class="products-grid">
             ${sectionProducts.map(({ product, zodiac }) => createProductCard(product, zodiac)).join('')}
@@ -190,10 +227,10 @@
       container.insertAdjacentHTML('beforeend', sectionHTML);
     });
 
-    // Render bundles
+    // Render bundles section
     const bundlesHTML = `
-      <section class="catalog-section" id="bundles">
-        <h2>Zodiac Bundles</h2>
+      <section class="catalog-section" id="bundles" data-category="bundles">
+        <h2>Bundles</h2>
         <div class="bundles-grid">
           ${catalogData.bundles.map(bundle => createBundleCard(bundle)).join('')}
         </div>
@@ -242,84 +279,56 @@
 
   // Setup filter controls
   function setupFilters() {
-    const filterBtns = document.querySelectorAll('.filter-btn');
     const signDropdown = document.querySelector('.sign-dropdown');
+    const signFilterBtn = document.querySelector('.filter-btn[data-filter="sign"]');
 
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        const filter = e.target.dataset.filter;
-        
-        if (filter === 'sign') {
-          signDropdown.classList.toggle('active');
-          return;
-        }
-
-        // Update active state
-        filterBtns.forEach(b => b.classList.remove('active'));
-        e.target.classList.add('active');
-
-        currentFilter = filter;
-        currentSign = 'all';
-        applyFilters();
+    // Sign filter toggle
+    if (signFilterBtn) {
+      signFilterBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        signDropdown.classList.toggle('active');
       });
-    });
+    }
 
-    // Sign dropdown
+    // Sign dropdown options
     if (signDropdown) {
       signDropdown.querySelectorAll('button').forEach(btn => {
         btn.addEventListener('click', (e) => {
+          e.stopPropagation();
           currentSign = e.target.dataset.sign;
-          currentFilter = 'all';
-          filterBtns.forEach(b => b.classList.remove('active'));
           signDropdown.classList.remove('active');
-          applyFilters();
+          applySignFilter();
         });
       });
     }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+      if (signDropdown && signDropdown.classList.contains('active')) {
+        signDropdown.classList.remove('active');
+      }
+    });
   }
 
-  // Apply active filters
-  function applyFilters() {
+  // Apply sign filter to currently visible sections
+  function applySignFilter() {
     const cards = document.querySelectorAll('.product-card');
-    const sections = document.querySelectorAll('.catalog-section');
-
+    
     cards.forEach(card => {
-      const tags = card.dataset.tags.split(',');
       const sign = card.dataset.sign;
-      const type = card.dataset.type;
-      let show = true;
-
-      if (currentFilter !== 'all') {
-        if (currentFilter === 'bundles') {
-          show = false; // Only show bundle cards, not product cards
-        } else if (currentFilter === 'apparel') {
-          show = ['hoodie', 'tee'].includes(type);
-        } else if (currentFilter === 'accessory') {
-          show = ['cap', 'beanie', 'scarf', 'tote'].includes(type);
-        } else if (currentFilter === 'socks') {
-          show = type === 'sock';
-        } else if (currentFilter === 'home') {
-          show = ['candle', 'cushion', 'mug', 'journal', 'framed_print_A3', 'poster_A3'].includes(type);
-        } else {
-          show = tags.includes(currentFilter);
-        }
+      
+      if (currentSign === 'all') {
+        card.style.display = '';
+      } else {
+        card.style.display = sign === currentSign ? '' : 'none';
       }
-
-      if (currentSign !== 'all') {
-        show = show && sign === currentSign;
-      }
-
-      card.style.display = show ? '' : 'none';
     });
 
-    // Show/hide sections based on visible cards
+    // Update section visibility based on visible cards
+    const sections = document.querySelectorAll('.catalog-section');
     sections.forEach(section => {
-      if (section.id === 'bundles') {
-        section.style.display = currentFilter === 'all' || currentFilter === 'bundles' ? '' : 'none';
-      } else {
-        const visibleCards = section.querySelectorAll('.product-card:not([style*="display: none"])');
-        section.style.display = visibleCards.length > 0 ? '' : 'none';
-      }
+      const visibleCards = section.querySelectorAll('.product-card:not([style*="display: none"])');
+      section.style.display = visibleCards.length > 0 ? '' : 'none';
     });
   }
 
