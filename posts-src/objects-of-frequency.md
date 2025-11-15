@@ -1,10 +1,11 @@
 ---
 title: Objects of Frequency
-date: 2024-03-01
-author: LYRĪON House
-category: Product Philosophy
+slug: objects-of-frequency
+date: 2025-11-12
 tags: [objects, design, consciousness, intention]
 excerpt: On the difference between things and Objects — and why everything you bring into your home should earn its place not just in space, but in your energetic field.
+cover: /assets/img/posts/objects-of-frequency.jpg
+featured: false
 ---
 
 # Objects of Frequency

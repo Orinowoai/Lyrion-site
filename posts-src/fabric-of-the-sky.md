@@ -1,10 +1,11 @@
 ---
 title: The Fabric of the Sky
-date: 2024-01-15
-author: LYRĪON House
-category: Philosophy
+slug: fabric-of-the-sky
+date: 2025-11-15
 tags: [astrology, design, philosophy, craftsmanship]
 excerpt: Where celestial cartography meets couture — an exploration of how the stars guide our aesthetic choices and the threads that bind heaven to earth.
+cover: /assets/img/posts/fabric-of-the-sky.jpg
+featured: true
 ---
 
 # The Fabric of the Sky

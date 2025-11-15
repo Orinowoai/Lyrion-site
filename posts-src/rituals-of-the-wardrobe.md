@@ -1,10 +1,11 @@
 ---
 title: Rituals of the Wardrobe
-date: 2024-03-15
-author: LYRĪON House  
-category: Practice & Ritual
+slug: rituals-of-the-wardrobe
+date: 2025-11-11
 tags: [ritual, wardrobe, practice, consciousness]
 excerpt: How to transform getting dressed from mundane necessity to sacred practice — and why your morning routine might be the most overlooked spiritual discipline.
+cover: /assets/img/posts/rituals-of-the-wardrobe.jpg
+featured: false
 ---
 
 # Rituals of the Wardrobe

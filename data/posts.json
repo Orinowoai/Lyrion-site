@@ -1,0 +1,100 @@
+[
+  {
+    "title": "The Fabric of the Sky",
+    "slug": "fabric-of-the-sky",
+    "date": "2025-11-15",
+    "tags": [
+      "astrology",
+      "design",
+      "philosophy",
+      "craftsmanship"
+    ],
+    "excerpt": "Where celestial cartography meets couture — an exploration of how the stars guide our aesthetic choices and the threads that bind heaven to earth.",
+    "cover": "/assets/img/posts/fabric-of-the-sky.jpg",
+    "featured": true
+  },
+  {
+    "title": "Twelve Signs, Twelve Silhouettes",
+    "slug": "twelve-signs-twelve-silhouettes",
+    "date": "2025-11-14",
+    "tags": [
+      "zodiac",
+      "fashion",
+      "silhouette",
+      "personal style"
+    ],
+    "excerpt": "How the twelve archetypes of the zodiac translate into distinct aesthetics, and why your birth chart might be the most honest style guide you'll ever consult.",
+    "cover": "/assets/img/posts/twelve-signs-twelve-silhouettes.jpg",
+    "featured": false
+  },
+  {
+    "title": "The Science of Serenity",
+    "slug": "science-of-serenity",
+    "date": "2025-11-13",
+    "tags": [
+      "science",
+      "wellness",
+      "psychology",
+      "neuroscience"
+    ],
+    "excerpt": "What neuroscience, color theory, and material science reveal about clothing as a tool for nervous system regulation and mental clarity.",
+    "cover": "/assets/img/posts/science-of-serenity.jpg",
+    "featured": false
+  },
+  {
+    "title": "Objects of Frequency",
+    "slug": "objects-of-frequency",
+    "date": "2025-11-12",
+    "tags": [
+      "objects",
+      "design",
+      "consciousness",
+      "intention"
+    ],
+    "excerpt": "On the difference between things and Objects — and why everything you bring into your home should earn its place not just in space, but in your energetic field.",
+    "cover": "/assets/img/posts/objects-of-frequency.jpg",
+    "featured": false
+  },
+  {
+    "title": "Rituals of the Wardrobe",
+    "slug": "rituals-of-the-wardrobe",
+    "date": "2025-11-11",
+    "tags": [
+      "ritual",
+      "wardrobe",
+      "practice",
+      "consciousness"
+    ],
+    "excerpt": "How to transform getting dressed from mundane necessity to sacred practice — and why your morning routine might be the most overlooked spiritual discipline.",
+    "cover": "/assets/img/posts/rituals-of-the-wardrobe.jpg",
+    "featured": false
+  },
+  {
+    "title": "Designing for the Celestial Body",
+    "slug": "designing-for-the-celestial-body",
+    "date": "2025-11-10",
+    "tags": [
+      "design",
+      "body",
+      "astrology",
+      "comfort"
+    ],
+    "excerpt": "Beyond earthly ergonomics — how we design garments that honor both your physical form and your astrological blueprint.",
+    "cover": "/assets/img/posts/designing-for-the-celestial-body.jpg",
+    "featured": false
+  },
+  {
+    "title": "A House Made of Light",
+    "slug": "a-house-made-of-light",
+    "date": "2025-11-09",
+    "tags": [
+      "philosophy",
+      "light",
+      "space",
+      "design"
+    ],
+    "excerpt": "On building a life — and a wardrobe — that doesn't block the light but becomes it. A meditation on luminosity as both aesthetic and practice.",
+    "cover": "/assets/img/posts/a-house-made-of-light.jpg",
+    "featured": false
+  }
+]

@@ -1,10 +1,11 @@
 ---
 title: Twelve Signs, Twelve Silhouettes
-date: 2024-02-01
-author: LYRĪON House
-category: Astrology & Style
+slug: twelve-signs-twelve-silhouettes
+date: 2025-11-14
 tags: [zodiac, fashion, silhouette, personal style]
 excerpt: How the twelve archetypes of the zodiac translate into distinct aesthetics, and why your birth chart might be the most honest style guide you'll ever consult.
+cover: /assets/img/posts/twelve-signs-twelve-silhouettes.jpg
+featured: false
 ---
 
 # Twelve Signs, Twelve Silhouettes
