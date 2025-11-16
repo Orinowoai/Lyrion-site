@@ -261,3 +261,423 @@ textarea:focus,select:focus,input:focus{outline:2px solid var(--gold);outline-of
   .post-navigation{grid-template-columns:1fr;gap:10px}
   .pagination-controls{flex-direction:column}
 }
+
+/* ========================================
+   === LYRĪON Final Polish ===
+   Cream/Ink/Gold Luxury Theme
+   ======================================== */
+
+/* Color Palette Override */
+:root {
+ --cream: #F4EFE8;
+ --ink: #161513;
+ --ink-60: rgba(22, 21, 19, 0.6);
+ --ink-40: rgba(22, 21, 19, 0.4);
+ --gold: #C9A449;
+ --gold-soft: #E7D8AB;
+ --card: #FFFFFF;
+ --line: rgba(22, 21, 19, 0.08);
+ --radius: 16px;
+ --shadow: 0 6px 24px rgba(22, 21, 19, 0.08);
+}
+
+/* Base Overrides */
+html, body {
+ background: var(--cream) !important;
+ color: var(--ink) !important;
+}
+
+h1, h2, h3 {
+ letter-spacing: 0.01em;
+ color: var(--ink) !important;
+}
+
+h1 {
+ font-weight: 800;
+ line-height: 1.05;
+}
+
+/* Buttons */
+.btn, button[type="submit"], button.btn {
+ background: var(--gold) !important;
+ color: var(--ink) !important;
+ border: none;
+ border-radius: 999px;
+ padding: 0.7rem 1.1rem;
+ box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08) inset, 0 8px 18px rgba(201, 164, 73, 0.24) !important;
+ font-weight: 700;
+}
+
+.btn-outline, .btn.outline {
+ background: transparent !important;
+ border: 2px solid var(--gold) !important;
+ color: var(--ink) !important;
+ box-shadow: none !important;
+}
+
+.btn:hover, button.btn:hover {
+ opacity: 0.9;
+}
+
+/* Cards */
+.card, .tile, .product-card, .bundle-card, .post-card, .panel, .post-preview-card, .zodiac-tile {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+ border-radius: var(--radius) !important;
+ box-shadow: var(--shadow) !important;
+}
+
+.hero-card {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+ box-shadow: var(--shadow) !important;
+}
+
+.hero-card::after {
+ display: none;
+}
+
+/* Navigation */
+.nav a {
+ color: var(--ink) !important;
+ opacity: 0.8;
+}
+
+.nav a:hover {
+ opacity: 1;
+}
+
+.nav a.active {
+ border-bottom: 2px solid var(--gold);
+ padding-bottom: 4px;
+ opacity: 1;
+}
+
+.nav-blog {
+ display: inline-flex;
+ align-items: center;
+ gap: 6px;
+}
+
+.nav-blog img {
+ vertical-align: middle;
+}
+
+/* Links */
+a {
+ color: var(--ink);
+ text-decoration-color: var(--gold);
+ text-underline-offset: 2px;
+}
+
+a:hover {
+ color: var(--gold);
+}
+
+/* Badges */
+.badge, .badge-pill, .supplier-badge, .bundle-badge, .post-tag {
+ background: var(--gold-soft) !important;
+ color: var(--ink) !important;
+ border: 1px solid var(--line) !important;
+ border-radius: 999px;
+ padding: 0.25rem 0.6rem;
+ font-weight: 600;
+}
+
+/* Form Elements */
+input, select, textarea {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+ border-radius: 12px;
+ padding: 0.8rem 1rem;
+ color: var(--ink) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+ outline: 2px solid var(--gold);
+ outline-offset: 2px;
+ border-color: var(--gold);
+}
+
+/* Product Images */
+figure.product img, .product-image img, .post-card-image img {
+ border-radius: 12px;
+ background: #fff;
+}
+
+/* Footer */
+footer, .site-footer {
+ background: transparent !important;
+ color: var(--ink-60) !important;
+ border-top: 1px solid var(--line) !important;
+}
+
+.logo-foundation {
+ background: url('/assets/brand/logo-foundation.svg') center/contain no-repeat;
+ opacity: 0.08;
+ filter: grayscale(100%);
+ width: 100%;
+ height: 140px;
+ margin-top: 24px;
+}
+
+/* Header */
+.site-header {
+ background: rgba(244, 239, 232, 0.95) !important;
+ backdrop-filter: blur(10px);
+ border-bottom: 1px solid var(--line) !important;
+}
+
+.brand {
+ color: var(--ink) !important;
+ display: flex;
+ align-items: center;
+ gap: 0.5rem;
+ text-decoration: none;
+}
+
+.brand-wordmark {
+ font-family: "Playfair Display", serif;
+ font-size: clamp(22px, 2vw, 32px);
+ font-weight: 800;
+ letter-spacing: 0.08em;
+ color: var(--ink);
+}
+
+/* Announcement Bar */
+.announcement-bar {
+ background: var(--cream);
+ color: var(--ink);
+ opacity: 0.8;
+ text-align: center;
+ padding: 10px 12px;
+ font-size: 0.9rem;
+ border-bottom: 1px solid var(--line);
+}
+
+.announcement-text {
+ color: var(--ink);
+}
+
+.spark {
+ color: var(--gold);
+ font-size: 0.8rem;
+ margin: 0 4px;
+}
+
+/* Shipping Banner */
+.shipping-banner {
+ background: var(--gold) !important;
+ color: var(--ink) !important;
+}
+
+/* Page Hero */
+.page-hero h1, .hero h1 {
+ color: var(--ink) !important;
+}
+
+.page-hero p, .hero p {
+ color: var(--ink-60) !important;
+}
+
+.hero-note {
+ color: var(--ink-60) !important;
+}
+
+/* Muted Text */
+.muted, .post-card-date, .post-card-excerpt, .product-story, .lead-time {
+ color: var(--ink-60) !important;
+}
+
+/* Filter Buttons */
+.filter-btn, .tag-filter-btn {
+ background: transparent;
+ border: 1px solid var(--line) !important;
+ color: var(--ink-60) !important;
+}
+
+.filter-btn:hover, .tag-filter-btn:hover,
+.filter-btn.active, .tag-filter-btn.active {
+ background: var(--gold-soft) !important;
+ color: var(--ink) !important;
+ border-color: var(--gold) !important;
+}
+
+.tag-filter-btn.active {
+ background: var(--gold) !important;
+ border: 2px solid var(--gold) !important;
+ font-weight: 700;
+}
+
+/* Catalog Filters */
+.catalog-filters, .tag-filters {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+}
+
+/* Sign Dropdown */
+.sign-dropdown {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+ box-shadow: var(--shadow) !important;
+}
+
+.sign-dropdown button {
+ background: var(--cream) !important;
+ border: 1px solid var(--line) !important;
+ color: var(--ink) !important;
+}
+
+.sign-dropdown button:hover {
+ background: var(--gold-soft) !important;
+}
+
+/* Product Pricing */
+.price, .price-now, .product-pricing, .bundle-price {
+ color: var(--ink) !important;
+}
+
+.price-now, .bundle-price {
+ color: var(--gold) !important;
+}
+
+.price-compare, .price-was {
+ color: var(--ink-40) !important;
+}
+
+/* Bundles */
+.bundle-card {
+ border: 2px solid var(--gold) !important;
+}
+
+.bundle-badge {
+ background: var(--gold) !important;
+ color: var(--ink) !important;
+ border: none !important;
+}
+
+/* Oracle Sigil */
+.oracle-sigil {
+ background: radial-gradient(60% 60% at 50% 40%, var(--gold), rgba(201, 164, 73, 0.18) 70%) !important;
+ box-shadow: 0 10px 30px rgba(201, 164, 73, 0.25) !important;
+}
+
+/* Glow Note */
+.glow-note {
+ background: linear-gradient(180deg, var(--card), rgba(201, 164, 73, 0.05)) !important;
+ border: 1px solid var(--line) !important;
+ box-shadow: 0 14px 40px rgba(201, 164, 73, 0.18) !important;
+}
+
+.glow-note p {
+ color: var(--ink) !important;
+}
+
+/* FAQ */
+.faq details {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+}
+
+.faq summary {
+ color: var(--ink) !important;
+}
+
+.faq summary::before {
+ color: var(--gold) !important;
+}
+
+/* Pagination */
+.pagination-btn {
+ background: var(--card) !important;
+ border: 1px solid var(--line) !important;
+ color: var(--ink-60) !important;
+}
+
+.pagination-btn:hover {
+ color: var(--ink) !important;
+ border-color: var(--gold) !important;
+}
+
+.pagination-btn.active {
+ background: var(--gold) !important;
+ color: var(--ink) !important;
+ border-color: var(--gold) !important;
+}
+
+/* Blog Post Links */
+.post-card-link, .post-nav-link {
+ color: var(--gold) !important;
+ border-color: var(--gold) !important;
+}
+
+.post-card-link:hover, .post-nav-link:hover {
+ color: var(--ink) !important;
+}
+
+.post-nav-all {
+ border-color: var(--gold) !important;
+ color: var(--gold) !important;
+}
+
+/* Post Body */
+.post-body p, .post-body li {
+ color: var(--ink) !important;
+}
+
+.post-body a {
+ color: var(--gold) !important;
+}
+
+.post-body a:hover {
+ color: var(--ink) !important;
+}
+
+/* Placeholder Images */
+.placeholder, .post-card-image.placeholder, .post-cover.placeholder {
+ background: radial-gradient(280px 220px at 60% 20%, rgba(201, 164, 73, 0.15), var(--cream) 60%),
+             linear-gradient(180deg, var(--card), var(--cream)) !important;
+}
+
+/* Focus Visible for Accessibility */
+*:focus-visible {
+ outline: 2px solid var(--gold);
+ outline-offset: 2px;
+}
+
+/* Promo Banner */
+.promo-banner {
+ background: var(--card) !important;
+ border: 1px solid var(--gold) !important;
+}
+
+.promo-banner p {
+ color: var(--ink) !important;
+}
+
+/* Collections */
+.zodiac-header h3 {
+ color: var(--ink) !important;
+}
+
+.zodiac-mood {
+ color: var(--ink-60) !important;
+}
+
+/* Product Cards */
+.product-title {
+ color: var(--ink) !important;
+}
+
+.product-image {
+ background: var(--card) !important;
+}
+
+/* Ensure no gradients remain */
+.site-header {
+ background: rgba(244, 239, 232, 0.95) !important;
+}
+
+html, body {
+ background: var(--cream) !important;
+}
