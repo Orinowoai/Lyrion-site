@@ -137,9 +137,14 @@
           p.tags && (p.tags.includes('unisex') || p.tags.includes('women'))
         );
         break;
-      case 'children':
+      case 'moon-girls':
         filtered = allProducts.filter(p => 
-          p.tags && (p.tags.includes('kids') || p.tags.includes('boys') || p.tags.includes('girls'))
+          p.tags && (p.tags.includes('kids') || p.tags.includes('girls'))
+        );
+        break;
+      case 'star-boys':
+        filtered = allProducts.filter(p => 
+          p.tags && (p.tags.includes('kids') || p.tags.includes('boys'))
         );
         break;
       case 'home':
@@ -201,6 +206,11 @@
 
     // Render show more / pagination
     renderPagination(totalPages);
+    
+    // Re-trigger scroll animations for new products
+    if (window.observeNewElements) {
+      setTimeout(window.observeNewElements, 50);
+    }
   }
 
   // Render pagination
@@ -243,7 +253,8 @@
       <div class="shop-categories">
         <button class="category-chip active" data-category="men">Men</button>
         <button class="category-chip" data-category="women">Women</button>
-        <button class="category-chip" data-category="children">Children</button>
+        <button class="category-chip moon-girls" data-category="moon-girls" style="background:linear-gradient(135deg, rgba(232,196,216,.15), rgba(200,180,230,.15));border-color:rgba(232,196,216,.4);">Moon Girls <span style="color:#E8C4D8;">✦</span> 👼</button>
+        <button class="category-chip star-boys" data-category="star-boys" style="background:linear-gradient(135deg, rgba(168,213,226,.15), rgba(180,200,240,.15));border-color:rgba(168,213,226,.4);">Star Boys <span style="color:#A8D5E2;">✦</span> ⭐</button>
         <button class="category-chip" data-category="home">Home & Art</button>
         <button class="category-chip" data-category="bundles">Bundles</button>
       </div>
