@@ -110,7 +110,7 @@
           <div class="product-info">
             <h4 class="product-title">${product.title}</h4>
             <p class="product-story">${product.story || ''}</p>
-            <span class="lead-time">${product.leadDays}–${product.leadDays + 1} days production</span>
+            <span class="lead-time">${product.leadDays}–${product.leadDays + 1} days</span>
             <div class="product-pricing">
               ${priceDisplay}
             </div>

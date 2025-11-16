@@ -544,3 +544,326 @@ a.product-link:focus-visible{
  opacity:1;
  transform:translateY(0);
 }
+
+/* ===== LYRIÓN FINAL RESTORATION ENHANCEMENTS ===== */
+
+/* Enhanced Header - Larger Logo */
+.brand img{
+ width:72px;
+ height:72px;
+}
+.brand-wordmark{
+ font-size:1.1rem;
+ letter-spacing:.1em;
+}
+
+/* Typography Refinements - Legacy Feel */
+body{
+ color:#1A1A1A;
+}
+h1,h2,h3,h4,h5,h6{
+ letter-spacing:0.02em;
+}
+h1{
+ letter-spacing:0.03em;
+}
+
+/* Button Golden Glow Hover */
+.btn:hover{
+ background:#2a2a2a;
+ box-shadow:0 4px 16px rgba(196,164,73,0.3), 0 0 32px rgba(196,164,73,0.15);
+}
+.btn-outline:hover{
+ box-shadow:0 4px 16px rgba(196,164,73,0.25), 0 0 24px rgba(196,164,73,0.12);
+}
+
+/* Category Chip Golden Hover */
+.category-chip:hover{
+ background:var(--cream);
+ border-color:var(--gold);
+ box-shadow:0 2px 12px rgba(196,164,73,0.2);
+}
+
+/* Homepage Hero - Cream-Gold Gradient with Zodiac Watermark */
+.hero{
+ position:relative;
+ overflow:hidden;
+}
+.hero::before{
+ content:"";
+ position:absolute;
+ inset:0;
+ background:
+   radial-gradient(ellipse at 30% 20%, rgba(196,164,73,0.08), transparent 60%),
+   radial-gradient(ellipse at 70% 80%, rgba(249,246,239,0.6), transparent 50%);
+ pointer-events:none;
+ z-index:0;
+}
+.hero::after{
+ content:"";
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%, -50%);
+ width:600px;
+ height:600px;
+ background:url('/assets/img/logo-foundation.png') center/contain no-repeat;
+ opacity:0.03;
+ pointer-events:none;
+ z-index:0;
+}
+.hero-text,.hero-card{
+ position:relative;
+ z-index:1;
+}
+
+/* Oracle Page - Enhanced Mystical Elements */
+.oracle-subheading{
+ font-family:"Playfair Display",serif;
+ font-style:italic;
+ color:var(--gold);
+ font-size:1.15rem;
+ margin:-0.3rem 0 0.8rem;
+ font-weight:600;
+ letter-spacing:0.01em;
+}
+
+.oracle-hero-card{
+ position:relative;
+ overflow:visible;
+}
+
+.oracle-orb-container{
+ position:relative;
+ width:140px;
+ height:140px;
+ margin:0 auto 20px;
+}
+
+/* Golden Halo Animation */
+.oracle-halo{
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%, -50%);
+ width:180px;
+ height:180px;
+ border-radius:50%;
+ background:radial-gradient(circle, rgba(196,164,73,0.15), transparent 70%);
+ animation:pulseHalo 4s ease-in-out infinite;
+}
+
+@keyframes pulseHalo{
+ 0%, 100%{
+   transform:translate(-50%, -50%) scale(1);
+   opacity:0.3;
+ }
+ 50%{
+   transform:translate(-50%, -50%) scale(1.15);
+   opacity:0.5;
+ }
+}
+
+/* Celestial Orb */
+.oracle-orb{
+ position:relative;
+ width:140px;
+ height:140px;
+ border-radius:50%;
+ background:radial-gradient(ellipse at 30% 30%, #E8D7A1, #C4A449 60%, #A88944);
+ box-shadow:
+   0 10px 40px rgba(196,164,73,0.4),
+   0 0 60px rgba(196,164,73,0.2),
+   inset -10px -10px 20px rgba(0,0,0,0.1),
+   inset 10px 10px 20px rgba(255,255,255,0.3);
+ animation:floatOrb 6s ease-in-out infinite;
+ cursor:pointer;
+ transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.oracle-orb:hover{
+ transform:scale(1.05);
+ box-shadow:
+   0 12px 50px rgba(196,164,73,0.5),
+   0 0 80px rgba(196,164,73,0.3),
+   inset -10px -10px 20px rgba(0,0,0,0.1),
+   inset 10px 10px 20px rgba(255,255,255,0.3);
+}
+
+@keyframes floatOrb{
+ 0%, 100%{
+   transform:translateY(0) rotate(0deg);
+ }
+ 50%{
+   transform:translateY(-8px) rotate(180deg);
+ }
+}
+
+.orb-inner{
+ position:absolute;
+ top:15%;
+ left:15%;
+ width:30%;
+ height:30%;
+ border-radius:50%;
+ background:radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), transparent);
+}
+
+.orb-shimmer{
+ position:absolute;
+ inset:0;
+ border-radius:50%;
+ background:linear-gradient(135deg, transparent 30%, rgba(255,255,255,0.15) 50%, transparent 70%);
+ animation:shimmer 3s linear infinite;
+}
+
+@keyframes shimmer{
+ 0%{
+   transform:rotate(0deg);
+ }
+ 100%{
+   transform:rotate(360deg);
+ }
+}
+
+/* Oracle Glimpse Enhanced */
+#glimpseOut{
+ opacity:0;
+ transition:opacity 0.5s ease;
+}
+#glimpseOut:not(:empty){
+ opacity:1;
+ animation:fadeIn 0.8s ease forwards;
+}
+
+.glow-note{
+ background:linear-gradient(135deg, rgba(255,255,255,0.95), rgba(249,246,239,0.95));
+ border:1px solid rgba(196,164,73,0.3);
+ box-shadow:0 4px 16px rgba(196,164,73,0.15), var(--shadow);
+}
+
+/* Smooth Scroll Globally */
+html{
+ scroll-behavior:smooth;
+}
+
+/* Enhanced Card Textures */
+.card,.tile,.product-card,.panel{
+ background:linear-gradient(135deg, #FFFFFF 0%, #F9F6EF 100%);
+}
+
+/* Product Card Improvements */
+.product-link{
+ display:block;
+ transition:transform 0.25s ease;
+}
+.product-link:hover .product-card{
+ border-color:rgba(196,164,73,0.4);
+}
+
+/* Enhanced Product Card with Crafted Upon Order */
+.lead-time::before{
+ content:"crafted upon order • ";
+ color:var(--gold);
+ font-weight:600;
+}
+
+/* Replace Print-on-Demand Language */
+.supplier-badge{
+ display:none;
+}
+
+/* About Page Enhancements */
+.about-section h2{
+ font-family:"Playfair Display",serif;
+ font-weight:700;
+ font-style:italic;
+ letter-spacing:0.015em;
+}
+
+.about-section p{
+ font-family:"Playfair Display",serif;
+ font-style:italic;
+ line-height:1.9;
+ color:#1A1A1A;
+}
+
+/* Reduced Spacing for Seamless Flow */
+.about-section{
+ margin-bottom:24px;
+}
+
+.poetic-transition{
+ margin:32px 0;
+}
+
+.leaf-divider{
+ margin:40px auto;
+}
+
+/* Ambient Glow on Hover States */
+.nav a:hover{
+ text-shadow:0 0 20px rgba(196,164,73,0.3);
+}
+
+.product-card:hover{
+ box-shadow:0 6px 20px rgba(196,164,73,0.15), 0 12px 40px rgba(21,21,21,0.08);
+}
+
+.tile:hover{
+ box-shadow:0 6px 20px rgba(196,164,73,0.15), 0 12px 40px rgba(21,21,21,0.08);
+}
+
+/* Filter Button Enhanced */
+.filter-btn:hover{
+ box-shadow:0 2px 12px rgba(196,164,73,0.2);
+}
+
+/* Responsive Typography Scaling */
+@media(max-width:800px){
+ .brand img{
+   width:56px;
+   height:56px;
+ }
+ .brand-wordmark{
+   font-size:1rem;
+ }
+ .oracle-orb-container{
+   width:100px;
+   height:100px;
+ }
+ .oracle-orb{
+   width:100px;
+   height:100px;
+ }
+ .oracle-halo{
+   width:140px;
+   height:140px;
+ }
+}
+
+/* Depth and Texture */
+.site-header{
+ box-shadow:0 1px 4px rgba(21,21,21,0.05);
+ backdrop-filter:blur(8px);
+ background:rgba(244,239,232,0.98);
+}
+
+.hero-card{
+ background:linear-gradient(135deg, rgba(255,255,255,0.98), rgba(249,246,239,0.95));
+}
+
+/* Prevent Pure Black Text */
+.product-title,.post-title,.zodiac-header h3{
+ color:#1A1A1A;
+}
+
+/* Muted Gold Accents */
+.badge-pill{
+ border-color:var(--gold);
+ color:var(--gold);
+}
+
+.spark{
+ text-shadow:0 0 8px rgba(196,164,73,0.4);
+}
