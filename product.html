@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="en"><head>
+ <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+ <title>Product — LYRĪON Celestial Couture House</title>
+ <meta name="description" content="Premium zodiac apparel & objects.">
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap&text=LYRĪON&subset=latin-ext" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&display=swap" rel="stylesheet">
+ <link rel="icon" href="/assets/img/favicon-sun.png" sizes="32x32">
+ <link rel="apple-touch-icon" href="/assets/img/favicon-sun.png">
+ <meta name="theme-color" content="#F4EFE8">
+ <meta property="og:image" content="https://lyrion.house/assets/img/logo-circle.png">
+ <link rel="stylesheet" href="/css/styles.css"></head><body>
+
+<div class="announcement-bar">
+ <span class="announcement-text">Complimentary UK shipping over £75 <span class="spark">✦</span> Gifts wrapped in starlight.</span>
+</div>
+
+<header class="site-header"><div class="wrap">
+ <a href="/index.html" class="brand" aria-label="LYRĪON — Celestial Couture House">
+  <img src="/assets/img/logo-circle.png" width="136" height="136" alt="LYRION">
+  <span class="brand-wordmark">LYRĪON</span>
+ </a>
+ <nav class="nav">
+  <a href="/index.html">Home</a>
+  <a href="/shop.html">Shop</a>
+  <a href="/collections.html">Collections</a>
+  <a href="/blog.html" class="nav-blog"><img src="/assets/img/blog-icon.png" width="16" height="16" alt="" aria-hidden="true"> Blog</a>
+  <a href="/oracle.html">Oracle</a>
+  <a href="/about.html">About</a>
+  <a href="/contact.html">Contact</a>
+ </nav>
+</div></header>
+
+<main class="wrap" id="productMain">
+ <!-- Product content will be rendered here -->
+</main>
+
+<footer class="site-footer"><div class="wrap">
+ <div class="footer-content">
+  <div class="foot-left">© LYRĪON — Celestial Couture House</div>
+  <div class="logo-foundation" aria-hidden="true"></div>
+ </div>
+</div></footer>
+
+<script src="/js/shop.js" defer></script>
+<script>
+(function() {
+  'use strict';
+
+  async function loadProduct() {
+    const params = new URLSearchParams(window.location.search);
+    const sku = params.get('sku');
+
+    if (!sku) {
+      render404();
+      return;
+    }
+
+    // Wait for shop.js to load catalog
+    const checkCatalog = setInterval(() => {
+      if (window.LyrionShop && window.LyrionShop.getCatalog()) {
+        clearInterval(checkCatalog);
+        const catalog = window.LyrionShop.getCatalog();
+        renderProduct(sku, catalog);
+      }
+    }, 100);
+  }
+
+  function renderProduct(sku, catalog) {
+    let product = null;
+    let zodiac = null;
+
+    // Find product in catalog
+    for (const z of catalog.zodiacs) {
+      const found = z.products.find(p => p.sku === sku);
+      if (found) {
+        product = found;
+        zodiac = z;
+        break;
+      }
+    }
+
+    if (!product) {
+      render404();
+      return;
+    }
+
+    const pricing = window.LyrionShop.priceFor(product.type);
+    if (!pricing) {
+      render404();
+      return;
+    }
+
+    const imagePath = window.LyrionShop.resolveImagePath({...product, sign: zodiac.sign});
+    const isKids = window.LyrionShop.isKidsProduct(product);
+
+    // Check if apparel (needs size selector)
+    const needsSizeSelector = ['hoodie', 'tee', 'sweatpants', 'joggers'].includes(product.type);
+
+    const html = `
+      <div class="product-detail">
+        <div class="product-detail-grid">
+          <div class="product-gallery">
+            <div class="product-main-image">
+              ${isKids ? '<img src="/assets/img/kids-mark.png" class="kids-badge" alt="LYRION Children" loading="lazy">' : ''}
+              <img src="${imagePath}" alt="${product.title}" loading="lazy" onerror="this.src='/assets/img/placeholder-soft.jpg?v=${window.SITE_BUILD}'">
+            </div>
+          </div>
+          
+          <div class="product-details">
+            <div class="product-header">
+              <h1>${product.title} ${isKids ? '<img src="/assets/img/kids-mark.png" class="kids-badge-pdp" alt="LYRION Children">' : ''}</h1>
+              <p class="product-sign">${zodiac.sign} — ${zodiac.mood}</p>
+              <p class="product-story-full">${zodiac.story}</p>
+            </div>
+
+            <div class="product-pricing-detail">
+              <span class="price-large">${window.LyrionShop.formatPrice(pricing.rrp)}</span>
+              <span class="price-compare">${window.LyrionShop.formatPrice(pricing.compareAt)}</span>
+            </div>
+
+            ${needsSizeSelector ? `
+            <div class="product-size-selector">
+              <label>Size</label>
+              <div class="size-options">
+                <button class="size-btn">S</button>
+                <button class="size-btn">M</button>
+                <button class="size-btn active">L</button>
+                <button class="size-btn">XL</button>
+                <button class="size-btn">XXL</button>
+              </div>
+            </div>
+            ` : ''}
+
+            <div class="product-info-detail">
+              <h3>Materials & Care</h3>
+              <ul>
+                <li>Premium organic cotton blend</li>
+                <li>Archival-grade inks for lasting color</li>
+                <li>Wash cool, line dry when possible</li>
+                <li>Made with intention, handled with care</li>
+              </ul>
+            </div>
+
+            <div class="product-meta-detail">
+              <p><strong>Lead Time:</strong> ${product.leadDays}–${product.leadDays + 1} days production</p>
+              <p><strong>Supplier:</strong> ${catalog.suppliers[product.supplier].name}</p>
+              <p><strong>Regions:</strong> ${product.regions}</p>
+            </div>
+
+            <div class="product-actions">
+              <button class="btn" disabled title="Coming online at launch">Add to Bag</button>
+              <a href="/shop.html" class="btn-outline">Back to Shop</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+
+    document.querySelector('#productMain').innerHTML = html;
+
+    // Update page title
+    document.title = `${product.title} — LYRĪON`;
+
+    // Add size selector event listeners
+    if (needsSizeSelector) {
+      document.querySelectorAll('.size-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          document.querySelectorAll('.size-btn').forEach(b => b.classList.remove('active'));
+          e.target.classList.add('active');
+        });
+      });
+    }
+  }
+
+  function render404() {
+    const html = `
+      <div class="product-404" style="text-align:center;padding:80px 24px;max-width:640px;margin:0 auto;">
+        <h1 style="font-family:'Playfair Display',serif;font-size:2.5rem;margin:0 0 16px;">Product Not Found</h1>
+        <p style="color:var(--muted);margin:0 0 32px;font-size:1.1rem;">This constellation piece could not be located in our current catalog.</p>
+        <a href="/shop.html" class="btn">Return to Shop</a>
+      </div>
+    `;
+    document.querySelector('#productMain').innerHTML = html;
+  }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', loadProduct);
+  } else {
+    loadProduct();
+  }
+})();
+</script>
+
+<style>
+/* Product Detail Page Styles */
+.product-detail{
+  max-width:1160px;
+  margin:0 auto;
+  padding:48px 0;
+}
+
+.product-detail-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:64px;
+  align-items:start;
+}
+
+.product-gallery{
+  position:sticky;
+  top:100px;
+}
+
+.product-main-image{
+  width:100%;
+  aspect-ratio:4/5;
+  background:var(--off-white);
+  border-radius:8px;
+  overflow:hidden;
+  position:relative;
+}
+
+.product-main-image img:not(.kids-badge){
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.product-details{
+  display:flex;
+  flex-direction:column;
+  gap:32px;
+}
+
+.product-header h1{
+  font-family:"Playfair Display",serif;
+  font-weight:700;
+  font-size:2.2rem;
+  margin:0 0 12px;
+  color:var(--ink);
+}
+
+.product-sign{
+  font-style:italic;
+  color:var(--gold-accent);
+  margin:0 0 16px;
+  font-size:1.1rem;
+}
+
+.product-story-full{
+  font-family:"Playfair Display",serif;
+  font-style:italic;
+  color:var(--muted);
+  font-size:1.05rem;
+  margin:0;
+}
+
+.product-pricing-detail{
+  padding:24px 0;
+  border-top:1px solid var(--border);
+  border-bottom:1px solid var(--border);
+}
+
+.price-large{
+  font-size:2rem;
+  font-weight:700;
+  color:var(--ink);
+}
+
+.product-size-selector{
+  padding:24px 0;
+}
+
+.product-size-selector label{
+  display:block;
+  margin-bottom:12px;
+  font-weight:600;
+  color:var(--ink);
+}
+
+.size-options{
+  display:flex;
+  gap:12px;
+}
+
+.size-btn{
+  padding:12px 20px;
+  border:2px solid var(--border);
+  background:transparent;
+  color:var(--ink);
+  border-radius:8px;
+  cursor:pointer;
+  font-weight:600;
+  font-family:inherit;
+  transition:all .2s;
+}
+
+.size-btn:hover{
+  border-color:var(--gold);
+  background:var(--cream);
+}
+
+.size-btn.active{
+  background:var(--ink);
+  color:var(--cream);
+  border-color:var(--ink);
+}
+
+.product-info-detail h3{
+  font-family:"Playfair Display",serif;
+  font-weight:700;
+  font-size:1.3rem;
+  margin:0 0 12px;
+  color:var(--ink);
+}
+
+.product-info-detail ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.product-info-detail li{
+  padding:8px 0;
+  color:var(--ink);
+  border-bottom:1px solid var(--border);
+}
+
+.product-info-detail li:last-child{
+  border-bottom:none;
+}
+
+.product-meta-detail p{
+  margin:0 0 8px;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+.product-actions{
+  display:flex;
+  gap:12px;
+  padding-top:24px;
+}
+
+.product-actions .btn,
+.product-actions .btn-outline{
+  flex:1;
+  text-align:center;
+}
+
+@media(max-width:900px){
+  .product-detail-grid{
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+  
+  .product-gallery{
+    position:static;
+  }
+}
+</style>
+
+</body></html>
