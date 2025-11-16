@@ -130,7 +130,7 @@ button.btn{cursor:pointer}
 }
 
 /* Catalog System Styles */
-.shipping-banner{background:linear-gradient(90deg,var(--gold),var(--gold-2)); color:#1b1340; text-align:center; padding:8px; font-weight:700; font-size:.9rem}
+.shipping-banner{background:linear-gradient(90deg,var(--gold),var(--gold-accent)); color:var(--ink); text-align:center; padding:8px; font-weight:700; font-size:.9rem}
 
 .promo-banner{background:var(--panel-strong); border:1px solid var(--gold); border-radius:var(--radius); padding:18px 24px; margin-bottom:24px; text-align:center}
 .promo-banner p{margin:0; color:var(--text); font-weight:600}
