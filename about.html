@@ -6,7 +6,7 @@
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&display=swap&text=LYRĪON&subset=latin-ext" rel="stylesheet">
  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;800&display=swap" rel="stylesheet">
- <link rel="icon" href="/assets/img/favicon-sun.png">
+ <link rel="icon" href="/assets/img/favicon-sun.png" sizes="32x32">
  <link rel="apple-touch-icon" href="/assets/img/favicon-sun.png">
  <meta name="theme-color" content="#F4EFE8">
  <meta property="og:image" content="https://lyrion.house/assets/img/logo-circle.png">
@@ -19,7 +19,7 @@
 
 <header class="site-header"><div class="wrap">
  <a href="/index.html" class="brand" aria-label="LYRĪON — Celestial Couture House">
-  <img src="/assets/img/logo-circle.png" width="36" height="36" alt="LYRĪON golden sun orb">
+  <img src="/assets/img/logo-circle.png" width="136" height="136" alt="LYRION">
   <span class="brand-wordmark">LYRĪON</span>
  </a>
  <nav class="nav">
@@ -36,12 +36,20 @@
 <main class="wrap">
  <section class="page-hero">
   <h1>About LYRĪON</h1>
+  <p>Where light meets form. Where celestial wisdom wears the body.</p>
  </section>
  
  <section class="panel" style="max-width: 820px; margin: 0 auto 32px;">
   <h2>Who We Are</h2>
-  <p>LYRĪON is a celestial couture house — where light meets form. We craft quiet, durable pieces that carry the rhythm of the sky into everyday rituals.</p>
+  <p>LYRĪON is a celestial couture house — where light meets form. We craft quiet, durable pieces that carry the rhythm of the sky into everyday rituals. Born from a love of astrology, design, and conscious living, each collection honors the zodiac's twelve archetypes through premium apparel, homeware, and altar pieces.</p>
+  <p>We are makers, dreamers, and seekers — guided by the stars, grounded in craft.</p>
  </section>
+
+ <div class="leaf-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M16 4C16 4 8 10 8 16C8 20.4 11.6 24 16 24C20.4 24 24 20.4 24 16C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4"/>
+  </svg>
+ </div>
 
  <section class="panel" style="max-width: 820px; margin: 0 auto 32px;">
   <h2>Materials & Making</h2>
@@ -53,6 +61,12 @@
   </ul>
  </section>
 
+ <div class="leaf-divider">
+  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M16 4C16 4 8 10 8 16C8 20.4 11.6 24 16 24C20.4 24 24 20.4 24 16C24 10 16 4 16 4Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.4"/>
+  </svg>
+ </div>
+
  <section class="panel" style="max-width: 820px; margin: 0 auto 32px;">
   <h2>Care & Intention</h2>
   <p style="line-height: 1.8; margin-bottom: 12px;">Every LYRĪON piece is designed to be lived in, loved, and cared for:</p>
@@ -63,6 +77,15 @@
    <li>Treat each object as you would a ritual tool — with attention, respect, and gentle use.</li>
   </ul>
  </section>
+
+ <div class="about-callout">
+  <h3>Glimpse from the House</h3>
+  <p style="color:var(--muted);margin:0 0 16px;">Explore our latest editorial essays on astrology, design, and conscious living.</p>
+  <a href="/blog.html" style="display:inline-flex;align-items:center;gap:8px;">
+   <img src="/assets/img/blog-icon.png" width="20" height="20" alt="" aria-hidden="true">
+   <span>Visit the Blog</span>
+  </a>
+ </div>
 </main>
 
 <footer class="site-footer"><div class="wrap">
@@ -71,5 +94,32 @@
   <div class="logo-foundation" aria-hidden="true"></div>
  </div>
 </div></footer>
+
+<script>
+// Parallax effect for leaf dividers
+(function() {
+  const leafDividers = document.querySelectorAll('.leaf-divider svg');
+  
+  function updateParallax() {
+    leafDividers.forEach((svg, index) => {
+      const rect = svg.getBoundingClientRect();
+      const scrollPosition = window.scrollY;
+      const elementTop = rect.top + scrollPosition;
+      const windowHeight = window.innerHeight;
+      const scrollOffset = scrollPosition + windowHeight / 2 - elementTop;
+      const translateY = scrollOffset * 0.25;
+      
+      // Only apply if reduced motion is not preferred
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (!prefersReducedMotion) {
+        svg.style.transform = `translateY(${translateY}px)`;
+      }
+    });
+  }
+
+  window.addEventListener('scroll', updateParallax);
+  updateParallax();
+})();
+</script>
 
 </body></html>
