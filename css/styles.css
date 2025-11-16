@@ -413,7 +413,7 @@ footer, .site-footer {
 }
 
 .logo-foundation {
- background: url('/assets/brand/logo-foundation.svg') center/contain no-repeat;
+ background: url('/assets/img/logo-foundation.png') center/contain no-repeat;
  opacity: 0.08;
  filter: grayscale(100%);
  width: 100%;
